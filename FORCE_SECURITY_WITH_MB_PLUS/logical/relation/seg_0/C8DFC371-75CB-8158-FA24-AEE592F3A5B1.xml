@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="auth_objs_auth_objs" directorySegmentName="seg_0" id="C8DFC371-75CB-8158-FA24-AEE592F3A5B1">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 07:46:50 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>6A4D69F4-2B67-7B9B-B201-E16957A55AA1</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6A4D69F4-2B67-7B9B-B201-E16957A55AA1</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

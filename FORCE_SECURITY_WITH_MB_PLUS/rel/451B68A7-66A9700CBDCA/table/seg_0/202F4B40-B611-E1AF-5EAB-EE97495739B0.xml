@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="202F4B40-B611-E1AF-5EAB-EE97495739B0" name="object_types">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<commentInRDBMS>Code table for database object types.&lt;br/&gt;Standard objects supported: TABLE, VIEW, MATERIALIZED VIEW</commentInRDBMS>
+<generatorID>40E4F5E3-CE90-1BC8-3213-D71A3CA53FCF</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<abbreviation>obj_typs</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="8E1B9852-64AE-0C43-BDA2-494D29D61C5A">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<commentInRDBMS>Technical primary key.</commentInRDBMS>
+<generatorID>DAA5A347-3E0B-5389-E90B-9509277F0244</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="606C7AE1-FD26-AB14-34E5-EA38354E0AAB">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<commentInRDBMS>Database object type name.</commentInRDBMS>
+<generatorID>DD5B56FE-4632-0656-D544-4588323E9584</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="active" id="5FC74835-0C46-CEC4-4666-7CBA1287A0DD">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<commentInRDBMS>Is record active?</commentInRDBMS>
+<generatorID>092945CD-3D5E-CF5B-C797-5F02AAF7CDFC</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<domain>E87979A5-1214-9393-5154-3867C64A312D</domain>
+<defaultValue>T</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="m_created_on" id="9C3C9C0F-B37F-0B6F-0517-C1BD45180B15">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<commentInRDBMS>Management Record created on.</commentInRDBMS>
+<generatorID>803840AD-13B8-DDA1-9242-C91FDD0F995E</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>C28BB3B5-EE39-5D69-B631-07CD44618E6E</domain>
+<defaultValue>sysdate</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="m_updated_on" id="1C6845DB-FE3C-B41A-0540-87716F9A33EB">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<commentInRDBMS>Record updated on.</commentInRDBMS>
+<generatorID>1D6FFEEB-5AF0-3F6B-228E-DEA66FDB7FA0</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>0DF407B9-410E-EBF7-3982-95F1ED01FB9A</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="m_valid_from" id="E5E0889C-12E0-FC0A-A310-C36822E1BB4F">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<commentInRDBMS>Record valid from. If NULL then infinite.</commentInRDBMS>
+<generatorID>44341538-7D4E-446C-5CAE-FDFF5F53A059</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>EE15CA62-A196-AD5F-FB68-3D471E68D33A</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="m_valid_to" id="7FD7D5DB-222B-2354-347E-55E8FFD129EC">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<commentInRDBMS>Record valid to. If NULL then infinite.</commentInRDBMS>
+<generatorID>529A565B-8CC8-54F1-9F26-FBB0A49D3FF7</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>95658974-F90C-2D33-5642-6BCAB49CAF78</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5364E339-AA0C-E7BE-DF56-E76C6095D3BC" name="object_types_PK">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<generatorID>860B4E65-4C45-03E7-2F97-26D62E82BBB0</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E1B9852-64AE-0C43-BDA2-494D29D61C5A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BIResponsibleParty class="oracle.dbtools.crest.model.businessinfo.BIResponsibleParty" name="ResParty_1" directorySegmentName="seg_0" id="B6BE332D-80E6-3281-A93B-7A1065BE30F8">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-17 12:13:48 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+</BIResponsibleParty>

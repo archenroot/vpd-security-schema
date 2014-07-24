@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="FORCE_SECURITY_WITH_MB_PLUS" id="ECAD5261-0085-A7EB-E364-BCD0C30F251C" version="3.5">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-08 15:06:41 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>ECAD5261-0085-A7EB-E364-BCD0C30F251C</designId>
+</OSDM_Design>

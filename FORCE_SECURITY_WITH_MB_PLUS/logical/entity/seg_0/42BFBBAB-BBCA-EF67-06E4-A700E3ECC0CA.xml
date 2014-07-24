@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="42BFBBAB-BBCA-EF67-06E4-A700E3ECC0CA" name="permissions">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 08:08:49 UTC</createdTime>
+<commentInRDBMS>Code table for permissions.&lt;br/&gt;&lt;br/&gt;Common support of those coming from VPD: INSERT, SELECT, UPDATE, DELETE, INDEX.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>permissions</preferredAbbreviation>
+<shortName>perms</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="F5F7935A-AADA-8956-35EE-1EC4C3959701">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 08:09:10 UTC</createdTime>
+<commentInRDBMS>Technical primary key.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="false"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+</Attribute>
+<Attribute name="name" id="0BAA643C-6526-B7A5-9C16-44E3BA46A52C">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 08:09:23 UTC</createdTime>
+<commentInRDBMS>Permission name.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="false"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+</Attribute>
+<Attribute name="desc" id="B3E1E25D-4544-1B52-EF71-490F95991437">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 08:09:41 UTC</createdTime>
+<commentInRDBMS>Permission description.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="false"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<domain>1EF3F76F-872F-BC87-ADB2-6B36294821F7</domain>
+</Attribute>
+<Attribute name="m_active" id="D42364D7-794E-A6A8-3B25-F6715D3FB323">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 08:10:01 UTC</createdTime>
+<commentInRDBMS>Is record active?</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="false"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<domain>E87979A5-1214-9393-5154-3867C64A312D</domain>
+<defaultValue>T</defaultValue>
+</Attribute>
+<Attribute name="m_created_on" id="A35AAB33-ED68-657E-E5B1-681586BB14F8">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 08:10:07 UTC</createdTime>
+<commentInRDBMS>Record created on.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="false"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>C28BB3B5-EE39-5D69-B631-07CD44618E6E</domain>
+<defaultValue>sysdate</defaultValue>
+</Attribute>
+<Attribute name="m_updated_on" id="3EC99977-25B2-337E-DCD6-4314A1A27F5E">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 08:10:16 UTC</createdTime>
+<commentInRDBMS>Record updated on.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="false"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>0DF407B9-410E-EBF7-3982-95F1ED01FB9A</domain>
+</Attribute>
+<Attribute name="m_valid_from" id="940D2C94-6594-933C-7804-392448EC6E9E">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 08:10:26 UTC</createdTime>
+<commentInRDBMS>Record valid from. If NULL then infinite.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="false"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>EE15CA62-A196-AD5F-FB68-3D471E68D33A</domain>
+</Attribute>
+<Attribute name="m_valid_to" id="0A63E6AD-C328-2823-8EED-837DCB119602">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 08:10:32 UTC</createdTime>
+<commentInRDBMS>Record valid to. If NULL then infinite.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="false"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>95658974-F90C-2D33-5642-6BCAB49CAF78</domain>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2C9C01E6-9783-EADE-2730-8FD74F9F986F" name="permissions_pk">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 08:09:52 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>F5F7935A-AADA-8956-35EE-1EC4C3959701</newElementsIDs>
+<usedAttributes>
+<attributeRef>F5F7935A-AADA-8956-35EE-1EC4C3959701</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

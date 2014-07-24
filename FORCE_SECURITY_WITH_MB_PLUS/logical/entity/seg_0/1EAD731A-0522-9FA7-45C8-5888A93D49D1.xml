@@ -1,0 +1,144 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1EAD731A-0522-9FA7-45C8-5888A93D49D1" name="namespaces">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 09:06:40 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>namespaces</preferredAbbreviation>
+<shortName>nss</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="5F6E981A-B3D5-EE26-C965-541425C350B8">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 09:07:17 UTC</createdTime>
+<commentInRDBMS>Technical primary key.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="false"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+</Attribute>
+<Attribute name="name" id="BAD3D8B6-BE7A-E479-8029-DF5A703C7E74">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 09:07:41 UTC</createdTime>
+<commentInRDBMS>Namespace name.&lt;br/&gt;Used to define a group of constants.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="false"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+</Attribute>
+<Attribute name="desc" id="AD4E8A12-EB9C-B940-FB3E-84070F196D9E">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 09:08:02 UTC</createdTime>
+<commentInRDBMS>Namespace description</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="false"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<domain>1EF3F76F-872F-BC87-ADB2-6B36294821F7</domain>
+</Attribute>
+<Attribute name="m_active" id="25ABCF8A-89D4-EE9B-8668-B18D845865BE">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 12:48:16 UTC</createdTime>
+<commentInRDBMS>Is record active?</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+</Attribute>
+<Attribute name="m_created_on" id="86D9A3F5-ED6C-E45B-495B-957FE7E33EFA">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 09:08:18 UTC</createdTime>
+<commentInRDBMS>Record created on.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="false"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>C28BB3B5-EE39-5D69-B631-07CD44618E6E</domain>
+<defaultValue>sysdate</defaultValue>
+</Attribute>
+<Attribute name="m_updated_on" id="77FDFE6B-0A29-7B65-9144-5F94E75D47FD">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 09:08:28 UTC</createdTime>
+<commentInRDBMS>Record updated on.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="false"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>0DF407B9-410E-EBF7-3982-95F1ED01FB9A</domain>
+</Attribute>
+<Attribute name="m_valid_from" id="A94E6B74-049A-F5C6-B55A-3E9B73CA5B8D">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 09:08:38 UTC</createdTime>
+<commentInRDBMS>Record valid from.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="false"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>EE15CA62-A196-AD5F-FB68-3D471E68D33A</domain>
+</Attribute>
+<Attribute name="m_valid_to" id="9AAED592-C99A-8C99-035F-51B817B434DA">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 09:08:52 UTC</createdTime>
+<commentInRDBMS>Record valid to.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="false"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>95658974-F90C-2D33-5642-6BCAB49CAF78</domain>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2891AF55-E12C-69E9-56F2-919D655C0024" name="namespaces_pk">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 09:11:37 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>5F6E981A-B3D5-EE26-C965-541425C350B8</newElementsIDs>
+<usedAttributes>
+<attributeRef>5F6E981A-B3D5-EE26-C965-541425C350B8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

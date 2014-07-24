@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5B32ECF9-2ECF-A41B-2DB6-F5717906A08F" name="column_values">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-14 09:06:18 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>column_values</preferredAbbreviation>
+<shortName>col_vals</shortName>
+<createSurrogateKey>true</createSurrogateKey>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="95035063-3888-1068-AC85-4BD361FC1B94">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 12:12:25 UTC</createdTime>
+<commentInRDBMS>Technical primary key.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+</Attribute>
+<Attribute name="content" id="3CABE892-71C8-2462-0B71-AB0D089C5AE2">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-14 09:07:17 UTC</createdTime>
+<commentInRDBMS>Column value.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="false"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<domain>1EF3F76F-872F-BC87-ADB2-6B36294821F7</domain>
+</Attribute>
+<Attribute name="type" id="70CA1E1D-2BA8-B214-D085-DCA58935A925">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 08:49:29 UTC</createdTime>
+<commentInRDBMS>Database object column type.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="false"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+</Attribute>
+<Attribute name="col_vals_id" id="3D23119E-8C8F-A88A-0E3B-B00158E4C031">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-14 09:08:39 UTC</createdTime>
+<commentInRDBMS>Foreign key.</commentInRDBMS>
+<generatorID>C476913E-7C65-A53D-E911-FB882CE627B0</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<referedAttribute>1CDBB8BB-2D7A-8543-5C9D-6B53DAC52355</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="70316A3B-BE89-496E-6C2E-474885D96A0F" name="column_values PK">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 12:12:36 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>95035063-3888-1068-AC85-4BD361FC1B94</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

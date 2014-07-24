@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="nss_consts" directorySegmentName="seg_0" id="27B70034-CDC7-312A-4E03-C75B9A2BAA6C">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 09:12:05 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<sourcePk>2891AF55-E12C-69E9-56F2-919D655C0024</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1EAD731A-0522-9FA7-45C8-5888A93D49D1</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>EB16F86E-F484-BDAC-1D77-192E0A315796</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

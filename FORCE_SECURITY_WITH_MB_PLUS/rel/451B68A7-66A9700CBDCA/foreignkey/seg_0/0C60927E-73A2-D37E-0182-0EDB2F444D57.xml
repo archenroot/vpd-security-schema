@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0C60927E-73A2-D37E-0182-0EDB2F444D57" name="vpd_pols_vpd_pol_types_FK">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 13:09:42 UTC</createdTime>
+<generatorID>471474A9-9798-5E98-4BC4-74B096431D94</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<containerWithKeyObject>1ECDC71A-BDD2-D131-2F18-5ACA06FD66F5</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>A387427B-CDE4-DF28-6B39-534F1D045028</localFKIndex>
+<keyObject>8B101346-AEEF-4C33-0B3A-FF0785B7AC8C</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

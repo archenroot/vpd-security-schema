@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="pol_types_vpd_pols" directorySegmentName="seg_0" id="471474A9-9798-5E98-4BC4-74B096431D94">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 12:36:57 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<sourcePk>A1D3D12F-FC6A-DC8E-79B1-029B19442D77</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>32BBD7A2-1A54-BDE9-77A4-9692F4407D5F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E68F8734-BB02-6591-9650-61ADDED89635</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

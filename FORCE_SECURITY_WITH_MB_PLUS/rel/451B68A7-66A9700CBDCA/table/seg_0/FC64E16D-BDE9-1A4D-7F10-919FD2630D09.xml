@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FC64E16D-BDE9-1A4D-7F10-919FD2630D09" name="vpd_policy_types">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 13:09:42 UTC</createdTime>
+<generatorID>32BBD7A2-1A54-BDE9-77A4-9692F4407D5F</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<abbreviation>pol_types</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="2EA26271-AD19-0EB1-A7EC-C1733690AB50">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 13:09:42 UTC</createdTime>
+<commentInRDBMS>Technical primary key.</commentInRDBMS>
+<generatorID>4CC3CDB3-08E6-3929-D557-E81DCE7B58E6</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type" id="AC143D64-C3AE-CE1A-C047-F00C8042286A">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 13:09:42 UTC</createdTime>
+<commentInRDBMS>Oracle VPD policy type.</commentInRDBMS>
+<generatorID>02E7346B-32D8-9244-199C-40880B0C08D2</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8B101346-AEEF-4C33-0B3A-FF0785B7AC8C" name="vpd_policy_types_PK">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 13:09:42 UTC</createdTime>
+<generatorID>A1D3D12F-FC6A-DC8E-79B1-029B19442D77</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2EA26271-AD19-0EB1-A7EC-C1733690AB50"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

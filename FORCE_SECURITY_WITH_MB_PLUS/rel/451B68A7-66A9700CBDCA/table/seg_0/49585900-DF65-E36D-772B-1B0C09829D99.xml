@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="49585900-DF65-E36D-772B-1B0C09829D99" name="AUTHORIZATION_OBJECTS">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<generatorID>6A4D69F4-2B67-7B9B-B201-E16957A55AA1</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<abbreviation>auth_objs</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="A13277FA-0868-771A-1C73-D2019C29C0BF">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<commentInRDBMS>Technical primary key.</commentInRDBMS>
+<generatorID>2D02733A-B524-849B-84C8-6AF6C875BEB6</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="code" id="601971D4-A69C-FF44-AF2D-2670CF9890D5">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<commentInRDBMS>Authorization object.</commentInRDBMS>
+<generatorID>1618D7EB-D219-6AD9-5A31-534F8A5C9E6E</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="business_description" id="6A392D8A-DEAA-C2D5-B42A-8BC5B0680ED5">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-17 13:15:50 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="auth_obj_type_id" id="06B65A40-3068-7F9B-389F-DA1725966DE9">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<commentInRDBMS>Foreign key.</commentInRDBMS>
+<generatorID>DA811FD5-B5AE-B7C9-A2E7-9050182D4EFF</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+<delegate>B1DEBD20-FC13-FC64-EA1D-D768F0AEA8F3</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="exp_code_id" id="435B31A3-7CE9-86BD-45DD-ABD9F822FD8A">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<commentInRDBMS>Foreign key.</commentInRDBMS>
+<generatorID>49C2993A-5DF1-929C-A42F-A694736E63D5</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="43ACB7DA-178D-BA12-FE3C-D2675A5715CA" name="auth_objs_PK">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<generatorID>BD1501E2-281C-EE2D-B0C1-033CDF72D55D</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A13277FA-0868-771A-1C73-D2019C29C0BF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6C0CFB1D-A73E-A4D7-255D-C26E33A65FFA" name="authorization_objects__IDX">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>A8EDB7EE-DE56-3F5F-533D-E8B63A41A4EF</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="435B31A3-7CE9-86BD-45DD-ABD9F822FD8A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

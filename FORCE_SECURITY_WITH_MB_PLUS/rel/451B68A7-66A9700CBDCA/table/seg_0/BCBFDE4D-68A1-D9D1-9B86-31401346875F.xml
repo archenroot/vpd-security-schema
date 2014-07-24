@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BCBFDE4D-68A1-D9D1-9B86-31401346875F" name="#USERS">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-18 06:48:16 UTC</createdTime>
+<generatorID>8BA84FAB-BE17-C228-0813-AA38FAF3DC16</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<abbreviation>#USERS</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="E13A72A1-1C1A-78E2-33D3-3FB0DC4453AB">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-18 06:48:16 UTC</createdTime>
+<commentInRDBMS>Technical primary key.</commentInRDBMS>
+<generatorID>DD1C6FF4-49CC-9067-E76B-507696B1A20D</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_USRS_ID</notNullConstraintName>
+</Column>
+<Column name="NAME" id="6649085B-8A2E-44B8-D3AF-92C68FE87383">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-18 06:48:16 UTC</createdTime>
+<commentInRDBMS>User name.</commentInRDBMS>
+<generatorID>B1B4A4DA-3CD7-FF11-E09B-11A62678CB97</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_USRS_NAME</notNullConstraintName>
+</Column>
+<Column name="FULL_NAME" id="56605615-DE8F-C99D-2EF9-B2797D0A042B">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-18 06:48:16 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="V_IS_ACTIVE" id="38D92742-CEA8-681C-5A40-36AE0DD849AA">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-18 06:48:16 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>CK_USERSv1_V_IS_ACTIVE</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<domain>E87979A5-1214-9393-5154-3867C64A312D</domain>
+<defaultValue>T</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="V_IS_DELETED" id="FCF1A5AA-4BB3-6908-4B59-C6A009F3BE32">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-18 06:48:16 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>CK_USERSv1_V_IS_DELETED</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<domain>ED65EBF4-C7DE-92C1-B9D2-E31E4B39D761</domain>
+<defaultValue>F</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="V_VALID_FROM" id="CE109B7D-328D-108A-1BBE-88C6BB9A9079">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-18 06:48:16 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>EE15CA62-A196-AD5F-FB68-3D471E68D33A</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="V_VALID_TO" id="31A97445-BA46-FBFB-E14D-305FF06EF0FA">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-18 06:48:16 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>95658974-F90C-2D33-5642-6BCAB49CAF78</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="T_CREATED_ON" id="8CF7F1B5-7625-BE16-8151-028194099146">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-18 06:48:16 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>C28BB3B5-EE39-5D69-B631-07CD44618E6E</domain>
+<defaultValue>sysdate</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DOMAINS_ID" id="8FDAE009-5BCD-DE61-0EB4-794B83C8CAFA">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-18 06:48:16 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_USRS_DOMAINS_ID</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6897C5A9-CD41-CD37-5CD4-3555656AF96D" name="#USERS_UK">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-18 06:48:16 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6649085B-8A2E-44B8-D3AF-92C68FE87383"/>
+<colUsage columnID="8FDAE009-5BCD-DE61-0EB4-794B83C8CAFA"/>
+<colUsage columnID="8CF7F1B5-7625-BE16-8151-028194099146"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

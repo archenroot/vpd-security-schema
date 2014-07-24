@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7A70CAA9-4176-DDA4-C2AD-B515B320E6B3" name="vpd_policy_groups">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 13:09:42 UTC</createdTime>
+<generatorID>5D87CF65-8ECF-03C4-794A-F31AA69FF664</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<abbreviation>vpd_pol_grps</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="C317DE24-3B23-2606-4D31-B8A1EC672FDA">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 13:09:42 UTC</createdTime>
+<commentInRDBMS>Technical primary key.</commentInRDBMS>
+<generatorID>00CF9846-064F-2B17-9B8D-4B87695E48BB</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="72BEE75B-B28F-CBF4-F087-2194D3FA68F4">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 13:09:42 UTC</createdTime>
+<generatorID>2835FCE3-6CEF-3963-794D-B25ACAF7D6DA</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4E7E5FD5-BE33-1A96-F5B4-550B3AACDE34" name="vpd_policy_groups_PK">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 13:09:42 UTC</createdTime>
+<generatorID>707F1B9D-20AD-B830-F36A-82E533152406</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C317DE24-3B23-2606-4D31-B8A1EC672FDA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DomainFile class="oracle.dbtools.crest.model.design.DomainFileWrapper" fileName="forsec">
+   <domains>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="UPDATED_ON" id="0DF407B9-410E-EBF7-3982-95F1ED01FB9A">
+         <createdBy>s9073</createdBy>
+         <createdTime>2014-07-15 08:34:33 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>forsec</fileName>
+         <logicalDatatype>LOGDT007</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="SHORT_STRING" id="19DEE806-9F73-939C-4464-330DC8C2F169">
+         <createdBy>s9073</createdBy>
+         <createdTime>2014-07-08 15:18:40 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>60</dataTypeSize>
+         <fileName>forsec</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="CLOB" id="1EF3F76F-872F-BC87-ADB2-6B36294821F7">
+         <createdBy>s9073</createdBy>
+         <createdTime>2014-07-08 15:20:20 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>forsec</fileName>
+         <logicalDatatype>LOGDT040</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="MAX_VARCHAR" id="3472F334-E16C-CA06-A317-B47F987ADD31">
+         <createdBy>s9073</createdBy>
+         <createdTime>2014-07-17 12:29:24 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>4000 BYTE</dataTypeSize>
+         <fileName>forsec</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="authorization_object_type" id="7F0DEA38-5E48-E1DF-C30C-C4D1017D475B">
+         <createdBy>s9073</createdBy>
+         <createdTime>2014-07-14 08:37:46 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>60</dataTypeSize>
+         <fileName>forsec</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="DELETED_ON" id="7FB81B67-CC7A-6FDC-96F2-B70CD96E2906">
+         <createdBy>s9073</createdBy>
+         <createdTime>2014-07-17 13:01:57 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>forsec</fileName>
+         <logicalDatatype>LOGDT007</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="DATE" id="8446C2A3-FE31-22B7-3F11-E6CEA7EFF836">
+         <createdBy>s9073</createdBy>
+         <createdTime>2014-07-15 08:57:13 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>forsec</fileName>
+         <logicalDatatype>LOGDT007</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VALID_TO" id="95658974-F90C-2D33-5642-6BCAB49CAF78">
+         <createdBy>s9073</createdBy>
+         <createdTime>2014-07-15 08:32:12 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>forsec</fileName>
+         <logicalDatatype>LOGDT007</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="CREATED_ON" id="C28BB3B5-EE39-5D69-B631-07CD44618E6E">
+         <createdBy>s9073</createdBy>
+         <createdTime>2014-07-15 08:32:52 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <defaultValue>sysdate</defaultValue>
+         <fileName>forsec</fileName>
+         <logicalDatatype>LOGDT007</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="TECHNICAL_PK" id="E1FC7E06-E17E-570F-CF24-FBDCE3D2A844">
+         <createdBy>s9073</createdBy>
+         <createdTime>2014-07-08 15:17:19 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>forsec</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="BOOLEAN_TRUE" id="E87979A5-1214-9393-5154-3867C64A312D">
+         <createdBy>s9073</createdBy>
+         <createdTime>2014-07-15 07:38:03 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <defaultValue>T</defaultValue>
+         <fileName>forsec</fileName>
+         <logicalDatatype>LOGDT006</logicalDatatype>
+         <listOfValues>
+            <valueDef value="F" description="Negative value (FALSE)"/>
+            <valueDef value="T" description="Positive value (TRUE)"/>
+         </listOfValues>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="BOOLEAN_FALSE" id="ED65EBF4-C7DE-92C1-B9D2-E31E4B39D761">
+         <createdBy>s9073</createdBy>
+         <createdTime>2014-07-17 13:47:22 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <defaultValue>F</defaultValue>
+         <fileName>forsec</fileName>
+         <logicalDatatype>LOGDT006</logicalDatatype>
+         <listOfValues>
+            <valueDef value="F" description="Negative value (FALSE)"/>
+            <valueDef value="T" description="Positive value (TRUE)"/>
+         </listOfValues>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VALID_FROM" id="EE15CA62-A196-AD5F-FB68-3D471E68D33A">
+         <createdBy>s9073</createdBy>
+         <createdTime>2014-07-08 15:19:34 UTC</createdTime>
+         <ownerDesignName>System</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>forsec</fileName>
+         <logicalDatatype>LOGDT007</logicalDatatype>
+      </Domain>
+   </domains>
+</DomainFile>

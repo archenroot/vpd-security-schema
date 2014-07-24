@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9D2C5CC7-6DF2-C905-86A9-8BF08C8BD9BC" name="AUTH_OBJECT_TYPES">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<comment>Authorization Object Types&lt;br/&gt;&lt;br/&gt;Description: Authorization Object Types is code table of currently supported security objects.&lt;br/&gt;&lt;br/&gt;Values:&lt;br/&gt;FUND&lt;br/&gt;Defined as objects -&gt; columns -&gt; value (master object is &apos;TODO&apos;)&lt;br/&gt;&lt;br/&gt;TENANT&lt;br/&gt;Defined as objects -&gt; columns -&gt; value (master object is OWNER_TB)&lt;br/&gt;&lt;br/&gt;DATA_SET&lt;br/&gt;Means view on the data and can be defined as: &lt;br/&gt;objects only (Then all columns are automatically included without any row-level based restriction available)&lt;br/&gt;objects -&gt; columns (The vertical matrix view restriction only)&lt;br/&gt;objects -&gt; columns -&gt; values &lt;br/&gt;&lt;br/&gt;NOTE: Data sets do NOT support any master object&lt;br/&gt;&lt;br/&gt;CUSTOMERS&lt;br/&gt;Defined as objects -&gt; columns -&gt; value (master object is CUSTOMERS_TB)&lt;br/&gt;</comment>
+<generatorID>5DA1DFB7-D7D0-783A-F73C-059B10788119</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<abbreviation>AUTH_OBJECT_TYPES</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="B1DEBD20-FC13-FC64-EA1D-D768F0AEA8F3">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<commentInRDBMS>Technical primary key.</commentInRDBMS>
+<generatorID>8776B4F1-2B48-5B40-2E3E-0B574DBB16D6</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODE" id="12BE9022-7281-243A-691C-8B67BAEF56B0">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<commentInRDBMS>Authorization object type name.&lt;br/&gt;&lt;br/&gt;For example: FUND, GROUP_OF_FUNDS, CLIENT, LICENSE, etc.</commentInRDBMS>
+<generatorID>6F4ECAD9-1835-309E-1BFF-F83AFB2438F2</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPTION" id="984CA6E8-546B-9B18-E762-240BB62C2EDC">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<commentInRDBMS>Authorization object type description.</commentInRDBMS>
+<generatorID>989C7CA3-D7C8-CBEE-0D6E-D1B7BE88ED91</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<domain>1EF3F76F-872F-BC87-ADB2-6B36294821F7</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="V_ACTIVE" id="8AE29EE7-4493-7D02-D704-675DDC7EC576">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<commentInRDBMS>Is record active?</commentInRDBMS>
+<generatorID>00B668D5-9859-F9D1-2B89-786F3EB41AF9</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<domain>E87979A5-1214-9393-5154-3867C64A312D</domain>
+<defaultValue>T</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="A_CREATED_ON" id="31EA8DD3-367B-8429-58C4-E6395CEF4562">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<commentInRDBMS>Audit column: Record created on.</commentInRDBMS>
+<generatorID>F437453B-C7CD-4E22-24A2-25D858B8AEE3</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>C28BB3B5-EE39-5D69-B631-07CD44618E6E</domain>
+<defaultValue>sysdate</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="A_LAST_UPDATED" id="AF5B227C-2F71-21CD-50D9-26D612027B16">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<commentInRDBMS>Audit column: Record updated on.</commentInRDBMS>
+<generatorID>74A41ED9-91F9-6805-436A-78D18C15A7F5</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>0DF407B9-410E-EBF7-3982-95F1ED01FB9A</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="V_VALID_FROM" id="76343CB2-D89A-5349-3785-C09A64FC20F6">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<commentInRDBMS>Validation record: Record valid from. If NULL then infinite.</commentInRDBMS>
+<generatorID>0D648D42-7C1A-6DF4-84FF-238625CA729F</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>EE15CA62-A196-AD5F-FB68-3D471E68D33A</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="V_VALID_TO" id="4968332C-0C5C-A8A5-3FBF-9882195B3600">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<commentInRDBMS>Validation record: Record valid to. If NULL then infinite.</commentInRDBMS>
+<generatorID>B559272C-53D7-C80C-2D3F-6426867D2127</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>95658974-F90C-2D33-5642-6BCAB49CAF78</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7A5600E8-52CF-C320-9460-7C938C0F8EBD" name="AUTH_OBJECT_TYPES_PKv1">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-18 07:27:22 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B1DEBD20-FC13-FC64-EA1D-D768F0AEA8F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

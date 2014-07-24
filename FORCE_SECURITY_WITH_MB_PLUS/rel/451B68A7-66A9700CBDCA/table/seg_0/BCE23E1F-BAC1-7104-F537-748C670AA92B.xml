@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BCE23E1F-BAC1-7104-F537-748C670AA92B" name="auth_objs_relationships">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="auth_obj_id_m" id="750D790E-2AD3-9263-FFFC-53C7660898A2">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+<delegate>A13277FA-0868-771A-1C73-D2019C29C0BF</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2BCEBA8D-3719-20F2-1458-CB33FEA40D9C" referredColumn="A13277FA-0868-771A-1C73-D2019C29C0BF"/>
+</associations>
+</Column>
+<Column name="auth_obj_id_n" id="8A4E8CDF-83E2-0B12-8A95-D5C74F63D7D0">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+<delegate>A13277FA-0868-771A-1C73-D2019C29C0BF</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C4B2D177-2ABD-B0F3-176E-E829964BD5F0" referredColumn="A13277FA-0868-771A-1C73-D2019C29C0BF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9DB803A4-824C-EAF0-92AB-151192EF0EF3" name="auth_objs_relationships_PK">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<commentInRDBMS>Primary key in M:N table based on source tables technical primary keys.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="750D790E-2AD3-9263-FFFC-53C7660898A2"/>
+<colUsage columnID="8A4E8CDF-83E2-0B12-8A95-D5C74F63D7D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3E676F4C-F57C-C979-E81A-A2152C05A8E8" name="auth_objs_FK1">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<generatorID>C8DFC371-75CB-8158-FA24-AEE592F3A5B1</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="750D790E-2AD3-9263-FFFC-53C7660898A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="717AEB9F-7ACE-8BCB-CBD8-A03334D7B474" name="auth_objs_FK2">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<generatorID>C8DFC371-75CB-8158-FA24-AEE592F3A5B1</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A4E8CDF-83E2-0B12-8A95-D5C74F63D7D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

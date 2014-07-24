@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EB16F86E-F484-BDAC-1D77-192E0A315796" name="constants">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 08:11:15 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>constants</preferredAbbreviation>
+<shortName>consts</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="0B83F9AE-D5C0-7389-5FE2-B26B4B35E7BF">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 08:11:40 UTC</createdTime>
+<commentInRDBMS>Technical primary key.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="false"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+</Attribute>
+<Attribute name="name" id="40F21D0A-D543-7D5C-5D68-5F751FE0588B">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 08:12:23 UTC</createdTime>
+<commentInRDBMS>Constant name.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="false"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+</Attribute>
+<Attribute name="value" id="DC450723-D4B2-BD6A-C991-49E969F18A72">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 08:12:28 UTC</createdTime>
+<commentInRDBMS>Constant value.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="false"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<domain>1EF3F76F-872F-BC87-ADB2-6B36294821F7</domain>
+</Attribute>
+<Attribute name="value_type" id="D1AB2614-ED58-77AC-596E-B1AAD4D0A15E">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 12:49:01 UTC</createdTime>
+<commentInRDBMS>Constant value type.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+</Attribute>
+<Attribute name="namespace_id" id="B6C9ACF9-9D63-6010-9363-213747C2AD0E">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 09:12:05 UTC</createdTime>
+<commentInRDBMS>Foreign key to NAMESPACES table.</commentInRDBMS>
+<generatorID>27B70034-CDC7-312A-4E03-C75B9A2BAA6C</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<referedAttribute>5F6E981A-B3D5-EE26-C965-541425C350B8</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B140547C-A09F-40A5-3BB2-AC4315F08CC8" name="constants_pk">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 08:12:21 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>0B83F9AE-D5C0-7389-5FE2-B26B4B35E7BF</newElementsIDs>
+<usedAttributes>
+<attributeRef>0B83F9AE-D5C0-7389-5FE2-B26B4B35E7BF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

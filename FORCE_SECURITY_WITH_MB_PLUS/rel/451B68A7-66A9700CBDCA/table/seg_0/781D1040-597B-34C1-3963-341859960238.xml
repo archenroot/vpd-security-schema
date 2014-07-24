@@ -1,0 +1,144 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="781D1040-597B-34C1-3963-341859960238" name="NAMESPACES">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<commentInRDBMS>Namespace define group of related parameters.</commentInRDBMS>
+<generatorID>1EAD731A-0522-9FA7-45C8-5888A93D49D1</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<abbreviation>NSS</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="07083B58-A016-E5B7-484A-BB5EFD3D1E32">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<commentInRDBMS>Technical primary key.</commentInRDBMS>
+<generatorID>5F6E981A-B3D5-EE26-C965-541425C350B8</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="7B3AAE57-1962-B64B-060D-8F6FF647C1C5">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<commentInRDBMS>Namespace name.&lt;br/&gt;Used to define a group of constants.</commentInRDBMS>
+<generatorID>BAD3D8B6-BE7A-E479-8029-DF5A703C7E74</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPTION" id="8C4036AC-C9CC-9ACA-059A-1BB195986294">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<commentInRDBMS>Namespace description.</commentInRDBMS>
+<generatorID>AD4E8A12-EB9C-B940-FB3E-84070F196D9E</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<domain>1EF3F76F-872F-BC87-ADB2-6B36294821F7</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="V_IS_ACTIVE" id="162B87E8-C1B3-E8B4-FFB6-8CA9C2C83EA3">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 13:09:42 UTC</createdTime>
+<commentInRDBMS>Validation column: Is record active?</commentInRDBMS>
+<generatorID>25ABCF8A-89D4-EE9B-8668-B18D845865BE</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<domain>E87979A5-1214-9393-5154-3867C64A312D</domain>
+<defaultValue>T</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="V_IS_DELETED" id="919AA585-52EF-34CD-9AB5-8C0AF541CAE7">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-17 13:46:51 UTC</createdTime>
+<commentInRDBMS>Validation column: Is record logicaly deleted?</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<domain>E87979A5-1214-9393-5154-3867C64A312D</domain>
+<defaultValue>T</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="V_VALID_FROM" id="93DA4261-E5A1-A73B-BAA4-3BB71443AA01">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<commentInRDBMS>Validation column: Record valid from.</commentInRDBMS>
+<generatorID>A94E6B74-049A-F5C6-B55A-3E9B73CA5B8D</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>EE15CA62-A196-AD5F-FB68-3D471E68D33A</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="V_VALID_TO" id="FA884606-760C-1FF5-DB42-26B803BA9A6B">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<commentInRDBMS>Validation column: Record valid to.</commentInRDBMS>
+<generatorID>9AAED592-C99A-8C99-035F-51B817B434DA</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>95658974-F90C-2D33-5642-6BCAB49CAF78</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="T_CREATED_ON" id="21AF7FC5-8DF2-F3BD-776D-71072FEF393C">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<commentInRDBMS>Tracking column: Record created on.</commentInRDBMS>
+<generatorID>86D9A3F5-ED6C-E45B-495B-957FE7E33EFA</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>C28BB3B5-EE39-5D69-B631-07CD44618E6E</domain>
+<defaultValue>sysdate</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="T_LAST_UPDATED_ON" id="3F4E2AA0-5017-5099-9513-AB75F84148FB">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<commentInRDBMS>Tracking column: Record updated on.</commentInRDBMS>
+<generatorID>77FDFE6B-0A29-7B65-9144-5F94E75D47FD</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>0DF407B9-410E-EBF7-3982-95F1ED01FB9A</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B3B66159-96F7-CDA4-5E3F-282B4171172E" name="NAMESPACES_PK">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<generatorID>2891AF55-E12C-69E9-56F2-919D655C0024</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="07083B58-A016-E5B7-484A-BB5EFD3D1E32"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="969CF0E2-E54E-9112-F408-9EEA48354D5F" name="NAMESPACES_NAME_UK">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-17 14:09:11 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B3AAE57-1962-B64B-060D-8F6FF647C1C5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

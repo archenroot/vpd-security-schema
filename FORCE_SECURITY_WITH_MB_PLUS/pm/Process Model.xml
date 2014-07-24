@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="1C15CD80-6E16-F3F6-496D-FE742297256A">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-08 15:06:41 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

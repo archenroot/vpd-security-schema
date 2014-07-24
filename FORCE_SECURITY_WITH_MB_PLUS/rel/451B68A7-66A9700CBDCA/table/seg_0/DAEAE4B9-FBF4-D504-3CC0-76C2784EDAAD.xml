@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DAEAE4B9-FBF4-D504-3CC0-76C2784EDAAD" name="CACHE_USERS">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<commentInRDBMS>MB+ cache table for users.</commentInRDBMS>
+<generatorID>8BA84FAB-BE17-C228-0813-AA38FAF3DC16</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<abbreviation>USRS</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="CFEBF9C6-39A3-D575-7332-676E1F34ED18">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<commentInRDBMS>Technical primary key.</commentInRDBMS>
+<generatorID>DD1C6FF4-49CC-9067-E76B-507696B1A20D</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="C3288EB8-A6BA-1EFE-13FC-4E013D6D94A0">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<commentInRDBMS>User name.</commentInRDBMS>
+<generatorID>B1B4A4DA-3CD7-FF11-E09B-11A62678CB97</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="V_VALID_FROM" id="92AF8EA9-3C76-1E6E-76B9-EF9E8D9F4CE9">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-17 14:28:31 UTC</createdTime>
+<commentInRDBMS>Validation column: Record valid from.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>EE15CA62-A196-AD5F-FB68-3D471E68D33A</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="V_VALID_TO" id="4DF2EFE4-8591-E799-12B0-C47FB977A8F0">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-17 14:28:31 UTC</createdTime>
+<commentInRDBMS>Validation column: Record valid to.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>95658974-F90C-2D33-5642-6BCAB49CAF78</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AA22ADD5-3280-642A-EFF1-DD2B80444A0E" name="USERS_PK">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-17 14:29:16 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CFEBF9C6-39A3-D575-7332-676E1F34ED18"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9967D2A9-B2D2-B784-38BF-61976D220E0F" name="USERS_UK">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-17 14:49:35 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C3288EB8-A6BA-1EFE-13FC-4E013D6D94A0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
