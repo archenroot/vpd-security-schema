@@ -18,7 +18,14 @@
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementGenerateAlways>true</autoIncrementGenerateAlways>
 <autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>1000</autoIncrementCache>
+<autoIncrementSequenceName>CACHE_USERS_SEQ</autoIncrementSequenceName>
+<autoIncrementTriggerName>CACHE_USERS_TR</autoIncrementTriggerName>
+<notNullConstraintName>CACHE_USERS_ID</notNullConstraintName>
 </Column>
 <Column name="NAME" id="C3288EB8-A6BA-1EFE-13FC-4E013D6D94A0">
 <createdBy>s9073</createdBy>

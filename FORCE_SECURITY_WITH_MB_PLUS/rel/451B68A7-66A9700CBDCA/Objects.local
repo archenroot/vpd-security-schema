@@ -8,7 +8,6 @@
    <object objectType="Table" objectID="9D2C5CC7-6DF2-C905-86A9-8BF08C8BD9BC" name="AUTH_OBJECT_TYPES" seqName="seg_0"/>
    <object objectType="Table" objectID="3C8D2FB5-60AC-4EB4-0426-AA0AF96FC100" name="CACHE_EXPERTEN_CODES" seqName="seg_0"/>
    <object objectType="Table" objectID="DAEAE4B9-FBF4-D504-3CC0-76C2784EDAAD" name="CACHE_USERS" seqName="seg_0"/>
-   <object objectType="Table" objectID="816AC8A4-7F06-BF26-DCF6-0ADD4363C735" name="CACHE_USERS_EXP_CODES" seqName="seg_0"/>
    <object objectType="Table" objectID="6A8C1790-6A1B-4E92-8EAD-005B633764F1" name="CONSTANTS" seqName="seg_0"/>
    <object objectType="Table" objectID="781D1040-597B-34C1-3963-341859960238" name="NAMESPACES" seqName="seg_0"/>
    <object objectType="Table" objectID="BCE23E1F-BAC1-7104-F537-748C670AA92B" name="auth_objs_relationships" seqName="seg_0"/>
@@ -23,8 +22,7 @@
    <object objectType="Table" objectID="7A70CAA9-4176-DDA4-C2AD-B515B320E6B3" name="vpd_policy_groups" seqName="seg_0"/>
    <object objectType="Table" objectID="FC64E16D-BDE9-1A4D-7F10-919FD2630D09" name="vpd_policy_types" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="756FCE5F-838B-48C6-6FE7-A01A2332E190" name="CONSTANTS_NAMESPACES_FK" seqName="seg_0"/>
-   <object objectType="FKIndexAssociation" objectID="0AC5C2AB-EBB9-C013-C0D2-C453A0C3A639" name="USRS_EXPCODES_EXP_CODES_FK" seqName="seg_0"/>
-   <object objectType="FKIndexAssociation" objectID="C636DF81-B657-B613-BE97-568095AF8CF1" name="USRS_EXPCODES_USERS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="577203A3-B11D-3A03-D0CE-9659263C0E75" name="CACHE_EXPERTEN_CODES_CACHE_USERS_FK" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="2BCEBA8D-3719-20F2-1458-CB33FEA40D9C" name="auth_objs_FK1" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="C4B2D177-2ABD-B0F3-176E-E829964BD5F0" name="auth_objs_FK2" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="2B606B72-F823-024B-81CE-F8BB6BF1DD16" name="authorization_objects_FK" seqName="seg_0"/>
