@@ -38,7 +38,7 @@
 <domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="V_VALID_FROM" id="92AF8EA9-3C76-1E6E-76B9-EF9E8D9F4CE9">
+<Column name="AUTHORIZED_ON" id="92AF8EA9-3C76-1E6E-76B9-EF9E8D9F4CE9">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-17 14:28:31 UTC</createdTime>
 <commentInRDBMS>Validation column: Record valid from.</commentInRDBMS>
@@ -46,18 +46,8 @@
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
-<domain>EE15CA62-A196-AD5F-FB68-3D471E68D33A</domain>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="V_VALID_TO" id="4DF2EFE4-8591-E799-12B0-C47FB977A8F0">
-<createdBy>s9073</createdBy>
-<createdTime>2014-07-17 14:28:31 UTC</createdTime>
-<commentInRDBMS>Validation column: Record valid to.</commentInRDBMS>
-<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<domain>95658974-F90C-2D33-5642-6BCAB49CAF78</domain>
+<domain>C28BB3B5-EE39-5D69-B631-07CD44618E6E</domain>
+<defaultValue>sysdate</defaultValue>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>

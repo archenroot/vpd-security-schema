@@ -42,7 +42,7 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="707F1B9D-20AD-B830-F36A-82E533152406" name="vpd_policy_groups PK">
+<identifier id="707F1B9D-20AD-B830-F36A-82E533152406" name="vpd_policy_groups_PK">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 12:39:29 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>

@@ -17,7 +17,7 @@
 <preferredAbbreviation>constants</preferredAbbreviation>
 <shortName>consts</shortName>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id" id="0B83F9AE-D5C0-7389-5FE2-B26B4B35E7BF">
+<Attribute name="ID" id="0B83F9AE-D5C0-7389-5FE2-B26B4B35E7BF">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 08:11:40 UTC</createdTime>
 <commentInRDBMS>Technical primary key.</commentInRDBMS>
@@ -30,7 +30,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
 </Attribute>
-<Attribute name="name" id="40F21D0A-D543-7D5C-5D68-5F751FE0588B">
+<Attribute name="NAME" id="40F21D0A-D543-7D5C-5D68-5F751FE0588B">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 08:12:23 UTC</createdTime>
 <commentInRDBMS>Constant name.</commentInRDBMS>
@@ -43,7 +43,7 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
 </Attribute>
-<Attribute name="value" id="DC450723-D4B2-BD6A-C991-49E969F18A72">
+<Attribute name="VALUE" id="DC450723-D4B2-BD6A-C991-49E969F18A72">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 08:12:28 UTC</createdTime>
 <commentInRDBMS>Constant value.</commentInRDBMS>
@@ -53,10 +53,10 @@
 <item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="false"/>
 </engineerTo>
 <use>0</use>
-<logicalDatatype>LOGDT040</logicalDatatype>
-<domain>1EF3F76F-872F-BC87-ADB2-6B36294821F7</domain>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3472F334-E16C-CA06-A317-B47F987ADD31</domain>
 </Attribute>
-<Attribute name="value_type" id="D1AB2614-ED58-77AC-596E-B1AAD4D0A15E">
+<Attribute name="VALUE TYPE" id="D1AB2614-ED58-77AC-596E-B1AAD4D0A15E">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 12:49:01 UTC</createdTime>
 <commentInRDBMS>Constant value type.</commentInRDBMS>
@@ -64,10 +64,11 @@
 <engineerTo>
 <item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
 </Attribute>
-<Attribute name="namespace_id" id="B6C9ACF9-9D63-6010-9363-213747C2AD0E">
+<Attribute name="ID1" id="B6C9ACF9-9D63-6010-9363-213747C2AD0E">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 09:12:05 UTC</createdTime>
 <commentInRDBMS>Foreign key to NAMESPACES table.</commentInRDBMS>
@@ -81,9 +82,96 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
 </Attribute>
+<Attribute name="V IS ACTIVE" id="15D5D712-69BE-7AD1-ACD9-14E12C691363">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-29 12:20:17 UTC</createdTime>
+<commentInRDBMS>Validation column: Is record active?</commentInRDBMS>
+<generatorID>7CADC15C-7644-F460-D7AE-52B0C12ED397</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<domain>E87979A5-1214-9393-5154-3867C64A312D</domain>
+<defaultValue>T</defaultValue>
+</Attribute>
+<Attribute name="V IS DELETED" id="3BE18D67-D35E-2F2C-1863-EA5DE01F120D">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-29 12:20:17 UTC</createdTime>
+<commentInRDBMS>Validation column: Is record logicaly deleted?</commentInRDBMS>
+<generatorID>A138991A-A1C0-E42D-930C-5F3E1A796E7A</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<domain>ED65EBF4-C7DE-92C1-B9D2-E31E4B39D761</domain>
+<defaultValue>F</defaultValue>
+</Attribute>
+<Attribute name="V VALID FROM" id="96869637-E0FA-E5EE-8ED8-0EC4F571CB21">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-29 12:20:17 UTC</createdTime>
+<commentInRDBMS>Validation column: Record valid from.</commentInRDBMS>
+<generatorID>54AFE6DA-E77C-4E8C-45F8-EF12A82CBC7D</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>EE15CA62-A196-AD5F-FB68-3D471E68D33A</domain>
+</Attribute>
+<Attribute name="V VALID TO" id="689BCCA6-5965-D809-F433-3BBBD8C64EA1">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-29 12:20:17 UTC</createdTime>
+<commentInRDBMS>Validation column: Record valid to.</commentInRDBMS>
+<generatorID>51F3D789-4D5B-E6A3-17DC-974609E1B9F2</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>95658974-F90C-2D33-5642-6BCAB49CAF78</domain>
+</Attribute>
+<Attribute name="T CREATED ON" id="224A4F6E-53E1-C33A-C5E5-C23D439AF35D">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-29 12:20:17 UTC</createdTime>
+<commentInRDBMS>Tracking column: Record created on.</commentInRDBMS>
+<generatorID>0AC47FE8-C63B-FE11-8231-7A4DA185A305</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>C28BB3B5-EE39-5D69-B631-07CD44618E6E</domain>
+<defaultValue>sysdate</defaultValue>
+</Attribute>
+<Attribute name="T LAST UPDATE ON" id="3832D41F-D34F-7F25-AC25-9936006C121A">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-29 12:20:17 UTC</createdTime>
+<commentInRDBMS>Tracking column: Record updated on.</commentInRDBMS>
+<generatorID>BCCC0FAC-A49B-381E-B99B-A63C137F61A8</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>0DF407B9-410E-EBF7-3982-95F1ED01FB9A</domain>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="B140547C-A09F-40A5-3BB2-AC4315F08CC8" name="constants_pk">
+<identifier id="B140547C-A09F-40A5-3BB2-AC4315F08CC8" name="CONSTANTS_PK">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 08:12:21 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
@@ -95,6 +183,19 @@
 <newElementsIDs>0B83F9AE-D5C0-7389-5FE2-B26B4B35E7BF</newElementsIDs>
 <usedAttributes>
 <attributeRef>0B83F9AE-D5C0-7389-5FE2-B26B4B35E7BF</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="9B67DF15-6966-D763-E5C6-6D7A97AFF605" name="CONSTANTS  UN">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-29 12:20:17 UTC</createdTime>
+<generatorID>653F6CD5-A425-4B72-96BD-00BB0259498B</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>40F21D0A-D543-7D5C-5D68-5F751FE0588B</attributeRef>
+<attributeRef>B6C9ACF9-9D63-6010-9363-213747C2AD0E</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

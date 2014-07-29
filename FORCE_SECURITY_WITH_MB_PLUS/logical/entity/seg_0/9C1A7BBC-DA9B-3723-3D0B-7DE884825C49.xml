@@ -18,7 +18,7 @@
 <preferredAbbreviation>schemas</preferredAbbreviation>
 <shortName>schms</shortName>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id" id="BC0B7B29-362F-30AC-F933-4C2B62E112CE">
+<Attribute name="ID" id="BC0B7B29-362F-30AC-F933-4C2B62E112CE">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-08 15:22:05 UTC</createdTime>
 <commentInRDBMS>Technical primary key.</commentInRDBMS>
@@ -31,7 +31,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
 </Attribute>
-<Attribute name="name" id="1F68EDA3-00B7-E4CC-F38D-A8D0C137742F">
+<Attribute name="NAME" id="1F68EDA3-00B7-E4CC-F38D-A8D0C137742F">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-08 15:22:15 UTC</createdTime>
 <commentInRDBMS>Database schema full name.</commentInRDBMS>
@@ -44,7 +44,7 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
 </Attribute>
-<Attribute name="m_active" id="7FC87398-AD0D-D047-3CFB-C3D329FB09EB">
+<Attribute name="m active" id="7FC87398-AD0D-D047-3CFB-C3D329FB09EB">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 08:05:25 UTC</createdTime>
 <commentInRDBMS>Is record active?</commentInRDBMS>
@@ -59,7 +59,7 @@
 <domain>E87979A5-1214-9393-5154-3867C64A312D</domain>
 <defaultValue>T</defaultValue>
 </Attribute>
-<Attribute name="m_created_on" id="7F82C6EF-317C-FAE3-9551-A7AEB5C298DF">
+<Attribute name="m created on" id="7F82C6EF-317C-FAE3-9551-A7AEB5C298DF">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 08:00:51 UTC</createdTime>
 <commentInRDBMS>Record created on.</commentInRDBMS>
@@ -74,7 +74,7 @@
 <domain>C28BB3B5-EE39-5D69-B631-07CD44618E6E</domain>
 <defaultValue>sysdate</defaultValue>
 </Attribute>
-<Attribute name="m_updated_on" id="070B6A5B-F80C-968D-B726-ED3445C3FF61">
+<Attribute name="m updated on" id="070B6A5B-F80C-968D-B726-ED3445C3FF61">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 08:00:59 UTC</createdTime>
 <commentInRDBMS>Record updated on.</commentInRDBMS>
@@ -88,7 +88,7 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <domain>0DF407B9-410E-EBF7-3982-95F1ED01FB9A</domain>
 </Attribute>
-<Attribute name="m_valid_from" id="300F475A-AFE7-9B4B-12C0-26191AF71024">
+<Attribute name="m valid from" id="300F475A-AFE7-9B4B-12C0-26191AF71024">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 08:01:06 UTC</createdTime>
 <commentInRDBMS>Record valid from. If NULL then infinite.</commentInRDBMS>
@@ -102,7 +102,7 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <domain>EE15CA62-A196-AD5F-FB68-3D471E68D33A</domain>
 </Attribute>
-<Attribute name="m_valid_to" id="F67311C9-0A2C-178E-1C84-C8A873882E47">
+<Attribute name="m valid to" id="F67311C9-0A2C-178E-1C84-C8A873882E47">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 08:01:14 UTC</createdTime>
 <commentInRDBMS>Record valid to. If NULL then infinite.</commentInRDBMS>
@@ -118,7 +118,7 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="8AFD067A-884A-304F-3488-FC48DB4C1139" name="schemas_pk">
+<identifier id="8AFD067A-884A-304F-3488-FC48DB4C1139" name="schemas_PK">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-08 15:22:30 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>

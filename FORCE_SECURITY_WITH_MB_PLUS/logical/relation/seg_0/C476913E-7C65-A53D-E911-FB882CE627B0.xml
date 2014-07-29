@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="db_obj_cols_col_vals" directorySegmentName="seg_0" id="C476913E-7C65-A53D-E911-FB882CE627B0">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="col vals obj cols FK" directorySegmentName="seg_0" id="C476913E-7C65-A53D-E911-FB882CE627B0">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-14 09:08:39 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>

@@ -1,14 +1,14 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6E7F26DF-EBA1-AD29-1801-99892025DEFD" name="objects">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6E7F26DF-EBA1-AD29-1801-99892025DEFD" name="OBJECTS">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 10:02:10 UTC</createdTime>
 <generatorID>B4CB17B7-1F34-7DF3-F5D5-66E55DC80EE5</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
-<abbreviation>objs</abbreviation>
+<abbreviation>OBJS</abbreviation>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id" id="F417F912-FD7E-6F3A-B23D-033C0AA90711">
+<Column name="ID" id="F417F912-FD7E-6F3A-B23D-033C0AA90711">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 10:02:10 UTC</createdTime>
 <commentInRDBMS>Technical primary key.</commentInRDBMS>
@@ -19,7 +19,7 @@
 <domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="name" id="BA32753A-1D5A-0ED9-01BE-F9A4A83C8EE5">
+<Column name="NAME" id="BA32753A-1D5A-0ED9-01BE-F9A4A83C8EE5">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 10:02:10 UTC</createdTime>
 <commentInRDBMS>Database object full name.</commentInRDBMS>
@@ -30,7 +30,7 @@
 <domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="availability" id="99DC8D59-0FA7-1F75-BA0F-03A5E97FE446">
+<Column name="IS_AVAILABLE" id="99DC8D59-0FA7-1F75-BA0F-03A5E97FE446">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 10:02:10 UTC</createdTime>
 <commentInRDBMS>Is object available in the database?</commentInRDBMS>
@@ -43,7 +43,7 @@
 <defaultValue>T</defaultValue>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="availability_last_checked_on" id="0FFB61B3-96AD-4A84-C741-86C8BB538249">
+<Column name="AVAILABLE_LAST_ON" id="0FFB61B3-96AD-4A84-C741-86C8BB538249">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 10:02:10 UTC</createdTime>
 <commentInRDBMS>Object availability checked on.</commentInRDBMS>
@@ -55,7 +55,7 @@
 <domain>8446C2A3-FE31-22B7-3F11-E6CEA7EFF836</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="obj_type_id" id="A0F288A8-12D8-3140-3546-CE1AB3CDA32C">
+<Column name="OBJ_TYPE_ID" id="A0F288A8-12D8-3140-3546-CE1AB3CDA32C">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 10:02:10 UTC</createdTime>
 <commentInRDBMS>Foreign key.</commentInRDBMS>
@@ -67,11 +67,8 @@
 <delegate>8E1B9852-64AE-0C43-BDA2-494D29D61C5A</delegate>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="48439112-503B-3FBC-D1F8-699F0E041615" referredColumn="8E1B9852-64AE-0C43-BDA2-494D29D61C5A"/>
-</associations>
 </Column>
-<Column name="schema_id" id="320D2B25-E13B-77D8-22D0-21A986FED773">
+<Column name="SCHEMA_ID" id="320D2B25-E13B-77D8-22D0-21A986FED773">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 10:02:10 UTC</createdTime>
 <commentInRDBMS>Foreign key.</commentInRDBMS>
@@ -87,7 +84,7 @@
 <colAssociation fkAssociation="83057370-8398-70ED-9EE8-873F2FC72248" referredColumn="132A2E59-DEEA-D5EB-D802-229764C7CE54"/>
 </associations>
 </Column>
-<Column name="auth_obj_id" id="7E2AAC68-A46C-CA95-4555-8E127E750435">
+<Column name="AUTH_OBJ_ID" id="7E2AAC68-A46C-CA95-4555-8E127E750435">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 10:02:10 UTC</createdTime>
 <commentInRDBMS>Foreign key.</commentInRDBMS>
@@ -101,6 +98,20 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="54FE7228-90D2-5CF9-2D31-9664CF26DEDE" referredColumn="A13277FA-0868-771A-1C73-D2019C29C0BF"/>
+</associations>
+</Column>
+<Column name="OBJECT_TYPES_ID" id="3B3C1ED7-D5E4-69E3-426D-74F85DCADF53">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-29 09:54:38 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+<delegate>8E1B9852-64AE-0C43-BDA2-494D29D61C5A</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="12A3409E-67FF-3C0A-8624-B0D1D7A36D8B" referredColumn="8E1B9852-64AE-0C43-BDA2-494D29D61C5A"/>
 </associations>
 </Column>
 </columns>
@@ -128,17 +139,6 @@
 <colUsage columnID="7E2AAC68-A46C-CA95-4555-8E127E750435"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="57D1A4B9-4AE7-12F2-4E4A-57C09EA37E42" name="objs_obj_typs_FK">
-<createdBy>s9073</createdBy>
-<createdTime>2014-07-15 10:02:10 UTC</createdTime>
-<generatorID>011D513F-4FD2-490F-98B9-C8896B5208BB</generatorID>
-<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="A0F288A8-12D8-3140-3546-CE1AB3CDA32C"/>
-</indexColumnUsage>
-</ind_PK_UK>
 <ind_PK_UK id="568207B9-2D2F-B7E1-B1CF-35EC5AC53C88" name="objs_schms_FK">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 10:02:10 UTC</createdTime>
@@ -148,6 +148,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="320D2B25-E13B-77D8-22D0-21A986FED773"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E64B0B98-7F18-E9EB-5CCD-913A545181B9" name="OBJECTS_OBJECT_TYPES_FK">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-29 09:54:38 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3B3C1ED7-D5E4-69E3-426D-74F85DCADF53"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

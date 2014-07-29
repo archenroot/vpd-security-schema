@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E816291B-F9D7-547A-FA16-537FBC579ED8" name="experten_codes">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E816291B-F9D7-547A-FA16-537FBC579ED8" name="CACHE EXPERTEN CODES">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-08 15:12:58 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
@@ -17,7 +17,7 @@
 <preferredAbbreviation>experten_codes</preferredAbbreviation>
 <shortName>exp_codes</shortName>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id" id="7CABC6AC-6BFC-4D46-408D-C34FACC2673F">
+<Attribute name="ID" id="7CABC6AC-6BFC-4D46-408D-C34FACC2673F">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-08 15:23:21 UTC</createdTime>
 <commentInRDBMS>Technical primary key.</commentInRDBMS>
@@ -30,7 +30,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
 </Attribute>
-<Attribute name="name" id="54231621-9815-61E5-46AA-EB9673E344CB">
+<Attribute name="CODE" id="54231621-9815-61E5-46AA-EB9673E344CB">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-08 15:23:21 UTC</createdTime>
 <commentInRDBMS>Experten code name.</commentInRDBMS>
@@ -43,6 +43,19 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
 </Attribute>
+<Attribute name="CACHE USERS ID" id="D141E8AF-03FD-0CF4-C47E-D75685918B30">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-29 12:20:17 UTC</createdTime>
+<generatorID>3C346E41-C5AD-5CF2-6772-1DAEDD61A807</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<referedAttribute>DD1C6FF4-49CC-9067-E76B-507696B1A20D</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="0BCF671A-1293-C362-71D5-F4D618547429" name="experten_codes_pk">
@@ -53,8 +66,20 @@
 <engineerTo>
 <item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="false"/>
 </engineerTo>
-<pk>true</pk>
 <newElementsIDs>7CABC6AC-6BFC-4D46-408D-C34FACC2673F</newElementsIDs>
+<usedAttributes>
+<attributeRef>7CABC6AC-6BFC-4D46-408D-C34FACC2673F</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="5A032C4C-8CA4-DAD0-72F0-0B3C6267944D" name="EXPERTEN CODES PK">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-29 12:20:17 UTC</createdTime>
+<generatorID>D35CE118-4FD0-C7B9-17AF-179962A8DAD5</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<pk>true</pk>
 <usedAttributes>
 <attributeRef>7CABC6AC-6BFC-4D46-408D-C34FACC2673F</attributeRef>
 </usedAttributes>

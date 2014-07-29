@@ -58,7 +58,7 @@
 <domain>E87979A5-1214-9393-5154-3867C64A312D</domain>
 <defaultValue>T</defaultValue>
 </Attribute>
-<Attribute name="availability_checked_on" id="2BA8D593-0E78-17BF-9265-B835D9283652">
+<Attribute name="availability checked on" id="2BA8D593-0E78-17BF-9265-B835D9283652">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 08:56:33 UTC</createdTime>
 <commentInRDBMS>Column availability checked on.</commentInRDBMS>
@@ -72,7 +72,7 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <domain>8446C2A3-FE31-22B7-3F11-E6CEA7EFF836</domain>
 </Attribute>
-<Attribute name="id1" id="FEE61B3D-E0EF-848B-0E14-790C82677B50">
+<Attribute name="ID1" id="FEE61B3D-E0EF-848B-0E14-790C82677B50">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-08 15:26:11 UTC</createdTime>
 <commentInRDBMS>Foreign key.</commentInRDBMS>
@@ -88,7 +88,7 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="A2F9E3EB-DE27-8EC9-F848-544E560E573E" name="obj_cols_pk">
+<identifier id="A2F9E3EB-DE27-8EC9-F848-544E560E573E" name="object_columns_PK">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-08 15:22:43 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>

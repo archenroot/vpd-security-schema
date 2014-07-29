@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="db_schms_db_objs" directorySegmentName="seg_0" id="F2F16B86-61BB-13D7-9044-BD0CF0768262">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="objs schms FK" directorySegmentName="seg_0" id="F2F16B86-61BB-13D7-9044-BD0CF0768262">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-14 09:03:50 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>

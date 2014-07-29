@@ -1,7 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8BA84FAB-BE17-C228-0813-AA38FAF3DC16" name="users">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8BA84FAB-BE17-C228-0813-AA38FAF3DC16" name="CACHE USERS">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-08 15:13:06 UTC</createdTime>
+<commentInRDBMS>MB+ cache table for users.</commentInRDBMS>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
 <engineerTo>
 <item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
@@ -15,9 +16,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <preferredAbbreviation>users</preferredAbbreviation>
-<shortName>usrs</shortName>
+<shortName>USRS</shortName>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id" id="DD1C6FF4-49CC-9067-E76B-507696B1A20D">
+<Attribute name="ID" id="DD1C6FF4-49CC-9067-E76B-507696B1A20D">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-08 15:22:58 UTC</createdTime>
 <commentInRDBMS>Technical primary key.</commentInRDBMS>
@@ -30,7 +31,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
 </Attribute>
-<Attribute name="name" id="B1B4A4DA-3CD7-FF11-E09B-11A62678CB97">
+<Attribute name="NAME" id="B1B4A4DA-3CD7-FF11-E09B-11A62678CB97">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-08 15:22:58 UTC</createdTime>
 <commentInRDBMS>User name.</commentInRDBMS>
@@ -43,6 +44,21 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
 </Attribute>
+<Attribute name="AUTHORIZED ON" id="A861D913-6D40-7834-9EBD-6B23CB5D4315">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-29 12:20:17 UTC</createdTime>
+<commentInRDBMS>Validation column: Record valid from.</commentInRDBMS>
+<generatorID>92AF8EA9-3C76-1E6E-76B9-EF9E8D9F4CE9</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>C28BB3B5-EE39-5D69-B631-07CD44618E6E</domain>
+<defaultValue>sysdate</defaultValue>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="E546A954-5412-6ABA-4184-496E5D43F217" name="users_pk">
@@ -53,10 +69,34 @@
 <engineerTo>
 <item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="false"/>
 </engineerTo>
-<pk>true</pk>
 <newElementsIDs>DD1C6FF4-49CC-9067-E76B-507696B1A20D</newElementsIDs>
 <usedAttributes>
 <attributeRef>DD1C6FF4-49CC-9067-E76B-507696B1A20D</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="AFB4F3F6-8446-97FC-D7F5-5BF7940BBAE1" name="USERS PK">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-29 12:20:17 UTC</createdTime>
+<generatorID>AA22ADD5-3280-642A-EFF1-DD2B80444A0E</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DD1C6FF4-49CC-9067-E76B-507696B1A20D</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="A6DDA118-708C-7EB9-D17F-C45C9FBF5510" name="USERS UK">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-29 12:20:17 UTC</createdTime>
+<generatorID>9967D2A9-B2D2-B784-38BF-61976D220E0F</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>B1B4A4DA-3CD7-FF11-E09B-11A62678CB97</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

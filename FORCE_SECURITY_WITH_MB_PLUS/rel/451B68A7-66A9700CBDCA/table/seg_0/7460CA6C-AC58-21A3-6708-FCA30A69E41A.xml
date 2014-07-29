@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7460CA6C-AC58-21A3-6708-FCA30A69E41A" name="schemas">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7460CA6C-AC58-21A3-6708-FCA30A69E41A" name="SCHEMAS">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 10:02:10 UTC</createdTime>
 <commentInRDBMS>List table for database schemas.</commentInRDBMS>
@@ -9,7 +9,7 @@
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id" id="132A2E59-DEEA-D5EB-D802-229764C7CE54">
+<Column name="ID" id="132A2E59-DEEA-D5EB-D802-229764C7CE54">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 10:02:10 UTC</createdTime>
 <commentInRDBMS>Technical primary key.</commentInRDBMS>
@@ -20,7 +20,7 @@
 <domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="name" id="CFEF71B0-C558-851A-BB75-F061C8F7AB3B">
+<Column name="NAME" id="CFEF71B0-C558-851A-BB75-F061C8F7AB3B">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 10:02:10 UTC</createdTime>
 <commentInRDBMS>Database schema full name.</commentInRDBMS>

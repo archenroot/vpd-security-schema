@@ -56,7 +56,7 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
 </Attribute>
-<Attribute name="col_vals_id" id="3D23119E-8C8F-A88A-0E3B-B00158E4C031">
+<Attribute name="object column id" id="3D23119E-8C8F-A88A-0E3B-B00158E4C031">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-14 09:08:39 UTC</createdTime>
 <commentInRDBMS>Foreign key.</commentInRDBMS>

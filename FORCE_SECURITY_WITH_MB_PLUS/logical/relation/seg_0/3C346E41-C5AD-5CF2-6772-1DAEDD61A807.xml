@@ -1,19 +1,20 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="obj cols objs FK" directorySegmentName="seg_0" id="63FBD1EE-F061-44A3-D633-C42B74288CA7">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CACHE_EXPERTEN_CODES_CACHE_USERS_FK" directorySegmentName="seg_0" id="3C346E41-C5AD-5CF2-6772-1DAEDD61A807">
 <createdBy>s9073</createdBy>
-<createdTime>2014-07-08 15:25:19 UTC</createdTime>
+<createdTime>2014-07-29 12:20:17 UTC</createdTime>
+<generatorID>577203A3-B11D-3A03-D0CE-9659263C0E75</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
 <engineerTo>
 <item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
 </engineerTo>
-<sourcePk>04032638-816C-4176-BDF9-A300A055A8A0</sourcePk>
+<sourcePk>AFB4F3F6-8446-97FC-D7F5-5BF7940BBAE1</sourcePk>
 <identifying>false</identifying>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
-<sourceEntity>B4CB17B7-1F34-7DF3-F5D5-66E55DC80EE5</sourceEntity>
+<sourceEntity>8BA84FAB-BE17-C228-0813-AA38FAF3DC16</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
-<targetEntity>9EAD8258-E911-FB1D-ADD7-100017905D57</targetEntity>
+<targetEntity>E816291B-F9D7-547A-FA16-537FBC579ED8</targetEntity>
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
 </Relation>

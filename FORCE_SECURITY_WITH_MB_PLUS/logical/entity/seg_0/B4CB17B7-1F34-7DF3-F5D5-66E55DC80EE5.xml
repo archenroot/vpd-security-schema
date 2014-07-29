@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <preferredAbbreviation>objects</preferredAbbreviation>
-<shortName>objs</shortName>
+<shortName>OBJS</shortName>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id" id="1DABE708-49C6-A369-55AC-7C5A0A7E2ECF">
+<Attribute name="ID" id="1DABE708-49C6-A369-55AC-7C5A0A7E2ECF">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-08 15:16:21 UTC</createdTime>
 <commentInRDBMS>Technical primary key.</commentInRDBMS>
@@ -30,7 +30,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
 </Attribute>
-<Attribute name="name" id="4EFE70D9-DB5C-06CC-33CA-83ED08F250FF">
+<Attribute name="NAME" id="4EFE70D9-DB5C-06CC-33CA-83ED08F250FF">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-08 15:21:52 UTC</createdTime>
 <commentInRDBMS>Database object full name.</commentInRDBMS>
@@ -43,7 +43,7 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
 </Attribute>
-<Attribute name="availability" id="F3941DA4-073F-CFC7-1350-22D505FD18FB">
+<Attribute name="IS AVAILABLE" id="F3941DA4-073F-CFC7-1350-22D505FD18FB">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 08:16:02 UTC</createdTime>
 <commentInRDBMS>Is object available in the database?</commentInRDBMS>
@@ -58,7 +58,7 @@
 <domain>E87979A5-1214-9393-5154-3867C64A312D</domain>
 <defaultValue>T</defaultValue>
 </Attribute>
-<Attribute name="availability_last_checked_on" id="26549DC4-C702-D827-C3F9-E31874870D37">
+<Attribute name="AVAILABLE LAST ON" id="26549DC4-C702-D827-C3F9-E31874870D37">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 08:57:55 UTC</createdTime>
 <commentInRDBMS>Object availability checked on.</commentInRDBMS>
@@ -72,7 +72,7 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <domain>8446C2A3-FE31-22B7-3F11-E6CEA7EFF836</domain>
 </Attribute>
-<Attribute name="obj_type_id" id="CA111AF4-8FAD-BB69-5497-A304ACD269EA">
+<Attribute name="OBJ TYPE ID" id="CA111AF4-8FAD-BB69-5497-A304ACD269EA">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-14 09:01:06 UTC</createdTime>
 <commentInRDBMS>Foreign key.</commentInRDBMS>
@@ -86,7 +86,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
 </Attribute>
-<Attribute name="schema_id" id="5B5E4428-D18B-D417-3FEC-7B9F52B85019">
+<Attribute name="ID1" id="5B5E4428-D18B-D417-3FEC-7B9F52B85019">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-14 09:03:50 UTC</createdTime>
 <commentInRDBMS>Foreign key.</commentInRDBMS>
@@ -100,7 +100,7 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
 </Attribute>
-<Attribute name="auth_obj_id" id="E636686B-05CE-3383-89D0-60B9BFFE3314">
+<Attribute name="AUTH OBJ ID" id="E636686B-05CE-3383-89D0-60B9BFFE3314">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-14 09:10:03 UTC</createdTime>
 <commentInRDBMS>Foreign key.</commentInRDBMS>
@@ -110,6 +110,19 @@
 <item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
 </engineerTo>
 <referedAttribute>2D02733A-B524-849B-84C8-6AF6C875BEB6</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+</Attribute>
+<Attribute name="OBJECT TYPES ID" id="10BF6B1D-63D2-B05A-F9B3-473904E11570">
+<createdBy>s9073</createdBy>
+<createdTime>2014-07-29 12:20:17 UTC</createdTime>
+<generatorID>E15B7F9E-D4C0-2C0F-94C8-C7F3434990D6</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<referedAttribute>DAA5A347-3E0B-5389-E90B-9509277F0244</referedAttribute>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>

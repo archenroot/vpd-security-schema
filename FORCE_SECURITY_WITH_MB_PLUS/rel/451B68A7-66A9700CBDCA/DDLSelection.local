@@ -1,8 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <oracle.dbtools.crest.model.design.relational.RelationalDesign objectID="451B68A7-E83C-AB26-41FA-66A9700CBDCA">
-   <object objectID="F1A281B8-6873-9442-6B8C-C4AF605EA040" markedGenerate="false"/>
-   <object objectID="DC3EEF47-C3B2-0631-F679-0FAFBCB2A5E9" markedGenerate="false"/>
-   <object objectID="BCBFDE4D-68A1-D9D1-9B86-31401346875F" markedGenerate="false"/>
    <object objectID="43ACB7DA-178D-BA12-FE3C-D2675A5715CA" markedGenerate="false"/>
    <object objectID="6C0CFB1D-A73E-A4D7-255D-C26E33A65FFA" markedGenerate="false"/>
    <object objectID="49585900-DF65-E36D-772B-1B0C09829D99" markedGenerate="false"/>
@@ -24,13 +21,10 @@
    <object objectID="414A5374-90E7-49C8-B464-223CE5346D66" markedGenerate="false"/>
    <object objectID="A60C4C6F-4C5F-7DE4-44B1-8A963FE0E635" markedGenerate="false"/>
    <object objectID="F9099400-D966-7ACE-1C20-92DF0269A668" markedGenerate="false"/>
-   <object objectID="5364E339-AA0C-E7BE-DF56-E76C6095D3BC" markedGenerate="false"/>
    <object objectID="202F4B40-B611-E1AF-5EAB-EE97495739B0" markedGenerate="false"/>
    <object objectID="52DBF230-AB2A-D197-3DF9-E195F345B68C" markedGenerate="false"/>
    <object objectID="54FE7228-90D2-5CF9-2D31-9664CF26DEDE" markedGenerate="false"/>
-   <object objectID="48439112-503B-3FBC-D1F8-699F0E041615" markedGenerate="false"/>
    <object objectID="83057370-8398-70ED-9EE8-873F2FC72248" markedGenerate="false"/>
-   <object objectID="6E7F26DF-EBA1-AD29-1801-99892025DEFD" markedGenerate="false"/>
    <object objectID="247CFBAD-4CE9-F3B0-3AD7-21C4576F6433" markedGenerate="false"/>
    <object objectID="23C4FF4D-65CC-E5BB-0C89-C4CF07F5B1A6" markedGenerate="false"/>
    <object objectID="693A9D38-B4DD-7FDF-7F12-E0E5B03BA045" markedGenerate="false"/>

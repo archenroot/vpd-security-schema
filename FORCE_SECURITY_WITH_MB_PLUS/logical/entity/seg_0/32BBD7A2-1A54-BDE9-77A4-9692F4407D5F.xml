@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="32BBD7A2-1A54-BDE9-77A4-9692F4407D5F" name="policy_types">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="32BBD7A2-1A54-BDE9-77A4-9692F4407D5F" name="vpd policy types">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 12:34:41 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
@@ -43,7 +43,7 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="A1D3D12F-FC6A-DC8E-79B1-029B19442D77" name="policy_types PK">
+<identifier id="A1D3D12F-FC6A-DC8E-79B1-029B19442D77" name="vpd_policy_types_PK">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 12:35:03 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
