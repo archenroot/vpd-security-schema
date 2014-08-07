@@ -17,7 +17,11 @@
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>CONSTANTS_SQ</autoIncrementSequenceName>
+<autoIncrementTriggerName>CONSTANTS_TR</autoIncrementTriggerName>
 </Column>
 <Column name="NAME" id="CDDD4BAD-3D88-C0B1-473C-DA4D080F4FFD">
 <createdBy>s9073</createdBy>
@@ -83,8 +87,9 @@
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
+<logicalDatatype>LOGDT015</logicalDatatype>
 <domain>EE15CA62-A196-AD5F-FB68-3D471E68D33A</domain>
+<defaultValue>SYSDATE</defaultValue>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="V_VALID_TO" id="51F3D789-4D5B-E6A3-17DC-974609E1B9F2">
@@ -94,8 +99,9 @@
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
+<logicalDatatype>LOGDT015</logicalDatatype>
 <domain>95658974-F90C-2D33-5642-6BCAB49CAF78</domain>
+<defaultValue>TO_DATE(5373484,&apos;J&apos;)</defaultValue>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="T_CREATED_ON" id="0AC47FE8-C63B-FE11-8231-7A4DA185A305">
@@ -105,7 +111,7 @@
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
+<logicalDatatype>LOGDT015</logicalDatatype>
 <domain>C28BB3B5-EE39-5D69-B631-07CD44618E6E</domain>
 <defaultValue>sysdate</defaultValue>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -117,7 +123,7 @@
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
+<logicalDatatype>LOGDT015</logicalDatatype>
 <domain>0DF407B9-410E-EBF7-3982-95F1ED01FB9A</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>

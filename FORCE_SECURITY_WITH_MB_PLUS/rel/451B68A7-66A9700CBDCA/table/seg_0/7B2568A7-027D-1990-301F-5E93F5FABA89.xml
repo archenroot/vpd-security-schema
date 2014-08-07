@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="781D1040-597B-34C1-3963-341859960238" name="NAMESPACES">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7B2568A7-027D-1990-301F-5E93F5FABA89" name="NAMESPACES#">
 <createdBy>s9073</createdBy>
-<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<createdTime>2014-07-30 13:30:54 UTC</createdTime>
 <commentInRDBMS>Namespace define group of related parameters.</commentInRDBMS>
 <generatorID>1EAD731A-0522-9FA7-45C8-5888A93D49D1</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
@@ -9,9 +9,9 @@
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID" id="07083B58-A016-E5B7-484A-BB5EFD3D1E32">
+<Column name="ID" id="78CB5226-3C0A-81D2-C48F-10B4DEBBAAF0">
 <createdBy>s9073</createdBy>
-<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<createdTime>2014-07-30 13:30:54 UTC</createdTime>
 <commentInRDBMS>Technical primary key.</commentInRDBMS>
 <generatorID>5F6E981A-B3D5-EE26-C965-541425C350B8</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
@@ -23,10 +23,11 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <autoIncrementSequenceName>NAMESPACES_SQ</autoIncrementSequenceName>
 <autoIncrementTriggerName>NAMESPACES_TR</autoIncrementTriggerName>
+<notNullConstraintName>NNC_NSS_ID</notNullConstraintName>
 </Column>
-<Column name="NAME" id="7B3AAE57-1962-B64B-060D-8F6FF647C1C5">
+<Column name="NAME" id="295E1FE2-C0A3-53C1-41C6-E0F16F9304C2">
 <createdBy>s9073</createdBy>
-<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<createdTime>2014-07-30 13:30:54 UTC</createdTime>
 <commentInRDBMS>Namespace name.&lt;br/&gt;Used to define a group of constants.</commentInRDBMS>
 <generatorID>BAD3D8B6-BE7A-E479-8029-DF5A703C7E74</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
@@ -34,10 +35,11 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_NSS_NAME</notNullConstraintName>
 </Column>
-<Column name="DESCRIPTION" id="8C4036AC-C9CC-9ACA-059A-1BB195986294">
+<Column name="DESCRIPTION" id="31FA424D-B7B3-17AF-D482-402AB785DEBF">
 <createdBy>s9073</createdBy>
-<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<createdTime>2014-07-30 13:30:54 UTC</createdTime>
 <commentInRDBMS>Namespace description.</commentInRDBMS>
 <generatorID>AD4E8A12-EB9C-B940-FB3E-84070F196D9E</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
@@ -45,13 +47,15 @@
 <logicalDatatype>LOGDT040</logicalDatatype>
 <domain>1EF3F76F-872F-BC87-ADB2-6B36294821F7</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_NSS_DESCRIPTION</notNullConstraintName>
 </Column>
-<Column name="V_IS_ACTIVE" id="162B87E8-C1B3-E8B4-FFB6-8CA9C2C83EA3">
+<Column name="V_IS_ACTIVE" id="51A2F2D0-4668-E9F0-C852-AA689909525D">
 <createdBy>s9073</createdBy>
-<createdTime>2014-07-15 13:09:42 UTC</createdTime>
+<createdTime>2014-07-30 13:30:54 UTC</createdTime>
 <commentInRDBMS>Validation column: Is record active?</commentInRDBMS>
 <generatorID>25ABCF8A-89D4-EE9B-8668-B18D845865BE</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>CK_NAMESPACESv1_V_IS_ACTIVE</constraintName>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>LOGDT006</logicalDatatype>
@@ -59,11 +63,12 @@
 <defaultValue>T</defaultValue>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="V_IS_DELETED" id="919AA585-52EF-34CD-9AB5-8C0AF541CAE7">
+<Column name="V_IS_DELETED" id="FDD6A932-FD19-1192-09D6-F1344289D187">
 <createdBy>s9073</createdBy>
-<createdTime>2014-07-17 13:46:51 UTC</createdTime>
+<createdTime>2014-07-30 13:30:54 UTC</createdTime>
 <commentInRDBMS>Validation column: Is record logicaly deleted?</commentInRDBMS>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>CK_NAMESPACESv1_V_IS_DELETED</constraintName>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>LOGDT006</logicalDatatype>
@@ -71,9 +76,9 @@
 <defaultValue>T</defaultValue>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="V_VALID_FROM" id="93DA4261-E5A1-A73B-BAA4-3BB71443AA01">
+<Column name="V_VALID_FROM" id="B9D466ED-38A8-E5F4-146E-64A23F67C72E">
 <createdBy>s9073</createdBy>
-<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<createdTime>2014-07-30 13:30:54 UTC</createdTime>
 <commentInRDBMS>Validation column: Record valid from.</commentInRDBMS>
 <generatorID>A94E6B74-049A-F5C6-B55A-3E9B73CA5B8D</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
@@ -84,9 +89,9 @@
 <defaultValue>SYSDATE</defaultValue>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="V_VALID_TO" id="FA884606-760C-1FF5-DB42-26B803BA9A6B">
+<Column name="V_VALID_TO" id="97F17E23-AEB1-CBB7-7D96-54E95AD76949">
 <createdBy>s9073</createdBy>
-<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<createdTime>2014-07-30 13:30:54 UTC</createdTime>
 <commentInRDBMS>Validation column: Record valid to.</commentInRDBMS>
 <generatorID>9AAED592-C99A-8C99-035F-51B817B434DA</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
@@ -97,9 +102,9 @@
 <defaultValue>TO_DATE(5373484,&apos;J&apos;)</defaultValue>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="T_CREATED_ON" id="21AF7FC5-8DF2-F3BD-776D-71072FEF393C">
+<Column name="T_CREATED_ON" id="41190477-0F90-ED0C-9655-E3F8C600ABCC">
 <createdBy>s9073</createdBy>
-<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<createdTime>2014-07-30 13:30:54 UTC</createdTime>
 <commentInRDBMS>Tracking column: Record created on.</commentInRDBMS>
 <generatorID>86D9A3F5-ED6C-E45B-495B-957FE7E33EFA</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
@@ -110,9 +115,9 @@
 <defaultValue>sysdate</defaultValue>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="T_LAST_UPDATED_ON" id="3F4E2AA0-5017-5099-9513-AB75F84148FB">
+<Column name="T_LAST_UPDATED_ON" id="0BAC3559-6BD7-41F9-A457-A7DC0751B889">
 <createdBy>s9073</createdBy>
-<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<createdTime>2014-07-30 13:30:54 UTC</createdTime>
 <commentInRDBMS>Tracking column: Record updated on.</commentInRDBMS>
 <generatorID>77FDFE6B-0A29-7B65-9144-5F94E75D47FD</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
@@ -124,26 +129,26 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="B3B66159-96F7-CDA4-5E3F-282B4171172E" name="NAMESPACES_PK">
+<ind_PK_UK id="1645B939-6F38-B04D-03BE-A9B33D1CB200" name="NAMESPACESv1_PK">
 <createdBy>s9073</createdBy>
-<createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<createdTime>2014-07-30 13:30:54 UTC</createdTime>
 <generatorID>2891AF55-E12C-69E9-56F2-919D655C0024</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="07083B58-A016-E5B7-484A-BB5EFD3D1E32"/>
+<colUsage columnID="78CB5226-3C0A-81D2-C48F-10B4DEBBAAF0"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="969CF0E2-E54E-9112-F408-9EEA48354D5F" name="NAMESPACES_NAME_UK">
+<ind_PK_UK id="054DA8AC-B83D-AA0A-8DEC-CD03DB5EE4AC" name="NAMESPACESv1_NAME_UN">
 <createdBy>s9073</createdBy>
-<createdTime>2014-07-17 14:09:11 UTC</createdTime>
+<createdTime>2014-07-30 13:30:54 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
 <indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="7B3AAE57-1962-B64B-060D-8F6FF647C1C5"/>
+<colUsage columnID="295E1FE2-C0A3-53C1-41C6-E0F16F9304C2"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
