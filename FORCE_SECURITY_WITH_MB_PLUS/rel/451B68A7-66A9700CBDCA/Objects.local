@@ -2,34 +2,33 @@
 <oracle.dbtools.crest.model.design.relational.RelationalDesign>
    <object objectType="Table" objectID="49585900-DF65-E36D-772B-1B0C09829D99" name="AUTHORIZATION_OBJECTS" seqName="seg_0"/>
    <object objectType="Table" objectID="9D2C5CC7-6DF2-C905-86A9-8BF08C8BD9BC" name="AUTH_OBJECT_TYPES" seqName="seg_0"/>
-   <object objectType="Table" objectID="3C8D2FB5-60AC-4EB4-0426-AA0AF96FC100" name="CACHE_EXPERTEN_CODES" seqName="seg_0"/>
-   <object objectType="Table" objectID="DAEAE4B9-FBF4-D504-3CC0-76C2784EDAAD" name="CACHE_USERS" seqName="seg_0"/>
-   <object objectType="Table" objectID="6A8C1790-6A1B-4E92-8EAD-005B633764F1" name="CONSTANTS" seqName="seg_0"/>
+   <object objectType="Table" objectID="BCE23E1F-BAC1-7104-F537-748C670AA92B" name="AUTH_OBJS_RELATIONS" seqName="seg_0"/>
+   <object objectType="Table" objectID="03494BB2-F31D-DE70-C772-09760FDCF379" name="COLUMN_TYPES" seqName="seg_0"/>
+   <object objectType="Table" objectID="1A7601E9-66E5-C9F5-4740-F2475D1862B1" name="COLUMN_VALUES" seqName="seg_0"/>
    <object objectType="Table" objectID="781D1040-597B-34C1-3963-341859960238" name="NAMESPACES" seqName="seg_0"/>
-   <object objectType="Table" objectID="7B2568A7-027D-1990-301F-5E93F5FABA89" name="NAMESPACES#" seqName="seg_0"/>
    <object objectType="Table" objectID="6E7F26DF-EBA1-AD29-1801-99892025DEFD" name="OBJECTS" seqName="seg_0"/>
+   <object objectType="Table" objectID="F9099400-D966-7ACE-1C20-92DF0269A668" name="OBJECT_COLUMNS" seqName="seg_0"/>
    <object objectType="Table" objectID="202F4B40-B611-E1AF-5EAB-EE97495739B0" name="OBJECT_TYPES" seqName="seg_0"/>
    <object objectType="Table" objectID="7460CA6C-AC58-21A3-6708-FCA30A69E41A" name="SCHEMAS" seqName="seg_0"/>
-   <object objectType="Table" objectID="3E804673-70BB-523E-B0E5-7EB7807164D5" name="USERS" seqName="seg_0"/>
-   <object objectType="Table" objectID="BCE23E1F-BAC1-7104-F537-748C670AA92B" name="auth_objs_relationships" seqName="seg_0"/>
-   <object objectType="Table" objectID="1A7601E9-66E5-C9F5-4740-F2475D1862B1" name="column_values" seqName="seg_0"/>
-   <object objectType="Table" objectID="F9099400-D966-7ACE-1C20-92DF0269A668" name="object_columns" seqName="seg_0"/>
-   <object objectType="Table" objectID="23C4FF4D-65CC-E5BB-0C89-C4CF07F5B1A6" name="permissions" seqName="seg_0"/>
-   <object objectType="Table" objectID="6D281B0A-69D2-8DEF-D1DA-DDF0F8C003B5" name="perms_auth_objs" seqName="seg_0"/>
-   <object objectType="Table" objectID="1ECDC71A-BDD2-D131-2F18-5ACA06FD66F5" name="vpd_policies" seqName="seg_0"/>
-   <object objectType="Table" objectID="7A70CAA9-4176-DDA4-C2AD-B515B320E6B3" name="vpd_policy_groups" seqName="seg_0"/>
-   <object objectType="Table" objectID="FC64E16D-BDE9-1A4D-7F10-919FD2630D09" name="vpd_policy_types" seqName="seg_0"/>
-   <object objectType="FKIndexAssociation" objectID="577203A3-B11D-3A03-D0CE-9659263C0E75" name="CACHE_EXPERTEN_CODES_CACHE_USERS_FK" seqName="seg_0"/>
-   <object objectType="FKIndexAssociation" objectID="756FCE5F-838B-48C6-6FE7-A01A2332E190" name="CONSTANTS_NAMESPACES_FK" seqName="seg_0"/>
-   <object objectType="FKIndexAssociation" objectID="12A3409E-67FF-3C0A-8624-B0D1D7A36D8B" name="OBJECTS_OBJECT_TYPES_FK" seqName="seg_0"/>
-   <object objectType="FKIndexAssociation" objectID="2BCEBA8D-3719-20F2-1458-CB33FEA40D9C" name="auth_objs_FK1" seqName="seg_0"/>
-   <object objectType="FKIndexAssociation" objectID="C4B2D177-2ABD-B0F3-176E-E829964BD5F0" name="auth_objs_FK2" seqName="seg_0"/>
-   <object objectType="FKIndexAssociation" objectID="2B606B72-F823-024B-81CE-F8BB6BF1DD16" name="authorization_objects_FK" seqName="seg_0"/>
-   <object objectType="FKIndexAssociation" objectID="FBB68094-A23A-A705-EFA5-C39E706450BE" name="col_vals_obj_cols_FK" seqName="seg_0"/>
-   <object objectType="FKIndexAssociation" objectID="A60C4C6F-4C5F-7DE4-44B1-8A963FE0E635" name="obj_cols_objs_FK" seqName="seg_0"/>
-   <object objectType="FKIndexAssociation" objectID="54FE7228-90D2-5CF9-2D31-9664CF26DEDE" name="objs_auth_objs_FK" seqName="seg_0"/>
-   <object objectType="FKIndexAssociation" objectID="83057370-8398-70ED-9EE8-873F2FC72248" name="objs_schms_FK" seqName="seg_0"/>
-   <object objectType="FKIndexAssociation" objectID="0CCEF687-79F2-687D-A900-5E05CA005E30" name="permissions_FK" seqName="seg_0"/>
-   <object objectType="FKIndexAssociation" objectID="4EBA5974-000B-FFBF-8E32-03505D1840B0" name="vpd_pols_vpd_pol_grps_FK" seqName="seg_0"/>
-   <object objectType="FKIndexAssociation" objectID="0C60927E-73A2-D37E-0182-0EDB2F444D57" name="vpd_pols_vpd_pol_types_FK" seqName="seg_0"/>
+   <object objectType="Table" objectID="A8227CA4-7923-75B6-BA10-C3BE1D894359" name="TABLE_21" seqName="seg_0"/>
+   <object objectType="Table" objectID="1F21AE2C-FCFA-D45D-6C27-8574B62848A2" name="USERS" seqName="seg_0"/>
+   <object objectType="Table" objectID="044E82D8-30CA-C09B-CDC7-3007E3733414" name="USERS_AUTH_OBJECTS" seqName="seg_0"/>
+   <object objectType="Table" objectID="6A8C1790-6A1B-4E92-8EAD-005B633764F1" name="VARIABLES" seqName="seg_0"/>
+   <object objectType="Table" objectID="1ECDC71A-BDD2-D131-2F18-5ACA06FD66F5" name="VPD_POLICIES" seqName="seg_0"/>
+   <object objectType="Table" objectID="7A70CAA9-4176-DDA4-C2AD-B515B320E6B3" name="VPD_POLICY_GROUPS" seqName="seg_0"/>
+   <object objectType="Table" objectID="FC64E16D-BDE9-1A4D-7F10-919FD2630D09" name="VPD_POLICY_TYPES" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="40620F35-8A15-0BBD-3B53-74061CCE16C0" name="AORELS_AOS_M_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="727B7AE0-EF16-9F39-33FA-9527370EAC1A" name="AORELS_AOS_N_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="0D485684-F2EB-CD58-6195-ED0619D8C0BC" name="AOS_AOTS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="160DB3A8-5A3E-4261-7A81-3ADF2B08D2AB" name="COL_VALS_COL_TYPS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="FBB68094-A23A-A705-EFA5-C39E706450BE" name="COL_VALS_OBJ_COLS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="50CD038F-01EA-9214-AA53-3D0114C4813D" name="UAOS_USERS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="D86E89AC-F32E-1FE6-14EC-E46B41B76196" name="OBJECTS_AUTH_OBJS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="7909663B-6CD5-8B63-5A21-2876D382722E" name="OBJECTS_OBJ_TYPES_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="83057370-8398-70ED-9EE8-873F2FC72248" name="OBJECTS_SCHEMAS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="A60C4C6F-4C5F-7DE4-44B1-8A963FE0E635" name="OBJ_COLS_OBJS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="D3162CB8-4490-91D1-C997-B087A7F92A5B" name="UAOS_AOS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="756FCE5F-838B-48C6-6FE7-A01A2332E190" name="VARS_NSPS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="D8A2FC05-78C5-5507-1E1A-FE7B3AEF85EC" name="VPD_POLS_VPD_POL_GRPS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="B15405A9-6E91-587D-EE9B-A417CFC515EC" name="VPD_POLS_VPD_POL_TYPES_FK" seqName="seg_0"/>
 </oracle.dbtools.crest.model.design.relational.RelationalDesign>

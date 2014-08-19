@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C5CD35B1-840C-D35E-8880-7809D658C6A0" name="CACHE USERS">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<commentInRDBMS>MB+ cache table for users.</commentInRDBMS>
+<generatorID>DAEAE4B9-FBF4-D504-3CC0-76C2784EDAAD</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>CACH_USRS</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="EAC8AE4F-6B8B-46AD-2BCC-1FA0D3CB42A3">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<commentInRDBMS>Technical primary key.</commentInRDBMS>
+<generatorID>CFEBF9C6-39A3-D575-7332-676E1F34ED18</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<constraintName>CACH_USRS_ID</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+</Attribute>
+<Attribute name="NAME" id="CE37D307-DAD2-7DEB-6DF0-07998AB00583">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<commentInRDBMS>User name.</commentInRDBMS>
+<generatorID>C3288EB8-A6BA-1EFE-13FC-4E013D6D94A0</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<constraintName>CACH_USRS_NM</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+</Attribute>
+<Attribute name="V CACHED ON" id="E30D5A30-9C42-DC17-0EFD-EC8FFC4EE3A2">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<commentInRDBMS>Validation column: Record valid from.</commentInRDBMS>
+<generatorID>92AF8EA9-3C76-1E6E-76B9-EF9E8D9F4CE9</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<constraintName>CACH_USRS_CON</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>EE15CA62-A196-AD5F-FB68-3D471E68D33A</domain>
+<usesDefaultValue>true</usesDefaultValue>
+<defaultValue>sysdate</defaultValue>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7F382755-DD96-F7E2-7E9E-7EBD1A73FB75" name="CACH USRS PK">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<generatorID>18C472A1-D48E-0C67-1637-7973724BD654</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EAC8AE4F-6B8B-46AD-2BCC-1FA0D3CB42A3</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="AFCF7B19-C120-8ACF-473D-BEB8240DF2E9" name="CACH USRS UK1">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<generatorID>9967D2A9-B2D2-B784-38BF-61976D220E0F</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>CE37D307-DAD2-7DEB-6DF0-07998AB00583</attributeRef>
+<attributeRef>E30D5A30-9C42-DC17-0EFD-EC8FFC4EE3A2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

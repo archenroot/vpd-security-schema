@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D86E89AC-F32E-1FE6-14EC-E46B41B76196" name="OBJECTS_AUTH_OBJS_FK">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:45:57 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<containerWithKeyObject>6E7F26DF-EBA1-AD29-1801-99892025DEFD</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>7F9EE578-3BC4-989A-2D5E-225070925F68</localFKIndex>
+<keyObject>1863484F-EAB1-D15C-F20D-AF9F53744601</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

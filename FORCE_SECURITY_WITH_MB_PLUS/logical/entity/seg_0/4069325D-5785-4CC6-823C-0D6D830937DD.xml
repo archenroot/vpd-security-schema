@@ -1,0 +1,158 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4069325D-5785-4CC6-823C-0D6D830937DD" name="AUTHORIZATION OBJECTS">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<generatorID>49585900-DF65-E36D-772B-1B0C09829D99</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>AUTH_OBJS</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="BDFEC095-CFF2-1C93-1986-A425C605D560">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<commentInRDBMS>Technical primary key.</commentInRDBMS>
+<generatorID>A13277FA-0868-771A-1C73-D2019C29C0BF</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<constraintName>AUTH_OBJS_ID</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+</Attribute>
+<Attribute name="CODE" id="20E9456D-1FB9-6A1D-D326-30887937FC8C">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<commentInRDBMS>Authorization object.</commentInRDBMS>
+<generatorID>601971D4-A69C-FF44-AF2D-2670CF9890D5</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+</Attribute>
+<Attribute name="DESCRIPTION" id="708F5FE7-A9C6-FA33-3E11-3D7E14E32121">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<generatorID>6A392D8A-DEAA-C2D5-B42A-8BC5B0680ED5</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>8F7D1148-F50B-EB33-3894-F0472C179892</domain>
+</Attribute>
+<Attribute name="AUTH OBJ TYPE ID" id="003E02C2-3B70-2BF5-15DC-154982DF15CE">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<commentInRDBMS>Foreign key.</commentInRDBMS>
+<generatorID>333BADA8-086B-227C-5373-7AF92557CD77</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<referedAttribute>BF16AD03-2990-17CB-A681-24A13C20B26E</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+</Attribute>
+<Attribute name="V IS DELETED" id="48C69B5A-6C27-146C-D340-DFEA11A16259">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<generatorID>8FE7A733-10C1-06C2-246D-EBF011040C19</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<domain>ED65EBF4-C7DE-92C1-B9D2-E31E4B39D761</domain>
+<defaultValue>F</defaultValue>
+</Attribute>
+<Attribute name="V VALID FROM" id="8391D4C2-BAA1-F365-419E-EBE043368507">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<generatorID>3A24D37F-24E1-C8B4-32CA-273CA2500140</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>EE15CA62-A196-AD5F-FB68-3D471E68D33A</domain>
+<defaultValue>sysdate</defaultValue>
+</Attribute>
+<Attribute name="V VALID TO" id="66CAE64F-8197-8F4F-53D7-A562794194E2">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<generatorID>45759119-8479-ECA9-2167-134143539C3B</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>95658974-F90C-2D33-5642-6BCAB49CAF78</domain>
+<defaultValue>to_date(5373484, &apos;J&apos;)</defaultValue>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="920EA646-F15A-5384-577F-DA934ED9FA38" name="AUTH OBJS PK">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<generatorID>1863484F-EAB1-D15C-F20D-AF9F53744601</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BDFEC095-CFF2-1C93-1986-A425C605D560</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="5276824F-5C05-E1D6-DBD9-9D594D1FF2BE" name="AUTHORIZATION OBJECTS UK">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<generatorID>2ADBA7B3-6CC2-17A2-61C6-1B253DB712B0</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>20E9456D-1FB9-6A1D-D326-30887937FC8C</attributeRef>
+<attributeRef>003E02C2-3B70-2BF5-15DC-154982DF15CE</attributeRef>
+<attributeRef>48C69B5A-6C27-146C-D340-DFEA11A16259</attributeRef>
+<attributeRef>8391D4C2-BAA1-F365-419E-EBE043368507</attributeRef>
+<attributeRef>66CAE64F-8197-8F4F-53D7-A562794194E2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

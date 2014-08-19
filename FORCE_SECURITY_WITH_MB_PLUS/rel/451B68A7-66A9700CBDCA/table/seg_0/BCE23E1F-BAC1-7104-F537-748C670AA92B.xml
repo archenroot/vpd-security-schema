@@ -1,58 +1,161 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BCE23E1F-BAC1-7104-F537-748C670AA92B" name="auth_objs_relationships">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BCE23E1F-BAC1-7104-F537-748C670AA92B" name="AUTH_OBJS_RELATIONS">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 10:02:10 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<abbreviation>AUTH_OBJS_RELS</abbreviation>
+<beforeCreate>DROP TABLE AUTH_OBJS_RELATIONS;&lt;br/&gt;DROP SEQUENCE AUTH_OBJS_RELS_SEQ;</beforeCreate>
+<shouldGeneratescript>true</shouldGeneratescript>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="auth_obj_id_m" id="750D790E-2AD3-9263-FFFC-53C7660898A2">
+<Column name="AUTH_OBJS_RELATIONS_ID" id="E3D211F9-29F4-BE1F-86D4-582C2791D8F8">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 10:51:45 UTC</createdTime>
+<commentInRDBMS>Technical primary key.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>AUTH_OBJS_RELS_ID_CHK</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>AUTH_OBJS_RELS_SEQ</autoIncrementSequenceName>
+<autoIncrementTriggerName>AUTH_OBJS_RELS_BIS_TRG</autoIncrementTriggerName>
+<notNullConstraintName>AUTH_OBJS_RELS_ID_NN_CHK</notNullConstraintName>
+</Column>
+<Column name="AUTH_OBJ_ID_M" id="750D790E-2AD3-9263-FFFC-53C7660898A2">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<commentInRDBMS>Authorization object id.</commentInRDBMS>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>AUTH_OBJS_RELS_AOIM_CHK</constraintName>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
 <delegate>A13277FA-0868-771A-1C73-D2019C29C0BF</delegate>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>AUTH_OBJS_RELS_AOIM_NN_CHK</notNullConstraintName>
 <associations>
-<colAssociation fkAssociation="2BCEBA8D-3719-20F2-1458-CB33FEA40D9C" referredColumn="A13277FA-0868-771A-1C73-D2019C29C0BF"/>
+<colAssociation fkAssociation="40620F35-8A15-0BBD-3B53-74061CCE16C0" referredColumn="A13277FA-0868-771A-1C73-D2019C29C0BF"/>
 </associations>
 </Column>
-<Column name="auth_obj_id_n" id="8A4E8CDF-83E2-0B12-8A95-D5C74F63D7D0">
+<Column name="AUTH_OBJ_ID_N" id="8A4E8CDF-83E2-0B12-8A95-D5C74F63D7D0">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 10:02:10 UTC</createdTime>
+<commentInRDBMS>Authorization object id.</commentInRDBMS>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>AUTH_OBJS_RELS_AOIN_CHK</constraintName>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
 <delegate>A13277FA-0868-771A-1C73-D2019C29C0BF</delegate>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>AUTH_OBJS_RELS_AOIN_NN_CHK</notNullConstraintName>
 <associations>
-<colAssociation fkAssociation="C4B2D177-2ABD-B0F3-176E-E829964BD5F0" referredColumn="A13277FA-0868-771A-1C73-D2019C29C0BF"/>
+<colAssociation fkAssociation="727B7AE0-EF16-9F39-33FA-9527370EAC1A" referredColumn="A13277FA-0868-771A-1C73-D2019C29C0BF"/>
 </associations>
+</Column>
+<Column name="V_IS_DELETED" id="E5D6D066-5E4A-13CD-3EB6-955B276FF3C9">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:46:59 UTC</createdTime>
+<commentInRDBMS>Validation column: Is record logicaly deleted?</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>AUTH_OBJS_RELS_DEL_CHK</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<domain>ED65EBF4-C7DE-92C1-B9D2-E31E4B39D761</domain>
+<defaultValue>F</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>AUTH_OBJS_RELS_DEL_NN_CHK</notNullConstraintName>
+</Column>
+<Column name="V_VALID_FROM" id="F0350DBD-EDEA-8B57-4ABF-2FFAE7151321">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:46:59 UTC</createdTime>
+<commentInRDBMS>Validation record: Record valid from.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>AUTH_OBJS_RELS_VF_CHK</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>EE15CA62-A196-AD5F-FB68-3D471E68D33A</domain>
+<defaultValue>sysdate</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>AUTH_OBJS_RELS_VF_NN_CHK</notNullConstraintName>
+</Column>
+<Column name="V_VALID_TO" id="FD92F5AF-72B4-3596-031D-2879BB2F6F96">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:46:59 UTC</createdTime>
+<commentInRDBMS>Validation column: Record valid to.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>AUTH_OBJS_RELS_VT_CHK</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>95658974-F90C-2D33-5642-6BCAB49CAF78</domain>
+<defaultValue>to_date(5373484, &apos;J&apos;)</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>AUTH_OBJS_RELS_VT_NN_CHK</notNullConstraintName>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="9DB803A4-824C-EAF0-92AB-151192EF0EF3" name="auth_objs_relationships_PK">
+<ind_PK_UK id="438E84FF-FE2A-6B9A-39BA-51260EE927E8" name="AUTH_OBJS_RELS_PK">
 <createdBy>s9073</createdBy>
-<createdTime>2014-07-15 10:02:10 UTC</createdTime>
-<commentInRDBMS>Primary key in M:N table based on source tables technical primary keys.</commentInRDBMS>
+<createdTime>2014-08-18 08:46:36 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
+<colUsage columnID="E3D211F9-29F4-BE1F-86D4-582C2791D8F8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0B0FF16E-0E90-0365-3655-471C5759E320" name="AUTH_OBJS_RELS_UK1">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:47:17 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
 <colUsage columnID="750D790E-2AD3-9263-FFFC-53C7660898A2"/>
+<colUsage columnID="8A4E8CDF-83E2-0B12-8A95-D5C74F63D7D0"/>
+<colUsage columnID="E5D6D066-5E4A-13CD-3EB6-955B276FF3C9"/>
+<colUsage columnID="F0350DBD-EDEA-8B57-4ABF-2FFAE7151321"/>
+<colUsage columnID="FD92F5AF-72B4-3596-031D-2879BB2F6F96"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A1488F62-F1EC-61F1-C17E-742E874D3CE2" name="AUTH_OBJS_RELS_PK_I">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 13:19:23 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E3D211F9-29F4-BE1F-86D4-582C2791D8F8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E31042A7-2793-2C85-88C8-C87A6EFDF347" name="AORELS_AOS_M_FK_I">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 13:57:22 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="750D790E-2AD3-9263-FFFC-53C7660898A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E89D25E0-2F8C-9C16-56E3-8800CD265CE2" name="AORELS_AOS_N_FK_I">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 13:58:22 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
 <colUsage columnID="8A4E8CDF-83E2-0B12-8A95-D5C74F63D7D0"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="3E676F4C-F57C-C979-E81A-A2152C05A8E8" name="auth_objs_FK1">
+<ind_PK_UK id="086D1949-4276-6E47-6766-7EC4F3E69097" name="AORELS_AOS_M_FK">
 <createdBy>s9073</createdBy>
-<createdTime>2014-07-15 10:02:10 UTC</createdTime>
-<generatorID>C8DFC371-75CB-8158-FA24-AEE592F3A5B1</generatorID>
+<createdTime>2014-08-18 08:47:49 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -60,10 +163,9 @@
 <colUsage columnID="750D790E-2AD3-9263-FFFC-53C7660898A2"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="717AEB9F-7ACE-8BCB-CBD8-A03334D7B474" name="auth_objs_FK2">
+<ind_PK_UK id="AF6AC05C-3FA3-070A-A88F-EC884EAA1CB6" name="AORELS_AOS_N_FK">
 <createdBy>s9073</createdBy>
-<createdTime>2014-07-15 10:02:10 UTC</createdTime>
-<generatorID>C8DFC371-75CB-8158-FA24-AEE592F3A5B1</generatorID>
+<createdTime>2014-08-18 08:48:01 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>

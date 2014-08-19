@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DE8A02AD-CF9A-ABFC-99FB-5AAC72829A2D" name="CACHE EXPERTEN CODES">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<generatorID>3C8D2FB5-60AC-4EB4-0426-AA0AF96FC100</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>CACH_EXP_CODS</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="0803D910-CE36-4F50-9A4F-0FA51A170C3C">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<commentInRDBMS>Technical primary key.</commentInRDBMS>
+<generatorID>9B55B8EE-628E-B3A5-10B9-A1B7911C8C3E</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<constraintName>CACH_EXP_CODS_ID</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+</Attribute>
+<Attribute name="CODE" id="4A3116F1-8440-E56D-85E0-A2172D1F9931">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<commentInRDBMS>Experten code name.</commentInRDBMS>
+<generatorID>BC0B5666-60F2-280F-44C9-692C2D0910BD</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<constraintName>CACH_EXP_CODS_NM</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+</Attribute>
+<Attribute name="CACHE USER ID" id="7967680A-181D-85E5-70FB-163A3F443718">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<generatorID>752E109E-9156-B9A3-9D3E-0212D24068F9</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<referedAttribute>EAC8AE4F-6B8B-46AD-2BCC-1FA0D3CB42A3</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="27B2799B-5707-3F30-C4DB-DB2F21FCDEB0" name="CACH EXP CODS PK">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<generatorID>CC0D7373-D854-1B44-0A60-EAEE8D98F858</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0803D910-CE36-4F50-9A4F-0FA51A170C3C</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="7C71065F-3D98-360D-8E36-460C83AFC1AC" name="CACH EXP CODS UK1">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<generatorID>923DB0F8-8955-C218-2087-F3D3E231050D</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>4A3116F1-8440-E56D-85E0-A2172D1F9931</attributeRef>
+<attributeRef>7967680A-181D-85E5-70FB-163A3F443718</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

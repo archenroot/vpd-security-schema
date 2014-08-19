@@ -1,0 +1,169 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="03494BB2-F31D-DE70-C772-09760FDCF379" name="COLUMN_TYPES">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-06 15:38:26 UTC</createdTime>
+<commentInRDBMS>Table includes detailed description of the specific column database data type with respect to Oracle.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<abbreviation>COL_TYPS</abbreviation>
+<beforeCreate>DROP TABLE COLUMN_TYPES CASCADE CONSTRAINTS;&lt;br/&gt;DROP SEQUENCE COL_TYPS_SEQ;</beforeCreate>
+<shouldGeneratescript>true</shouldGeneratescript>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COLUMN_TYPE_ID" id="AF9C597C-545A-F964-A383-0E12BAA80AD0">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-06 15:38:49 UTC</createdTime>
+<commentInRDBMS>Technical primary key.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>COL_TYPS_ID_CHK</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>COL_TYPS_SEQ</autoIncrementSequenceName>
+<autoIncrementTriggerName>COL_TYPS_BIS_TRG</autoIncrementTriggerName>
+<notNullConstraintName>COL_TYPS_ID_NN_CHK</notNullConstraintName>
+</Column>
+<Column name="NAME" id="C746F359-0FCB-7902-A6AE-E47E1C9D1B39">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-06 15:38:49 UTC</createdTime>
+<commentInRDBMS>Name of the database type.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>COL_TYPS_NM_CHK</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>COL_TYPS_NM_NN_CHK</notNullConstraintName>
+</Column>
+<Column name="LENGTH" id="1579CE58-6D9B-425B-0867-3810F0BA4DFE">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-06 15:49:25 UTC</createdTime>
+<commentInRDBMS>Length - related only to some of the database types.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>COL_TYPS_LENGTH_CHK</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F858B42E-04EE-D273-55EA-5AFB8790A8C2</domain>
+<usesDefaultValue>true</usesDefaultValue>
+<defaultValue>NULL</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>COL_TYPS_LENGTH_NN_CHK</notNullConstraintName>
+</Column>
+<Column name="PRECISION" id="76A68740-29C5-65F0-C21C-7ED539D86F72">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-06 15:38:49 UTC</createdTime>
+<commentInRDBMS>Precision - related only to some of the database types.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>COL_TYPS_PRECISION_CHK</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F858B42E-04EE-D273-55EA-5AFB8790A8C2</domain>
+<usesDefaultValue>true</usesDefaultValue>
+<defaultValue>NULL</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>COL_TYPS_PRECISION_NN_CHK</notNullConstraintName>
+</Column>
+<Column name="SCALE" id="8BDB14EE-A532-381C-D9D5-49EA66F1FD3D">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-06 15:43:06 UTC</createdTime>
+<commentInRDBMS>Scale - related only to some of the database types.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>COL_TYPS_SCALE_CHK</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F858B42E-04EE-D273-55EA-5AFB8790A8C2</domain>
+<usesDefaultValue>true</usesDefaultValue>
+<defaultValue>NULL</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>COL_TYPS_SCALE_NN_CHK</notNullConstraintName>
+</Column>
+<Column name="V_IS_DELETED" id="5FC460F7-4120-3A99-6939-E01C3F41DB45">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-06 15:38:49 UTC</createdTime>
+<commentInRDBMS>Validation column: Is record logicaly deleted?</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>COL_TYPS_DEL_CHK</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<domain>ED65EBF4-C7DE-92C1-B9D2-E31E4B39D761</domain>
+<usesDefaultValue>true</usesDefaultValue>
+<defaultValue>F</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>COL_TYPS_DEL_NN_CHK</notNullConstraintName>
+</Column>
+<Column name="V_VALID_FROM" id="28F5570D-00A5-A26B-6FC5-153D168CC988">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-06 15:49:25 UTC</createdTime>
+<commentInRDBMS>Validation record: Record valid from.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>COL_TYPS_VF_CHK</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>EE15CA62-A196-AD5F-FB68-3D471E68D33A</domain>
+<usesDefaultValue>true</usesDefaultValue>
+<defaultValue>sysdate</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>COL_TYPS_VF_NN_CHK</notNullConstraintName>
+</Column>
+<Column name="V_VALID_TO" id="A80850E4-65BF-F825-4889-9F18A0F4D2F7">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-06 15:49:25 UTC</createdTime>
+<commentInRDBMS>Validation column: Record valid to.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>COL_TYPS_VT_CHK</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>95658974-F90C-2D33-5642-6BCAB49CAF78</domain>
+<usesDefaultValue>true</usesDefaultValue>
+<defaultValue>to_date(5373484, &apos;J&apos;)</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>COL_TYPS_VT_NN_CHK</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="307451BF-8875-D86C-BCA0-181D5E85597B" name="COL_TYPS_PK">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-06 15:39:32 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF9C597C-545A-F964-A383-0E12BAA80AD0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="59CC93C0-7E2E-EF3C-6DAD-D64C90ED35DC" name="COL_TYPS_UK1">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-06 15:53:47 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C746F359-0FCB-7902-A6AE-E47E1C9D1B39"/>
+<colUsage columnID="5FC460F7-4120-3A99-6939-E01C3F41DB45"/>
+<colUsage columnID="28F5570D-00A5-A26B-6FC5-153D168CC988"/>
+<colUsage columnID="A80850E4-65BF-F825-4889-9F18A0F4D2F7"/>
+<colUsage columnID="AF9C597C-545A-F964-A383-0E12BAA80AD0"/>
+<colUsage columnID="1579CE58-6D9B-425B-0867-3810F0BA4DFE"/>
+<colUsage columnID="76A68740-29C5-65F0-C21C-7ED539D86F72"/>
+<colUsage columnID="8BDB14EE-A532-381C-D9D5-49EA66F1FD3D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7632FACC-732F-0394-34DD-697E392B689F" name="COL_TYPS_PK_I">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 13:28:35 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF9C597C-545A-F964-A383-0E12BAA80AD0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

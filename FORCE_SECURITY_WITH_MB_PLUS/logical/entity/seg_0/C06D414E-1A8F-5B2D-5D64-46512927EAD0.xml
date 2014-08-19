@@ -1,0 +1,214 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C06D414E-1A8F-5B2D-5D64-46512927EAD0" name="OBJECTS">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<generatorID>6E7F26DF-EBA1-AD29-1801-99892025DEFD</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>OBJECTS</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="OBJECT ID" id="180513D0-6865-84D2-ACB9-A81E39931AAA">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<commentInRDBMS>Technical primary key.</commentInRDBMS>
+<generatorID>F417F912-FD7E-6F3A-B23D-033C0AA90711</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<constraintName>OBJECTS_ID</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+</Attribute>
+<Attribute name="NAME" id="CC650518-8C6E-7C98-AA29-B182FCE8FE73">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<commentInRDBMS>Database object full name.</commentInRDBMS>
+<generatorID>BA32753A-1D5A-0ED9-01BE-F9A4A83C8EE5</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<constraintName>OBJECTS_NM</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+</Attribute>
+<Attribute name="AVAILABILITY" id="C27F3E13-421B-2822-79A6-ADB559873D6E">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<commentInRDBMS>Is object available in the database?</commentInRDBMS>
+<generatorID>99DC8D59-0FA7-1F75-BA0F-03A5E97FE446</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<constraintName>OBJECTS_AVAIL</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<domain>ED65EBF4-C7DE-92C1-B9D2-E31E4B39D761</domain>
+<usesDefaultValue>true</usesDefaultValue>
+<defaultValue>F</defaultValue>
+</Attribute>
+<Attribute name="AVAIL LAST CHECKED ON" id="BE10D6E3-F414-297C-D111-EBEB883B31C4">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<commentInRDBMS>Object availability checked on.</commentInRDBMS>
+<generatorID>0FFB61B3-96AD-4A84-C741-86C8BB538249</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<constraintName>OBJECTS_ALCHO</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>8446C2A3-FE31-22B7-3F11-E6CEA7EFF836</domain>
+<usesDefaultValue>true</usesDefaultValue>
+<defaultValue>NULL</defaultValue>
+</Attribute>
+<Attribute name="V IS DELETED" id="EA14E0B9-7C4E-3921-4441-9E80D3F050F6">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<generatorID>A1028D4B-F833-75C0-281F-FDDD321302DF</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<constraintName>OBJECTS_DEL</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<domain>ED65EBF4-C7DE-92C1-B9D2-E31E4B39D761</domain>
+<usesDefaultValue>true</usesDefaultValue>
+<defaultValue>F</defaultValue>
+</Attribute>
+<Attribute name="V VALID FROM" id="FAA8A2AE-6D8F-9D51-5CB3-A0E55A608B06">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<generatorID>70F2F53D-3DDD-7488-C64A-0A9A0B1D2D95</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<constraintName>OBJECTS_VF</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>EE15CA62-A196-AD5F-FB68-3D471E68D33A</domain>
+<usesDefaultValue>true</usesDefaultValue>
+<defaultValue>sysdate</defaultValue>
+</Attribute>
+<Attribute name="V VALID TO" id="A288753C-AA9A-9210-2D32-B1CDC0A09B6E">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<generatorID>D2C5075D-5A64-721C-B46B-1F17D79795C0</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<constraintName>OBJECTS_VT</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>95658974-F90C-2D33-5642-6BCAB49CAF78</domain>
+<defaultValue>to_date(5373484, &apos;J&apos;)</defaultValue>
+</Attribute>
+<Attribute name="OBJECT TYPE ID" id="0FD53D30-A0F2-B80A-F434-D8E87B461D99">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<commentInRDBMS>Foreign key.</commentInRDBMS>
+<generatorID>F7690877-B167-BC33-967B-B2AA5C79D3AA</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<constraintName>OBJECTS_OBJTYPE_ID</constraintName>
+<referedAttribute>498A7C52-19B5-4632-3EAF-927F4102CBCB</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+</Attribute>
+<Attribute name="SCHEMA ID" id="C443FAE1-366F-91DA-9BD7-C0A4C8148810">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<commentInRDBMS>Foreign key.</commentInRDBMS>
+<generatorID>14DABF3D-944B-94B9-E79D-5713B7C77E66</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<constraintName>OBJECTS_SCHEMA_ID</constraintName>
+<referedAttribute>529F33A4-01A9-CDCD-A07F-45FBDF72C955</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+</Attribute>
+<Attribute name="AUTHORIZATION OBJECT ID" id="86C11D73-C921-0C94-E769-3E69798C91A9">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<commentInRDBMS>Foreign key.</commentInRDBMS>
+<generatorID>7E2AAC68-A46C-CA95-4555-8E127E750435</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<constraintName>OBJECTS_AUTH_OBJ_ID</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D49E2112-2883-E1E4-D4EB-3560D46C087C" name="OBJECTS PK">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<generatorID>52DBF230-AB2A-D197-3DF9-E195F345B68C</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>180513D0-6865-84D2-ACB9-A81E39931AAA</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="C4F28FA9-8FD1-AB1B-931B-271B7FE53CE6" name="OBJECTS UK1">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<generatorID>69B38262-27F9-FAE1-EE30-3086D166F4BD</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>CC650518-8C6E-7C98-AA29-B182FCE8FE73</attributeRef>
+<attributeRef>EA14E0B9-7C4E-3921-4441-9E80D3F050F6</attributeRef>
+<attributeRef>FAA8A2AE-6D8F-9D51-5CB3-A0E55A608B06</attributeRef>
+<attributeRef>A288753C-AA9A-9210-2D32-B1CDC0A09B6E</attributeRef>
+<attributeRef>C443FAE1-366F-91DA-9BD7-C0A4C8148810</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

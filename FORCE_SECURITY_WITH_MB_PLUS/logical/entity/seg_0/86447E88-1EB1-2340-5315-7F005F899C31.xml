@@ -1,0 +1,286 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="86447E88-1EB1-2340-5315-7F005F899C31" name="VPD POLICIES">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<generatorID>1ECDC71A-BDD2-D131-2F18-5ACA06FD66F5</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>VPD_POLS</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="VPD POL ID" id="2B6979FB-6133-26F0-AE8D-F709A4819681">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<commentInRDBMS>Technical primary key.</commentInRDBMS>
+<generatorID>8D03BE86-B9C3-47E8-7624-621B4AF6F49F</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<constraintName>VPD_POLS_ID</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+</Attribute>
+<Attribute name="OBJECT SCHEMA" id="89A6193A-00C6-361D-0D66-07D5164AB708">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<commentInRDBMS>Schema containing the table, view, or synonym. If no object_schema is specified, the current user&apos;s schema is assumed.</commentInRDBMS>
+<generatorID>01B4A84D-AA50-18CE-6871-64E2B21B3FDB</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<constraintName>VPD_POLS_OS</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+</Attribute>
+<Attribute name="OBJECT NAME" id="A0CAFFDA-57C5-8CA2-1687-E0FD953431CE">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<commentInRDBMS>Name of table, view, or synonym to which the policy is added.</commentInRDBMS>
+<generatorID>34B0C5BC-8A78-E531-757D-2EFF70FB42EA</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<constraintName>VPD_POLS_ON</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+</Attribute>
+<Attribute name="POLICY NAME" id="495CCC62-4D16-3110-28E2-2B3B5C574951">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<commentInRDBMS>Name of policy to be added. It must be unique for the same table or view.</commentInRDBMS>
+<generatorID>C1C4235B-8DEA-B66B-78FB-48FB5906499C</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<constraintName>VPD_POLS_PN</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+</Attribute>
+<Attribute name="FUNCTION SCHEMA" id="213787B2-FEB3-2956-1456-FC59549C7EE4">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<commentInRDBMS>Schema of the policy function (current default schema, if NULL). If no function_schema is specified, the current user&apos;s schema is assumed.</commentInRDBMS>
+<generatorID>BC4A3A29-1779-B1D3-BAF3-07B6A84D266E</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<constraintName>VPD_POLS_FS</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+</Attribute>
+<Attribute name="POLICY FUNCTION" id="F8D45B1D-5200-AAD4-DDFA-2B1184E86631">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<commentInRDBMS>Name of a function which generates a predicate for the policy. If the function is defined within a package, then the name of the package must be present.</commentInRDBMS>
+<generatorID>27AF2ADC-2216-24E0-8891-65DB6A5BE497</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<constraintName>VPD_POLS_PF</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+</Attribute>
+<Attribute name="STATEMENT TYPES" id="1086AF68-67CF-BA4D-AD68-BA57CE0771A1">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<commentInRDBMS>Statement types to which the policy applies. It can be any combination of INDEX, SELECT, INSERT, UPDATE, or DELETE. The default is to apply to all of these types except INDEX.</commentInRDBMS>
+<generatorID>777168A8-EBC6-C90C-5A97-0E02B140E68E</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<constraintName>VPD_POLS_ST</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+</Attribute>
+<Attribute name="UPDATE CHECK" id="D63C5560-F264-5F3C-B2DE-FA4587FE22A2">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<commentInRDBMS>Optional argument for INSERT or UPDATE statement types. The default is FALSE. Setting update_check to TRUE causes the server to also check the policy against the value after insert or update.</commentInRDBMS>
+<generatorID>C423D7E6-4BED-DD4F-231A-6745601E54A2</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<constraintName>VPD_POLS_UC</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+</Attribute>
+<Attribute name="ENABLE" id="371D02CB-BC29-0B4D-095C-3B34E49A68BC">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<commentInRDBMS>Indicates if the policy is enabled when it is added. The default is TRUE.</commentInRDBMS>
+<generatorID>EDD55C25-956A-0BBF-A908-D535EF75F699</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<constraintName>VPD_POLS_E</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+</Attribute>
+<Attribute name="STATIC POLICY" id="C04FB36F-633B-3EA2-D491-A90E25051669">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<commentInRDBMS>The default is FALSE. If it is set to TRUE, the server assumes that the policy function for the static policy produces the same predicate string for anyone accessing the object, except for SYS or the privileged user who has the EXEMPT ACCESS POLICY privilege.</commentInRDBMS>
+<generatorID>FB2B1375-F765-E3C7-1505-89043B832A22</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<constraintName>VPD_POLS_SP</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+</Attribute>
+<Attribute name="LONG PREDICATE" id="1DCFF5F1-EAA4-9E98-5C24-02E7AB275C4F">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<commentInRDBMS>efault is FALSE, which means the policy function can return a predicate with a length of up to 4000 bytes. TRUE means the predicate text string length can be up to 32K bytes.Policies existing prior to the availability of this parameter retain a 32K limit.</commentInRDBMS>
+<generatorID>16F89B00-7D3B-ED70-23F9-DB37221B1D7D</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<constraintName>VPD_POLS_LP</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+</Attribute>
+<Attribute name="SEC RELEVANT COLS" id="DA473E6A-7ADC-BAEF-3765-D6D36CAD7EFC">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<commentInRDBMS>nables column-level Virtual Private Database (VPD), which enforces security policies when a column containing sensitive information is referenced in a query. Applies to tables and views, but not to synonyms. Specify a list of comma- or space-separated valid column names of the policy-protected object. The policy is enforced only if a specified column is referenced (or, for an abstract datatype column, its attributes are referenced) in the user SQL statement or its underlying view definition. Default is all the user-defined columns for the object.</commentInRDBMS>
+<generatorID>69393F5D-FF4B-AE0F-AB5A-9B620A04E33F</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<constraintName>VPD_POLS_SRC</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>8F7D1148-F50B-EB33-3894-F0472C179892</domain>
+</Attribute>
+<Attribute name="SEC RELEVANT COLS OPT" id="CF18F867-0BFC-E64C-0B58-8F765191781C">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<commentInRDBMS>Use with sec_relevant_cols to display all rows for column-level VPD filtered queries (SELECT only), but where sensitive columns appear as NULL. Default is set to NULL, which allows the filtering defined with sec_relevant_cols to take effect. Set to dbms_rls.ALL_ROWS to display all rows, but with sensitive column values, which are filtered by sec_relevant_cols, displayed as NULL. See &quot;Usage Notes&quot; for restrictions and additional information about this option.</commentInRDBMS>
+<generatorID>46781945-46C7-ECB2-2308-AB57322AB0C3</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<constraintName>VPD_POLS_SRCO</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>8F7D1148-F50B-EB33-3894-F0472C179892</domain>
+</Attribute>
+<Attribute name="VPD POLICY TYPE ID" id="DBB2E8CD-DCFB-2A37-CE5E-7CDA2D6157F5">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<commentInRDBMS>Foreign key to VPD_POLICY_TYPES table.</commentInRDBMS>
+<generatorID>D20AA661-CDC0-B325-C391-50695629D327</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<referedAttribute>66ACB2B4-7CF4-0F80-0E25-F847FF48BE5E</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+</Attribute>
+<Attribute name="VPD POLICY GROUP ID" id="3D718D88-DD31-AFE7-D1FF-E5200E9AD43C">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<commentInRDBMS>Foreing key to VPD_POLICY_GROUP table.</commentInRDBMS>
+<generatorID>3D3B1099-CF47-EB9C-8FB8-6FA30877CB5F</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<referedAttribute>E310DAE8-771D-AC19-F71B-879BDFDF1BE7</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="73A2A31C-BADD-7AA1-389C-FBA266BAB1C4" name="VPD POLICIES">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<generatorID>390F73D2-7875-F9B8-7E3C-7B224819FC88</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2B6979FB-6133-26F0-AE8D-F709A4819681</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="DE138D7E-43F6-311B-4E2D-8A306D141BF7" name="VPD POLICIES UK1">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<generatorID>4CA46E0A-BCC0-A5CD-2A3E-859395ACF1B1</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>89A6193A-00C6-361D-0D66-07D5164AB708</attributeRef>
+<attributeRef>A0CAFFDA-57C5-8CA2-1687-E0FD953431CE</attributeRef>
+<attributeRef>495CCC62-4D16-3110-28E2-2B3B5C574951</attributeRef>
+<attributeRef>F8D45B1D-5200-AAD4-DDFA-2B1184E86631</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

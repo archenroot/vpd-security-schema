@@ -1,215 +1,277 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1ECDC71A-BDD2-D131-2F18-5ACA06FD66F5" name="vpd_policies">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1ECDC71A-BDD2-D131-2F18-5ACA06FD66F5" name="VPD_POLICIES">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 10:02:10 UTC</createdTime>
 <generatorID>E68F8734-BB02-6591-9650-61ADDED89635</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
-<abbreviation>vpd_policies</abbreviation>
+<abbreviation>VPD_POLS</abbreviation>
+<beforeCreate>DROP TABLE VPD_POLICIES CASCADE CONSTRAINTS;&lt;br/&gt;DROP SEQUENCE VPD_POLS_SEQ;</beforeCreate>
+<shouldGeneratescript>true</shouldGeneratescript>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id" id="8D03BE86-B9C3-47E8-7624-621B4AF6F49F">
+<Column name="VPD_POL_ID" id="8D03BE86-B9C3-47E8-7624-621B4AF6F49F">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 10:02:10 UTC</createdTime>
 <commentInRDBMS>Technical primary key.</commentInRDBMS>
 <generatorID>62B90949-18AE-1719-EF6E-9A00774FFB0A</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>VPD_POLS_ID_CHK</constraintName>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>1000</autoIncrementCache>
+<autoIncrementSequenceName>VPD_POLS_SEQ</autoIncrementSequenceName>
+<autoIncrementTriggerName>VPD_POLS_BIS_TRG</autoIncrementTriggerName>
+<notNullConstraintName>VPD_POLS_ID_NN_CHK</notNullConstraintName>
 </Column>
-<Column name="object_schema" id="01B4A84D-AA50-18CE-6871-64E2B21B3FDB">
+<Column name="OBJECT_SCHEMA" id="01B4A84D-AA50-18CE-6871-64E2B21B3FDB">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 10:02:10 UTC</createdTime>
 <commentInRDBMS>Schema containing the table, view, or synonym. If no object_schema is specified, the current user&apos;s schema is assumed.</commentInRDBMS>
 <generatorID>CCD465E4-890C-A1A0-29FD-AF0B68DB61BA</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
+<constraintName>VPD_POLS_OS_CHK</constraintName>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>VPD_POLS_OS_NN_CHK</notNullConstraintName>
 </Column>
-<Column name="object_name" id="34B0C5BC-8A78-E531-757D-2EFF70FB42EA">
+<Column name="OBJECT_NAME" id="34B0C5BC-8A78-E531-757D-2EFF70FB42EA">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 10:02:10 UTC</createdTime>
 <commentInRDBMS>Name of table, view, or synonym to which the policy is added.</commentInRDBMS>
 <generatorID>1A655BC2-28A0-8A0E-5177-95CC052D5F02</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>VPD_POLS_ON_CHK</constraintName>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>VPD_POLS_ON_NN_CHK</notNullConstraintName>
 </Column>
-<Column name="policy_name" id="C1C4235B-8DEA-B66B-78FB-48FB5906499C">
+<Column name="POLICY_NAME" id="C1C4235B-8DEA-B66B-78FB-48FB5906499C">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 13:09:42 UTC</createdTime>
 <commentInRDBMS>Name of policy to be added. It must be unique for the same table or view.</commentInRDBMS>
 <generatorID>50FD7885-0BC4-128B-0461-9CDE5A60C82C</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>VPD_POLS_PN_CHK</constraintName>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>VPD_POLS_PN_NN_CHK</notNullConstraintName>
 </Column>
-<Column name="function_schema" id="BC4A3A29-1779-B1D3-BAF3-07B6A84D266E">
+<Column name="FUNCTION_SCHEMA" id="BC4A3A29-1779-B1D3-BAF3-07B6A84D266E">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 13:09:42 UTC</createdTime>
 <commentInRDBMS>Schema of the policy function (current default schema, if NULL). If no function_schema is specified, the current user&apos;s schema is assumed.</commentInRDBMS>
 <generatorID>F1317233-7DBF-BC0C-F84B-281EBD516CB2</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
+<constraintName>VPD_POLS_FS_CHK</constraintName>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>VPD_POLS_FS_NN_CHK</notNullConstraintName>
 </Column>
-<Column name="policy_function" id="27AF2ADC-2216-24E0-8891-65DB6A5BE497">
+<Column name="POLICY_FUNCTION" id="27AF2ADC-2216-24E0-8891-65DB6A5BE497">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 13:09:42 UTC</createdTime>
 <commentInRDBMS>Name of a function which generates a predicate for the policy. If the function is defined within a package, then the name of the package must be present.</commentInRDBMS>
 <generatorID>8FD5F10A-264E-2EAA-BFF6-29EF7FB38638</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>VPD_POLS_PF_CHK</constraintName>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>VPD_POLS_PF_NN_CHK</notNullConstraintName>
 </Column>
-<Column name="statement_types" id="777168A8-EBC6-C90C-5A97-0E02B140E68E">
+<Column name="STATEMENT_TYPES" id="777168A8-EBC6-C90C-5A97-0E02B140E68E">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 13:09:42 UTC</createdTime>
 <commentInRDBMS>Statement types to which the policy applies. It can be any combination of INDEX, SELECT, INSERT, UPDATE, or DELETE. The default is to apply to all of these types except INDEX.</commentInRDBMS>
 <generatorID>72320102-433A-CAFC-392C-86476BA72360</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>VPD_POLS_ST_CHK</constraintName>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>VPD_POLS_ST_NN_CHK</notNullConstraintName>
 </Column>
-<Column name="update_check" id="C423D7E6-4BED-DD4F-231A-6745601E54A2">
+<Column name="UPDATE_CHECK" id="C423D7E6-4BED-DD4F-231A-6745601E54A2">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 13:09:42 UTC</createdTime>
 <commentInRDBMS>Optional argument for INSERT or UPDATE statement types. The default is FALSE. Setting update_check to TRUE causes the server to also check the policy against the value after insert or update.</commentInRDBMS>
 <generatorID>F70D5FD4-7DDD-43FC-57D8-12ED5461CD9E</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>VPD_POLS_UC_CHK</constraintName>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>VPD_POLS_UC_NN_CHK</notNullConstraintName>
 </Column>
-<Column name="enable" id="EDD55C25-956A-0BBF-A908-D535EF75F699">
+<Column name="ENABLE" id="EDD55C25-956A-0BBF-A908-D535EF75F699">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 13:09:42 UTC</createdTime>
 <commentInRDBMS>Indicates if the policy is enabled when it is added. The default is TRUE.</commentInRDBMS>
 <generatorID>D1E30A24-A263-1C0C-5529-D755C78A7A4B</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>VPD_POLS_E_CHK</constraintName>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>VPD_POLS_E_NN_CHK</notNullConstraintName>
 </Column>
-<Column name="static_policy" id="FB2B1375-F765-E3C7-1505-89043B832A22">
+<Column name="STATIC_POLICY" id="FB2B1375-F765-E3C7-1505-89043B832A22">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 13:09:42 UTC</createdTime>
 <commentInRDBMS>The default is FALSE. If it is set to TRUE, the server assumes that the policy function for the static policy produces the same predicate string for anyone accessing the object, except for SYS or the privileged user who has the EXEMPT ACCESS POLICY privilege.</commentInRDBMS>
 <generatorID>530BE161-F483-BDB7-EB59-C941B33704C2</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>VPD_POLS_SP_CHK</constraintName>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>VPD_POLS_SP_NN_CHK</notNullConstraintName>
 </Column>
-<Column name="policy_type" id="21F241E6-C0B5-2B77-9B5F-7FB42833E4D5">
-<createdBy>s9073</createdBy>
-<createdTime>2014-07-15 13:09:42 UTC</createdTime>
-<commentInRDBMS>Default is NULL, which means policy_type is decided by the value of static_policy. The available policy types are listed in Table 125-4. Specifying any of these policy types overrides the value of static_policy.&lt;br/&gt;&lt;br/&gt;STATIC&lt;br/&gt;	&lt;br/&gt;&lt;br/&gt;Predicate is assumed to be the same regardless of the runtime environment. Static policy functions are executed once and then cached in SGA. Statements accessing the same object do not reexecute the policy function. However, each execution of the same cursor could produce a different row set even for the same predicate because the predicate may filter the data differently based on attributes such as SYS_CONTEXT or SYSDATE. Applies to only one object.&lt;br/&gt;&lt;br/&gt;SHARED_STATIC&lt;br/&gt;	&lt;br/&gt;&lt;br/&gt;Same as STATIC except that the server first looks for a cached predicate generated by the same policy function of the same policy type. Shared across multiple objects.&lt;br/&gt;&lt;br/&gt;CONTEXT_SENSITIVE&lt;br/&gt;	&lt;br/&gt;&lt;br/&gt;Server re-evaluates the policy function at statement execution time if it detects context changes since the last use of the cursor. For session pooling where multiple clients share a database session, the middle tier must reset context during client switches. Note that the server does not cache the value returned by the function for this policy type; it always executes the policy function on statement parsing. Applies to only one object.&lt;br/&gt;&lt;br/&gt;SHARED_CONTEXT_SENSITIVE&lt;br/&gt;	&lt;br/&gt;&lt;br/&gt;Same as CONTEXT_SENSITIVE except that the server first looks for a cached predicate generated by the same policy function of the same policy type within the same database session. If the predicate is found in the session memory, the policy function is not reexecuted and the cached value is valid until session private application context changes occur. Shared across multiple objects.&lt;br/&gt;&lt;br/&gt;DYNAMIC&lt;br/&gt;	&lt;br/&gt;&lt;br/&gt;The default policy type. Server assumes the predicate may be affected by any system or session environment at any time, and so always reexecutes the policy function upon each statement parsing and execution. Applies to only one object.</commentInRDBMS>
-<generatorID>1846658C-7606-CABF-DE6A-EF58E12CEF24</generatorID>
-<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="long_predicate" id="16F89B00-7D3B-ED70-23F9-DB37221B1D7D">
+<Column name="LONG_PREDICATE" id="16F89B00-7D3B-ED70-23F9-DB37221B1D7D">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 13:09:42 UTC</createdTime>
 <commentInRDBMS>efault is FALSE, which means the policy function can return a predicate with a length of up to 4000 bytes. TRUE means the predicate text string length can be up to 32K bytes.Policies existing prior to the availability of this parameter retain a 32K limit.</commentInRDBMS>
 <generatorID>38044828-73D8-5013-8D45-E68DFBC8D897</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>VPD_POLS_LP_CHK</constraintName>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>VPD_POLS_LP_NN_CHK</notNullConstraintName>
 </Column>
-<Column name="sec_relevant_cols" id="69393F5D-FF4B-AE0F-AB5A-9B620A04E33F">
+<Column name="SEC_RELEVANT_COLS" id="69393F5D-FF4B-AE0F-AB5A-9B620A04E33F">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 13:09:42 UTC</createdTime>
 <commentInRDBMS>nables column-level Virtual Private Database (VPD), which enforces security policies when a column containing sensitive information is referenced in a query. Applies to tables and views, but not to synonyms. Specify a list of comma- or space-separated valid column names of the policy-protected object. The policy is enforced only if a specified column is referenced (or, for an abstract datatype column, its attributes are referenced) in the user SQL statement or its underlying view definition. Default is all the user-defined columns for the object.</commentInRDBMS>
 <generatorID>BAD68B38-635F-56D1-947A-B179AD6C01B5</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>VPD_POLS_SRC_CHK</constraintName>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+<domain>8F7D1148-F50B-EB33-3894-F0472C179892</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>VPD_POLS_SRC_NN_CHK</notNullConstraintName>
 </Column>
-<Column name="sec_relevant_cols_opt" id="46781945-46C7-ECB2-2308-AB57322AB0C3">
+<Column name="SEC_RELEVANT_COLS_OPT" id="46781945-46C7-ECB2-2308-AB57322AB0C3">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 13:09:42 UTC</createdTime>
 <commentInRDBMS>Use with sec_relevant_cols to display all rows for column-level VPD filtered queries (SELECT only), but where sensitive columns appear as NULL. Default is set to NULL, which allows the filtering defined with sec_relevant_cols to take effect. Set to dbms_rls.ALL_ROWS to display all rows, but with sensitive column values, which are filtered by sec_relevant_cols, displayed as NULL. See &quot;Usage Notes&quot; for restrictions and additional information about this option.</commentInRDBMS>
 <generatorID>3A98AE66-244D-083E-E92B-5D032423B932</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>VPD_POLS_SRCO_CHK</constraintName>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+<domain>8F7D1148-F50B-EB33-3894-F0472C179892</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>VPD_POLS_SRCO_NN_CHK</notNullConstraintName>
 </Column>
-<Column name="vpd_policy_type_id" id="B3B42ED0-A047-FCC9-A293-FADCFFF6F318">
+<Column name="V_IS_DELETED" id="58CA09A3-10AB-8B3B-15AA-D291A48CFEB6">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:53:56 UTC</createdTime>
+<commentInRDBMS>Validation column: Is record logicaly deleted?</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>VPD_POLS_DEL_CHK</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<domain>ED65EBF4-C7DE-92C1-B9D2-E31E4B39D761</domain>
+<defaultValue>F</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>VPD_POLS_DEL_NN_CHK</notNullConstraintName>
+</Column>
+<Column name="V_VALID_FROM" id="693D3720-F752-9F63-4285-BD98C7428804">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:53:56 UTC</createdTime>
+<commentInRDBMS>Validation record: Record valid from.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>VPD_POLS_VF_CHK</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>EE15CA62-A196-AD5F-FB68-3D471E68D33A</domain>
+<defaultValue>sysdate</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>VPD_POLS_VF_NN_CHK</notNullConstraintName>
+</Column>
+<Column name="V_VALID_TO" id="886AF238-180E-17C2-A5C8-721AD3387B09">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:53:56 UTC</createdTime>
+<commentInRDBMS>Validation column: Record valid to.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>VPD_POLS_VT_CHK</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>95658974-F90C-2D33-5642-6BCAB49CAF78</domain>
+<defaultValue>to_date(5373484, &apos;J&apos;)</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>VPD_POLS_VT_NN_CHK</notNullConstraintName>
+</Column>
+<Column name="VPD_POLICY_TYPE_ID" id="B3B42ED0-A047-FCC9-A293-FADCFFF6F318">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 13:09:42 UTC</createdTime>
 <commentInRDBMS>Foreign key to VPD_POLICY_TYPES table.</commentInRDBMS>
 <generatorID>B4975D9B-544F-D02E-8D83-2A4A43673526</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>VPD_POLS_VPDPT_CHK</constraintName>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
 <delegate>2EA26271-AD19-0EB1-A7EC-C1733690AB50</delegate>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>VPD_POLS_VPDPT_NN_CHK</notNullConstraintName>
 <associations>
-<colAssociation fkAssociation="0C60927E-73A2-D37E-0182-0EDB2F444D57" referredColumn="2EA26271-AD19-0EB1-A7EC-C1733690AB50"/>
+<colAssociation fkAssociation="B15405A9-6E91-587D-EE9B-A417CFC515EC" referredColumn="2EA26271-AD19-0EB1-A7EC-C1733690AB50"/>
 </associations>
 </Column>
-<Column name="vpd_policy_group_id" id="0F5DF29B-D41B-A7BD-B4BF-BEF93B5C5459">
+<Column name="VPD_POLICY_GROUP_ID" id="0F5DF29B-D41B-A7BD-B4BF-BEF93B5C5459">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 13:09:42 UTC</createdTime>
 <commentInRDBMS>Foreing key to VPD_POLICY_GROUP table.</commentInRDBMS>
 <generatorID>FABF4CA4-CAEA-9342-24BA-335C2710723B</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>VPD_POLS_VPDPG_CHK</constraintName>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
 <delegate>C317DE24-3B23-2606-4D31-B8A1EC672FDA</delegate>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>VPD_POLS_VPDPG_NN_CHK</notNullConstraintName>
 <associations>
-<colAssociation fkAssociation="4EBA5974-000B-FFBF-8E32-03505D1840B0" referredColumn="C317DE24-3B23-2606-4D31-B8A1EC672FDA"/>
+<colAssociation fkAssociation="D8A2FC05-78C5-5507-1E1A-FE7B3AEF85EC" referredColumn="C317DE24-3B23-2606-4D31-B8A1EC672FDA"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="F14B4A6E-B9E8-2369-E13F-F39ABFFC1F97" name="vpd_policies_PK">
+<ind_PK_UK id="390F73D2-7875-F9B8-7E3C-7B224819FC88" name="VPD_POLS_PK">
 <createdBy>s9073</createdBy>
-<createdTime>2014-07-15 10:02:10 UTC</createdTime>
-<generatorID>C695A059-5C70-7760-2022-0A40CB298B46</generatorID>
+<createdTime>2014-08-06 11:00:59 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
@@ -218,26 +280,70 @@
 <colUsage columnID="8D03BE86-B9C3-47E8-7624-621B4AF6F49F"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="A387427B-CDE4-DF28-6B39-534F1D045028" name="vpd_pols_vpd_pol_types_FK">
+<ind_PK_UK id="4CA46E0A-BCC0-A5CD-2A3E-859395ACF1B1" name="VPD_POLS_UK1">
 <createdBy>s9073</createdBy>
-<createdTime>2014-07-15 13:09:42 UTC</createdTime>
-<generatorID>471474A9-9798-5E98-4BC4-74B096431D94</generatorID>
+<createdTime>2014-08-06 11:00:40 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
-<indexState>Foreign Key</indexState>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01B4A84D-AA50-18CE-6871-64E2B21B3FDB"/>
+<colUsage columnID="34B0C5BC-8A78-E531-757D-2EFF70FB42EA"/>
+<colUsage columnID="C1C4235B-8DEA-B66B-78FB-48FB5906499C"/>
+<colUsage columnID="27AF2ADC-2216-24E0-8891-65DB6A5BE497"/>
+<colUsage columnID="B3B42ED0-A047-FCC9-A293-FADCFFF6F318"/>
+<colUsage columnID="0F5DF29B-D41B-A7BD-B4BF-BEF93B5C5459"/>
+<colUsage columnID="58CA09A3-10AB-8B3B-15AA-D291A48CFEB6"/>
+<colUsage columnID="693D3720-F752-9F63-4285-BD98C7428804"/>
+<colUsage columnID="886AF238-180E-17C2-A5C8-721AD3387B09"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F8F69A8E-006E-36B7-B8A0-8EE4E2EDCDFF" name="VPD_POLS_PK_I">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 13:35:11 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D03BE86-B9C3-47E8-7624-621B4AF6F49F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="66D85496-FB18-3E4F-D9C9-6BC3C4FB7AC4" name="VPD_POLS_VPD_POL_GRPS_FK_I">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 14:07:55 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0F5DF29B-D41B-A7BD-B4BF-BEF93B5C5459"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F419E3F3-EF19-A69C-FD57-8C107923314A" name="VPD_POLS_VPD_POL_TYPES_FK_I">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 14:08:12 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="B3B42ED0-A047-FCC9-A293-FADCFFF6F318"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="90FF9EFF-7A71-4B51-B68D-EE43C7E523AD" name="vpd_pols_vpd_pol_grps_FK">
+<ind_PK_UK id="1A04E91B-8661-2EB5-EA8D-F3DCD71E4F5B" name="VPD_POLS_VPD_POL_GRPS_FK">
 <createdBy>s9073</createdBy>
-<createdTime>2014-07-15 13:09:42 UTC</createdTime>
-<generatorID>699E3DD3-B817-DBC3-EA00-C3986E17A3F7</generatorID>
+<createdTime>2014-08-06 10:43:25 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="0F5DF29B-D41B-A7BD-B4BF-BEF93B5C5459"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7695C881-5CE0-63EE-DB40-EB3FF66ACBA7" name="VPD_POLS_VPD_POL_TYPES_FK">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-06 10:58:44 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B3B42ED0-A047-FCC9-A293-FADCFFF6F318"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

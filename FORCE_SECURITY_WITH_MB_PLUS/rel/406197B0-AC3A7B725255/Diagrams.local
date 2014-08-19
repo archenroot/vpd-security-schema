@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="main_view" objectID="596319B4-6765-F5DE-E90B-7CFBD2947775" name="FSF_AUDIT" visible="false"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <settings>
 	<logical_type_for_domain_presentation value="false" />
-	<automatic_pk_generation value="false" />
+	<automatic_pk_generation value="true" />
 	<automatic_uk_generation value="false" />
 	<automatic_fk_generation value="false" />
 	<preserve_ddl_generation_options value="false" />

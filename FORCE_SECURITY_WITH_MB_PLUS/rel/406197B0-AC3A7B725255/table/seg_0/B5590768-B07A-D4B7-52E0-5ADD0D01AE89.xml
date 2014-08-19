@@ -1,0 +1,154 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B5590768-B07A-D4B7-52E0-5ADD0D01AE89" name="EVENTS">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 11:08:41 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<abbreviation>EVENTS</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EVENT_ID" id="6E0E1405-5572-5FDC-B9CC-A8261178E189">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 11:20:24 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>EVENTS_ID</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>EVENTS_SQ</autoIncrementSequenceName>
+<autoIncrementTriggerName>EVENTS_TR</autoIncrementTriggerName>
+<notNullConstraintName>EVENTS_ID_NN</notNullConstraintName>
+</Column>
+<Column name="CREATED_ON" id="CEFAE43B-E798-6B74-CDC6-E3886F4AA7B2">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 11:20:24 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>C28BB3B5-EE39-5D69-B631-07CD44618E6E</domain>
+<defaultValue>sysdate</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EVENT_MESSAGE" id="4F1F9C6B-9AC8-E6B7-A9C3-7486982AA3FC">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 11:20:58 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<domain>1EF3F76F-872F-BC87-ADB2-6B36294821F7</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EVENT_TYPE_ID" id="49FD89AD-92C1-0C76-7E38-E4A21BD08920">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 11:22:37 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+<delegate>002DF348-58F6-211C-44F5-58B36519F9D6</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="942051A3-C09B-B58E-C0F4-96F2E9BABE98" referredColumn="002DF348-58F6-211C-44F5-58B36519F9D6"/>
+</associations>
+</Column>
+<Column name="USER_NAME" id="C193D0BF-2E2B-4989-BC72-CC4A0F5F2914">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 11:25:35 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OBJECT" id="EF307D84-77FA-AB78-C07D-135C14E7830C">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 11:25:41 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SCHEMA" id="DC42665A-2658-2F1B-F923-8D47F8FBFA5A">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 11:30:56 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID" id="E50B6FC0-1179-12FC-65FC-164B0E1DD428">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 11:30:56 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COLUMN" id="FA59040F-FB74-94F8-6FC4-70B33B1043D0">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 11:25:48 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OLD_VALUE" id="3E3A2B4E-B968-3FF0-E109-3D58C6B55111">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 11:30:56 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>8F7D1148-F50B-EB33-3894-F0472C179892</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NEW_VALUE" id="835DEB2C-A034-08CA-1969-621CB2BA6963">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 11:30:56 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>8F7D1148-F50B-EB33-3894-F0472C179892</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C2DCF945-9C65-FB52-745A-A3C431EE4985" name="EVENTS_PK">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 11:21:19 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6E0E1405-5572-5FDC-B9CC-A8261178E189"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D861AB5F-5A03-625A-DB53-5BBC8A98D80A" name="EVENTS_EVENT_TYPES_FK">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 11:22:37 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49FD89AD-92C1-0C76-7E38-E4A21BD08920"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

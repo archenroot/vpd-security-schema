@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="VPD_POLICIES_VPD_POLICY_TYPES_FK" directorySegmentName="seg_0" id="D20AA661-CDC0-B325-C391-50695629D327">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:43:17 UTC</createdTime>
+<generatorID>B15405A9-6E91-587D-EE9B-A417CFC515EC</generatorID>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<engineerTo>
+<item key="406197B0-D17F-07C6-6D0B-AC3A7B725255" value="true"/>
+<item key="451B68A7-E83C-AB26-41FA-66A9700CBDCA" value="true"/>
+</engineerTo>
+<sourcePk>74C87E29-EE4C-E250-551C-35E2BFD27A12</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E5260296-1F3F-9DB1-BD44-7B19711E5FC3</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>86447E88-1EB1-2340-5315-7F005F899C31</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

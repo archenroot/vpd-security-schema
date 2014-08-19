@@ -4,20 +4,28 @@
 <createdTime>2014-07-15 10:02:10 UTC</createdTime>
 <generatorID>B4CB17B7-1F34-7DF3-F5D5-66E55DC80EE5</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
-<abbreviation>OBJS</abbreviation>
+<abbreviation>OBJECTS</abbreviation>
+<beforeCreate>DROP TABLE OBJECTS CASCADE CONSTRAINTS;&lt;br/&gt;DROP SEQUENCE OBJECTS_SEQ;</beforeCreate>
+<shouldGeneratescript>true</shouldGeneratescript>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ID" id="F417F912-FD7E-6F3A-B23D-033C0AA90711">
+<Column name="OBJECT_ID" id="F417F912-FD7E-6F3A-B23D-033C0AA90711">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 10:02:10 UTC</createdTime>
 <commentInRDBMS>Technical primary key.</commentInRDBMS>
 <generatorID>1DABE708-49C6-A369-55AC-7C5A0A7E2ECF</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>OBJECTS_ID_CHK</constraintName>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>OBJECTS_SEQ</autoIncrementSequenceName>
+<autoIncrementTriggerName>OBJECTS_BIS_TRG</autoIncrementTriggerName>
+<notNullConstraintName>OBJECTS_ID_NN_CHK</notNullConstraintName>
 </Column>
 <Column name="NAME" id="BA32753A-1D5A-0ED9-01BE-F9A4A83C8EE5">
 <createdBy>s9073</createdBy>
@@ -25,48 +33,102 @@
 <commentInRDBMS>Database object full name.</commentInRDBMS>
 <generatorID>4EFE70D9-DB5C-06CC-33CA-83ED08F250FF</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>OBJECTS_NM_CHK</constraintName>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>OBJECTS_NM_NN_CHK</notNullConstraintName>
 </Column>
-<Column name="IS_AVAILABLE" id="99DC8D59-0FA7-1F75-BA0F-03A5E97FE446">
+<Column name="AVAILABILITY" id="99DC8D59-0FA7-1F75-BA0F-03A5E97FE446">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 10:02:10 UTC</createdTime>
 <commentInRDBMS>Is object available in the database?</commentInRDBMS>
 <generatorID>F3941DA4-073F-CFC7-1350-22D505FD18FB</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
+<constraintName>OBJECTS_AVAIL_CHK</constraintName>
 <use>0</use>
 <logicalDatatype>LOGDT006</logicalDatatype>
-<domain>E87979A5-1214-9393-5154-3867C64A312D</domain>
-<defaultValue>T</defaultValue>
+<domain>ED65EBF4-C7DE-92C1-B9D2-E31E4B39D761</domain>
+<usesDefaultValue>true</usesDefaultValue>
+<defaultValue>F</defaultValue>
 <autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>OBJECTS_AVAIL_NN_CHK</notNullConstraintName>
 </Column>
-<Column name="AVAILABLE_LAST_ON" id="0FFB61B3-96AD-4A84-C741-86C8BB538249">
+<Column name="AVAIL_LAST_CHECKED_ON" id="0FFB61B3-96AD-4A84-C741-86C8BB538249">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 10:02:10 UTC</createdTime>
 <commentInRDBMS>Object availability checked on.</commentInRDBMS>
 <generatorID>26549DC4-C702-D827-C3F9-E31874870D37</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>OBJECTS_ALCHO_CHK</constraintName>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
 <domain>8446C2A3-FE31-22B7-3F11-E6CEA7EFF836</domain>
+<usesDefaultValue>true</usesDefaultValue>
+<defaultValue>NULL</defaultValue>
 <autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>OBJECTS_ALCHO_NN_CHK</notNullConstraintName>
 </Column>
-<Column name="OBJ_TYPE_ID" id="A0F288A8-12D8-3140-3546-CE1AB3CDA32C">
+<Column name="V_IS_DELETED" id="A1028D4B-F833-75C0-281F-FDDD321302DF">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-06 15:30:02 UTC</createdTime>
+<commentInRDBMS>Validation column: Is record logicaly deleted?</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>OBJECTS_DEL_CHK</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<domain>ED65EBF4-C7DE-92C1-B9D2-E31E4B39D761</domain>
+<usesDefaultValue>true</usesDefaultValue>
+<defaultValue>F</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>OBJECTS_DEL_NN_CHK</notNullConstraintName>
+</Column>
+<Column name="V_VALID_FROM" id="70F2F53D-3DDD-7488-C64A-0A9A0B1D2D95">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-06 15:30:02 UTC</createdTime>
+<commentInRDBMS>Validation record: Record valid from.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>OBJECTS_VF_CHK</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>EE15CA62-A196-AD5F-FB68-3D471E68D33A</domain>
+<usesDefaultValue>true</usesDefaultValue>
+<defaultValue>sysdate</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>OBJECTS_VF_NN_CHK</notNullConstraintName>
+</Column>
+<Column name="V_VALID_TO" id="D2C5075D-5A64-721C-B46B-1F17D79795C0">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-06 15:30:02 UTC</createdTime>
+<commentInRDBMS>Validation column: Record valid to.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>OBJECTS_VT_CHK</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>95658974-F90C-2D33-5642-6BCAB49CAF78</domain>
+<defaultValue>to_date(5373484, &apos;J&apos;)</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>OBJECTS_VT_NN_CHK</notNullConstraintName>
+</Column>
+<Column name="OBJECT_TYPE_ID" id="A0F288A8-12D8-3140-3546-CE1AB3CDA32C">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 10:02:10 UTC</createdTime>
 <commentInRDBMS>Foreign key.</commentInRDBMS>
 <generatorID>CA111AF4-8FAD-BB69-5497-A304ACD269EA</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>OBJECTS_OBJTYPE_ID_CHK</constraintName>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
 <delegate>8E1B9852-64AE-0C43-BDA2-494D29D61C5A</delegate>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>OBJECTS_OBJTYPE_ID_NN_CHK</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="7909663B-6CD5-8B63-5A21-2876D382722E" referredColumn="8E1B9852-64AE-0C43-BDA2-494D29D61C5A"/>
+</associations>
 </Column>
 <Column name="SCHEMA_ID" id="320D2B25-E13B-77D8-22D0-21A986FED773">
 <createdBy>s9073</createdBy>
@@ -74,49 +136,39 @@
 <commentInRDBMS>Foreign key.</commentInRDBMS>
 <generatorID>5B5E4428-D18B-D417-3FEC-7B9F52B85019</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>OBJECTS_SCHEMA_ID_CHK</constraintName>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
 <delegate>132A2E59-DEEA-D5EB-D802-229764C7CE54</delegate>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>OBJECTS_SCHEMA_ID_NN_CHK</notNullConstraintName>
 <associations>
 <colAssociation fkAssociation="83057370-8398-70ED-9EE8-873F2FC72248" referredColumn="132A2E59-DEEA-D5EB-D802-229764C7CE54"/>
 </associations>
 </Column>
-<Column name="AUTH_OBJ_ID" id="7E2AAC68-A46C-CA95-4555-8E127E750435">
+<Column name="AUTHORIZATION_OBJECT_ID" id="7E2AAC68-A46C-CA95-4555-8E127E750435">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 10:02:10 UTC</createdTime>
 <commentInRDBMS>Foreign key.</commentInRDBMS>
 <generatorID>E636686B-05CE-3383-89D0-60B9BFFE3314</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>OBJECTS_AUTH_OBJ_ID_CHK</constraintName>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
 <delegate>A13277FA-0868-771A-1C73-D2019C29C0BF</delegate>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>OBJECTS_AUTH_OBJ_ID_NN_CHK</notNullConstraintName>
 <associations>
-<colAssociation fkAssociation="54FE7228-90D2-5CF9-2D31-9664CF26DEDE" referredColumn="A13277FA-0868-771A-1C73-D2019C29C0BF"/>
-</associations>
-</Column>
-<Column name="OBJECT_TYPES_ID" id="3B3C1ED7-D5E4-69E3-426D-74F85DCADF53">
-<createdBy>s9073</createdBy>
-<createdTime>2014-07-29 09:54:38 UTC</createdTime>
-<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
-<use>0</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
-<delegate>8E1B9852-64AE-0C43-BDA2-494D29D61C5A</delegate>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="12A3409E-67FF-3C0A-8624-B0D1D7A36D8B" referredColumn="8E1B9852-64AE-0C43-BDA2-494D29D61C5A"/>
+<colAssociation fkAssociation="D86E89AC-F32E-1FE6-14EC-E46B41B76196" referredColumn="A13277FA-0868-771A-1C73-D2019C29C0BF"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="52DBF230-AB2A-D197-3DF9-E195F345B68C" name="objects_PK">
+<ind_PK_UK id="52DBF230-AB2A-D197-3DF9-E195F345B68C" name="OBJECTS_PK">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 10:02:10 UTC</createdTime>
 <generatorID>04032638-816C-4176-BDF9-A300A055A8A0</generatorID>
@@ -128,18 +180,60 @@
 <colUsage columnID="F417F912-FD7E-6F3A-B23D-033C0AA90711"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="AF7323CD-2E63-062A-EEF8-216C0E30044D" name="objs_auth_objs_FK">
+<ind_PK_UK id="69B38262-27F9-FAE1-EE30-3086D166F4BD" name="OBJECTS_UK1">
 <createdBy>s9073</createdBy>
-<createdTime>2014-07-15 10:02:10 UTC</createdTime>
-<generatorID>0C1C2711-C18F-DE52-FD7D-177EEC9247A8</generatorID>
+<createdTime>2014-08-06 15:32:32 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
-<indexState>Foreign Key</indexState>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA32753A-1D5A-0ED9-01BE-F9A4A83C8EE5"/>
+<colUsage columnID="A1028D4B-F833-75C0-281F-FDDD321302DF"/>
+<colUsage columnID="70F2F53D-3DDD-7488-C64A-0A9A0B1D2D95"/>
+<colUsage columnID="D2C5075D-5A64-721C-B46B-1F17D79795C0"/>
+<colUsage columnID="320D2B25-E13B-77D8-22D0-21A986FED773"/>
+<colUsage columnID="A0F288A8-12D8-3140-3546-CE1AB3CDA32C"/>
+<colUsage columnID="7E2AAC68-A46C-CA95-4555-8E127E750435"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5E6FF334-A238-14CD-FC73-5CA51513538D" name="OBJECTS_PK_I">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 13:23:45 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F417F912-FD7E-6F3A-B23D-033C0AA90711"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EAA10EFD-8C2A-2991-161D-BCBA3276BEBA" name="OBJECTS_AUTH_OBJS_FK_I">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 14:01:45 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="7E2AAC68-A46C-CA95-4555-8E127E750435"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="568207B9-2D2F-B7E1-B1CF-35EC5AC53C88" name="objs_schms_FK">
+<ind_PK_UK id="8002F5BC-B58E-BEBE-880C-8D56482EB26A" name="OBJECTS_OBJ_TYPES_FK_I">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 14:02:01 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A0F288A8-12D8-3140-3546-CE1AB3CDA32C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3D25A971-02B6-D082-A7A3-F1BE7C10542F" name="OBJECTS_SCHEMAS_FK_I">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 14:02:12 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="320D2B25-E13B-77D8-22D0-21A986FED773"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="568207B9-2D2F-B7E1-B1CF-35EC5AC53C88" name="OBJECTS_SCHEMAS_FK">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 10:02:10 UTC</createdTime>
 <generatorID>F2F16B86-61BB-13D7-9044-BD0CF0768262</generatorID>
@@ -150,14 +244,25 @@
 <colUsage columnID="320D2B25-E13B-77D8-22D0-21A986FED773"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="E64B0B98-7F18-E9EB-5CCD-913A545181B9" name="OBJECTS_OBJECT_TYPES_FK">
+<ind_PK_UK id="4CF63452-3B24-85AF-44FD-17227E0E83FC" name="OBJECTS_OBJ_TYPES_FK">
 <createdBy>s9073</createdBy>
-<createdTime>2014-07-29 09:54:38 UTC</createdTime>
+<createdTime>2014-08-06 15:13:29 UTC</createdTime>
+<generatorID>860B4E65-4C45-03E7-2F97-26D62E82BBB0</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="3B3C1ED7-D5E4-69E3-426D-74F85DCADF53"/>
+<colUsage columnID="A0F288A8-12D8-3140-3546-CE1AB3CDA32C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7F9EE578-3BC4-989A-2D5E-225070925F68" name="OBJECTS_AUTH_OBJS_FK">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 08:45:57 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E2AAC68-A46C-CA95-4555-8E127E750435"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

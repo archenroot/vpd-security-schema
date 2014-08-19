@@ -1,43 +1,117 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7A70CAA9-4176-DDA4-C2AD-B515B320E6B3" name="vpd_policy_groups">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7A70CAA9-4176-DDA4-C2AD-B515B320E6B3" name="VPD_POLICY_GROUPS">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 13:09:42 UTC</createdTime>
 <generatorID>5D87CF65-8ECF-03C4-794A-F31AA69FF664</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
-<abbreviation>vpd_pol_grps</abbreviation>
+<abbreviation>VPD_POL_GRPS</abbreviation>
+<beforeCreate>DROP TABLE VPD_POLICY_GROUPS CASCADE CONSTRAINTS;&lt;br/&gt;DROP SEQUENCE VPD_POL_GRPS_SEQ;</beforeCreate>
+<shouldGeneratescript>true</shouldGeneratescript>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id" id="C317DE24-3B23-2606-4D31-B8A1EC672FDA">
+<Column name="VPD_POL_GROUP_ID" id="C317DE24-3B23-2606-4D31-B8A1EC672FDA">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 13:09:42 UTC</createdTime>
 <commentInRDBMS>Technical primary key.</commentInRDBMS>
 <generatorID>00CF9846-064F-2B17-9B8D-4B87695E48BB</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>VPD_POL_GRPS_ID_CHK</constraintName>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>VPD_POL_GRPS_SEQ</autoIncrementSequenceName>
+<autoIncrementTriggerName>VPD_POL_GRPS_BIS_TRG</autoIncrementTriggerName>
+<notNullConstraintName>VPD_POL_GRPS_ID_NN_CHK</notNullConstraintName>
 </Column>
-<Column name="name" id="72BEE75B-B28F-CBF4-F087-2194D3FA68F4">
+<Column name="NAME" id="72BEE75B-B28F-CBF4-F087-2194D3FA68F4">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 13:09:42 UTC</createdTime>
 <generatorID>2835FCE3-6CEF-3963-794D-B25ACAF7D6DA</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>VPD_POL_GRPS_NM_CHK</constraintName>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>VPD_POL_GRPS_NM_NN_CHK</notNullConstraintName>
+</Column>
+<Column name="V_IS_DELETED" id="D6B8569F-9C4F-947A-E1D8-2406C39B187B">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 10:24:36 UTC</createdTime>
+<commentInRDBMS>Validation column: Is record logicaly deleted?</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>VPD_POL_GRPS_DEL_CHK</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<domain>ED65EBF4-C7DE-92C1-B9D2-E31E4B39D761</domain>
+<usesDefaultValue>true</usesDefaultValue>
+<defaultValue>F</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>VPD_POL_GRPS_DEL_NN_CHK</notNullConstraintName>
+</Column>
+<Column name="V_VALID_FROM" id="140DF2EE-9DAF-2242-5F2D-1A102139429E">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 10:24:36 UTC</createdTime>
+<commentInRDBMS>Validation record: Record valid from.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>VPD_POL_GRPS_VF_CHK</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>EE15CA62-A196-AD5F-FB68-3D471E68D33A</domain>
+<usesDefaultValue>true</usesDefaultValue>
+<defaultValue>sysdate</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>VPD_POL_GRPS_VF_NN_CHK</notNullConstraintName>
+</Column>
+<Column name="V_VALID_TO" id="01B18B39-C1AE-32BE-A27E-107DAAE631AC">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 10:24:36 UTC</createdTime>
+<commentInRDBMS>Validation column: Record valid to.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>VPD_POL_GRPS_VT_CHK</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>95658974-F90C-2D33-5642-6BCAB49CAF78</domain>
+<usesDefaultValue>true</usesDefaultValue>
+<defaultValue>to_date(5373484, &apos;J&apos;)</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>VPD_POL_GRPS_VT_NN_CHK</notNullConstraintName>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="4E7E5FD5-BE33-1A96-F5B4-550B3AACDE34" name="vpd_policy_groups_PK">
+<ind_PK_UK id="C649A6CB-AA93-8EB6-00F7-614111AB5E47" name="VPD_POL_GRPS_PK">
 <createdBy>s9073</createdBy>
-<createdTime>2014-07-15 13:09:42 UTC</createdTime>
-<generatorID>707F1B9D-20AD-B830-F36A-82E533152406</generatorID>
+<createdTime>2014-08-06 10:40:47 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C317DE24-3B23-2606-4D31-B8A1EC672FDA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3F80754D-24D1-5C0D-64B7-AA35F09B4427" name="VPD_POL_GRPS_UK1">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-06 10:40:47 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="72BEE75B-B28F-CBF4-F087-2194D3FA68F4"/>
+<colUsage columnID="D6B8569F-9C4F-947A-E1D8-2406C39B187B"/>
+<colUsage columnID="140DF2EE-9DAF-2242-5F2D-1A102139429E"/>
+<colUsage columnID="01B18B39-C1AE-32BE-A27E-107DAAE631AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="352CA963-2ACF-3246-D5B5-6957167247E5" name="VPD_POL_GRPS_PK_I">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 13:33:17 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="C317DE24-3B23-2606-4D31-B8A1EC672FDA"/>

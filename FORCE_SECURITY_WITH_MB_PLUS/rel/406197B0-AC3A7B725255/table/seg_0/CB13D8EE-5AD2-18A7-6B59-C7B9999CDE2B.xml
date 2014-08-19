@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CB13D8EE-5AD2-18A7-6B59-C7B9999CDE2B" name="EVENT_TYPES">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 11:08:52 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EVENT_TYPE_ID" id="002DF348-58F6-211C-44F5-58B36519F9D6">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 11:19:52 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>EVENT_TYPES_ID</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>EVENT_TYPES_SQ</autoIncrementSequenceName>
+<autoIncrementTriggerName>EVENT_TYPES_TR</autoIncrementTriggerName>
+<notNullConstraintName>EVENT_TYPES_ID_NN</notNullConstraintName>
+</Column>
+<Column name="TYPE" id="6B80F685-C591-A455-48A5-DEB007C2FB54">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 11:19:52 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1B561554-3E59-9516-88D6-D5A75509A7DE</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="V_IS_DELETED" id="6E127978-2D95-96DD-35B3-911989B10DB4">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 11:19:52 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<domain>ED65EBF4-C7DE-92C1-B9D2-E31E4B39D761</domain>
+<defaultValue>F</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="V_VALID_FROM" id="503FB846-18A2-AF19-CF89-87B88C0E7896">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 11:19:52 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>EE15CA62-A196-AD5F-FB68-3D471E68D33A</domain>
+<defaultValue>sysdate</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="V_VALID_TO" id="090DB317-4846-DF87-24EF-66F60740BCBE">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 11:19:52 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>95658974-F90C-2D33-5642-6BCAB49CAF78</domain>
+<defaultValue>to_date(5373484, &apos;J&apos;)</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9786A8C8-3C18-857A-9399-8ACC097F7246" name="EVENT_TYPES_PK">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 11:22:31 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="002DF348-58F6-211C-44F5-58B36519F9D6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

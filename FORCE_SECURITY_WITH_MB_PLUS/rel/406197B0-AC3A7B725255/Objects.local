@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="B5590768-B07A-D4B7-52E0-5ADD0D01AE89" name="EVENTS" seqName="seg_0"/>
+   <object objectType="Table" objectID="CB13D8EE-5AD2-18A7-6B59-C7B9999CDE2B" name="EVENT_TYPES" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="942051A3-C09B-B58E-C0F4-96F2E9BABE98" name="EVENTS_EVENT_TYPES_FK" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

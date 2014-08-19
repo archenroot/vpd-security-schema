@@ -1,44 +1,119 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FC64E16D-BDE9-1A4D-7F10-919FD2630D09" name="vpd_policy_types">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FC64E16D-BDE9-1A4D-7F10-919FD2630D09" name="VPD_POLICY_TYPES">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 13:09:42 UTC</createdTime>
 <generatorID>32BBD7A2-1A54-BDE9-77A4-9692F4407D5F</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
-<abbreviation>pol_types</abbreviation>
+<abbreviation>VPD_POL_TYPS</abbreviation>
+<afterCreate>&lt;br/&gt;</afterCreate>
+<beforeCreate>DROP TABLE VPD_POLICY_TYPES CASCADE CONSTRAINTS;&lt;br/&gt;DROP SEQUENCE VPD_POL_TYPS_SEQ;</beforeCreate>
+<endOfScript>-- EOS part, because the sequence and trigger must be created&lt;br/&gt;-- Initial static constants.&lt;br/&gt;REM INSERTING into F_SEC_ADMIN.VPD_POLICY_TYPES&lt;br/&gt;SET DEFINE OFF;&lt;br/&gt;Insert into F_SEC_ADMIN.VPD_POLICY_TYPES (VPD_POLICY_TYPE_ID,TYPE,V_IS_DELETED,V_VALID_FROM,V_VALID_TO) values (1,&apos;dbms_rls.CONTEXT_SENSITIVE&apos;,&apos;F&apos;,sysdate,to_date(&apos;31-DEC-99&apos;,&apos;DD-MON-RR&apos;));&lt;br/&gt;Insert into F_SEC_ADMIN.VPD_POLICY_TYPES (VPD_POLICY_TYPE_ID,TYPE,V_IS_DELETED,V_VALID_FROM,V_VALID_TO) values (2,&apos;dbms_rls.DYNAMIC&apos;,&apos;F&apos;,sysdate,to_date(&apos;31-DEC-99&apos;,&apos;DD-MON-RR&apos;));&lt;br/&gt;Insert into F_SEC_ADMIN.VPD_POLICY_TYPES (VPD_POLICY_TYPE_ID,TYPE,V_IS_DELETED,V_VALID_FROM,V_VALID_TO) values (3,&apos;dbms_rls.SHARED_CONTEXT_SENSITIVE&apos;,&apos;F&apos;,sysdate,to_date(&apos;31-DEC-99&apos;,&apos;DD-MON-RR&apos;));&lt;br/&gt;Insert into F_SEC_ADMIN.VPD_POLICY_TYPES (VPD_POLICY_TYPE_ID,TYPE,V_IS_DELETED,V_VALID_FROM,V_VALID_TO) values (4,&apos;dbms_rls.SHARED_STATIC&apos;,&apos;F&apos;,sysdate,to_date(&apos;31-DEC-99&apos;,&apos;DD-MON-RR&apos;));&lt;br/&gt;Insert into F_SEC_ADMIN.VPD_POLICY_TYPES (VPD_POLICY_TYPE_ID,TYPE,V_IS_DELETED,V_VALID_FROM,V_VALID_TO) values (5,&apos;dbms_rls.STATIC&apos;,&apos;F&apos;,sysdate,to_date(&apos;31-DEC-99&apos;,&apos;DD-MON-RR&apos;));&lt;br/&gt;</endOfScript>
+<shouldGeneratescript>true</shouldGeneratescript>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id" id="2EA26271-AD19-0EB1-A7EC-C1733690AB50">
+<Column name="VPD_POLICY_TYPE_ID" id="2EA26271-AD19-0EB1-A7EC-C1733690AB50">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 13:09:42 UTC</createdTime>
 <commentInRDBMS>Technical primary key.</commentInRDBMS>
 <generatorID>4CC3CDB3-08E6-3929-D557-E81DCE7B58E6</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>VPD_POL_TYPS_ID_CHK</constraintName>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementMinValue>1000</autoIncrementMinValue>
 <autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>VPD_POL_TYPS_SEQ</autoIncrementSequenceName>
+<autoIncrementTriggerName>VPD_POL_TYPS_BIS_TRG</autoIncrementTriggerName>
+<notNullConstraintName>VPD_POL_TYPS_ID_NN_CHK</notNullConstraintName>
 </Column>
-<Column name="type" id="AC143D64-C3AE-CE1A-C047-F00C8042286A">
+<Column name="TYPE" id="AC143D64-C3AE-CE1A-C047-F00C8042286A">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 13:09:42 UTC</createdTime>
-<commentInRDBMS>Oracle VPD policy type.</commentInRDBMS>
+<commentInRDBMS>Oracle VPD policy type - list of values defined by domain type:&lt;br/&gt;dbms_rls.CONTEXT_SENSITIVE	Context-sensitive policies are useful when different predicates should apply depending on which user is executing the query.&lt;br/&gt;dbms_rls.DYNAMIC	The DYNAMIC policy type runs the policy function each time a user accesses the Virtual Private Database-protected database objects.&lt;br/&gt;dbms_rls.SHARED_CONTEXT_SENSITIVE	ontext-sensitive policies are useful when a predicate does not need to change for a user session, but the policy must enforce two or more different predicates for different users or groups.&lt;br/&gt;dbms_rls.SHARED_STATIC	 You do not need to rerun the function, so the predicate can be cached in the SGA, thus conserving system resources and improving performance.&lt;br/&gt;dbms_rls.STATIC	The static policy type enforces the same predicate for all users in the instance.</commentInRDBMS>
 <generatorID>02E7346B-32D8-9244-199C-40880B0C08D2</generatorID>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>VPD_POL_TYPS_TYPE_CHK</constraintName>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+<domain>CBA61939-B5B5-58F5-6564-C43AC773FAE7</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>VPD_POL_TYPS_TYPE_NN_CHK</notNullConstraintName>
+</Column>
+<Column name="V_IS_DELETED" id="438A2AC7-FE28-E2B9-89AA-F0EE628BA11B">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-06 10:34:08 UTC</createdTime>
+<commentInRDBMS>Validation column: Is record logicaly deleted?</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>VPD_POL_TYPS_DEL_CHK</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<domain>ED65EBF4-C7DE-92C1-B9D2-E31E4B39D761</domain>
+<defaultValue>F</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>VPD_POL_TYPS_DEL_NN_CHK</notNullConstraintName>
+</Column>
+<Column name="V_VALID_FROM" id="16B24BE0-537F-165F-8B44-7C2002C86AF6">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-06 10:34:08 UTC</createdTime>
+<commentInRDBMS>Validation record: Record valid from.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>VPD_POL_TYPS_VF_CHK</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>EE15CA62-A196-AD5F-FB68-3D471E68D33A</domain>
+<usesDefaultValue>true</usesDefaultValue>
+<defaultValue>sysdate</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>VPD_POL_TYPS_VF_NN_CHK</notNullConstraintName>
+</Column>
+<Column name="V_VALID_TO" id="E64B86F6-3E51-CA71-2EDC-11BA0D8F7FA2">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-06 10:34:08 UTC</createdTime>
+<commentInRDBMS>Validation column: Record valid to.</commentInRDBMS>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>VPD_POL_TYPS_VT_CHK</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>95658974-F90C-2D33-5642-6BCAB49CAF78</domain>
+<defaultValue>to_date(5373484, &apos;J&apos;)</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>VPD_POL_TYPS_VT_NN_CHK</notNullConstraintName>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="8B101346-AEEF-4C33-0B3A-FF0785B7AC8C" name="vpd_policy_types_PK">
+<ind_PK_UK id="AE1B3C6C-CA9C-A1BC-2771-A4DA09DA04A1" name="VPD_POL_TYPS_PK">
 <createdBy>s9073</createdBy>
-<createdTime>2014-07-15 13:09:42 UTC</createdTime>
-<generatorID>A1D3D12F-FC6A-DC8E-79B1-029B19442D77</generatorID>
+<createdTime>2014-08-06 10:58:41 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2EA26271-AD19-0EB1-A7EC-C1733690AB50"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CF0376E3-0270-98A0-E11A-0F4B52CF7557" name="VPD_POL_TYPS_UK1">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-06 10:59:44 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC143D64-C3AE-CE1A-C047-F00C8042286A"/>
+<colUsage columnID="438A2AC7-FE28-E2B9-89AA-F0EE628BA11B"/>
+<colUsage columnID="16B24BE0-537F-165F-8B44-7C2002C86AF6"/>
+<colUsage columnID="E64B86F6-3E51-CA71-2EDC-11BA0D8F7FA2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EB57B919-9809-11E8-6E43-6E78B93C3FC0" name="VPD_POL_TYPS_PK_I">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-18 13:31:19 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="2EA26271-AD19-0EB1-A7EC-C1733690AB50"/>
