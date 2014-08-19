@@ -1,6 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<BIDocument class="oracle.dbtools.crest.model.businessinfo.BIDocument" name="Doc_1" directorySegmentName="seg_0" id="A069D5A9-ED8C-1729-E563-7F876281333D">
-<createdBy>s9073</createdBy>
-<createdTime>2014-07-17 13:51:34 UTC</createdTime>
-<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
-</BIDocument>

@@ -1,7 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="2092A614-EA9D-8612-730F-6F260F8B946F" mainViewID="5429535B-A1C8-E4E8-21BA-A32F043ECF09">
-<createdBy>s9073</createdBy>
-<createdTime>2014-07-08 15:06:41 UTC</createdTime>
-<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
-<shouldBeOpen>false</shouldBeOpen>
-</LogicalDesign>
