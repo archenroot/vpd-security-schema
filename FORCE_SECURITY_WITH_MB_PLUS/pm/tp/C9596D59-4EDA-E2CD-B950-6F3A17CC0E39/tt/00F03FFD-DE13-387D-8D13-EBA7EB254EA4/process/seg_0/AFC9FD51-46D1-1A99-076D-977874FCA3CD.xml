@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Transformation class="oracle.dbtools.crest.model.design.process.Transformation" name="Transformation_1" directorySegmentName="seg_0" id="AFC9FD51-46D1-1A99-076D-977874FCA3CD">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-20 15:09:33 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<primary>false</primary>
+</Transformation>

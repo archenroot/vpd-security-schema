@@ -7,7 +7,7 @@
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
 <abbreviation>AUTH_OBJ_TYPES</abbreviation>
 <beforeCreate>DROP TABLE AUTH_OBJECT_TYPES CASCADE CONSTRAINTS;&lt;br/&gt;DROP SEQUENCE AUTH_OBJ_TYPES_SEQ;</beforeCreate>
-<endOfScript>-- EOS part, because the sequence and trigger must be created&lt;br/&gt;-- Initial static constants.&lt;br/&gt;REM INSERTING into F_SEC_ADMIN.AUTH_OBJECT_TYPES&lt;br/&gt;SET DEFINE OFF;&lt;br/&gt;Insert into F_SEC_ADMIN.AUTH_OBJECT_TYPES (AUTH_OBJ_TYPE_ID,CODE,V_IS_DELETED,V_VALID_FROM,V_VALID_TO) values (1,&apos;Data Set&apos;,&apos;F&apos;,sysdate,to_date(&apos;31-DEC-99&apos;,&apos;DD-MON-RR&apos;));&lt;br/&gt;Insert into F_SEC_ADMIN.AUTH_OBJECT_TYPES (AUTH_OBJ_TYPE_ID,CODE,V_IS_DELETED,V_VALID_FROM,V_VALID_TO) values (2,&apos;Fund&apos;,&apos;F&apos;,sysdate,to_date(&apos;31-DEC-99&apos;,&apos;DD-MON-RR&apos;));&lt;br/&gt;Insert into F_SEC_ADMIN.AUTH_OBJECT_TYPES (AUTH_OBJ_TYPE_ID,CODE,V_IS_DELETED,V_VALID_FROM,V_VALID_TO) values (3,&apos;Group of Funds&apos;,&apos;F&apos;,sysdate,to_date(&apos;31-DEC-99&apos;,&apos;DD-MON-RR&apos;));&lt;br/&gt;Insert into F_SEC_ADMIN.AUTH_OBJECT_TYPES (AUTH_OBJ_TYPE_ID,CODE,V_IS_DELETED,V_VALID_FROM,V_VALID_TO) values (4,&apos;Licenced Data&apos;,&apos;F&apos;,sysdate,to_date(&apos;31-DEC-99&apos;,&apos;DD-MON-RR&apos;));&lt;br/&gt;Insert into F_SEC_ADMIN.AUTH_OBJECT_TYPES (AUTH_OBJ_TYPE_ID,CODE,V_IS_DELETED,V_VALID_FROM,V_VALID_TO) values (5,&apos;Tenant&apos;,&apos;F&apos;,sysdate,to_date(&apos;31-DEC-99&apos;,&apos;DD-MON-RR&apos;));&lt;br/&gt;	&lt;br/&gt;&lt;br/&gt;	&lt;br/&gt;	</endOfScript>
+<endOfScript>-- EOS part, because the sequence and trigger must be created&lt;br/&gt;-- Initial static constants.&lt;br/&gt;REM INSERTING into F_SEC_ADMIN.AUTH_OBJECT_TYPES&lt;br/&gt;SET DEFINE OFF;&lt;br/&gt;Insert into F_SEC_ADMIN.AUTH_OBJECT_TYPES (AUTH_OBJ_TYPE_ID,CODE,TYPE,DESCRIPTION,V_IS_DELETED,V_VALID_FROM,V_VALID_TO) values (1,&apos;Data Set&apos;,&apos;Vertical&apos;,&apos;Data Set&apos;,&apos;F&apos;,sysdate,to_date(&apos;31-DEC-99&apos;,&apos;DD-MON-RR&apos;));&lt;br/&gt;Insert into F_SEC_ADMIN.AUTH_OBJECT_TYPES (AUTH_OBJ_TYPE_ID,CODE,TYPE,DESCRIPTION,V_IS_DELETED,V_VALID_FROM,V_VALID_TO) values (2,&apos;Fund&apos;,&apos;Horizontal&apos;,&apos;Fund&apos;,&apos;F&apos;,sysdate,to_date(&apos;31-DEC-99&apos;,&apos;DD-MON-RR&apos;));&lt;br/&gt;Insert into F_SEC_ADMIN.AUTH_OBJECT_TYPES (AUTH_OBJ_TYPE_ID,CODE,TYPE,DESCRIPTION,V_IS_DELETED,V_VALID_FROM,V_VALID_TO) values (3,&apos;Group of Funds&apos;,&apos;Horizontal&apos;,&apos;Group of Funds&apos;,&apos;F&apos;,sysdate,to_date(&apos;31-DEC-99&apos;,&apos;DD-MON-RR&apos;));&lt;br/&gt;Insert into F_SEC_ADMIN.AUTH_OBJECT_TYPES (AUTH_OBJ_TYPE_ID,CODE,TYPE,DESCRIPTION,V_IS_DELETED,V_VALID_FROM,V_VALID_TO) values (4,&apos;Licenced Data&apos;,&apos;Mixed&apos;,&apos;Licenced Data&apos;,&apos;F&apos;,sysdate,to_date(&apos;31-DEC-99&apos;,&apos;DD-MON-RR&apos;));&lt;br/&gt;Insert into F_SEC_ADMIN.AUTH_OBJECT_TYPES (AUTH_OBJ_TYPE_ID,CODE,TYPE,DESCRIPTION,V_IS_DELETED,V_VALID_FROM,V_VALID_TO) values (5,&apos;Tenant&apos;,&apos;Horizontal&apos;,&apos;Tenant&apos;,&apos;F&apos;,sysdate,to_date(&apos;31-DEC-99&apos;,&apos;DD-MON-RR&apos;));&lt;br/&gt;	&lt;br/&gt;&lt;br/&gt;	&lt;br/&gt;	</endOfScript>
 <shouldGeneratescript>true</shouldGeneratescript>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -24,6 +24,7 @@
 <domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
 <autoIncrementColumn>true</autoIncrementColumn>
 <identityColumn>true</identityColumn>
+<autoIncrementStartWith>1000</autoIncrementStartWith>
 <autoIncrementMinValue>1000</autoIncrementMinValue>
 <autoIncrementCycle>false</autoIncrementCycle>
 <autoIncrementSequenceName>AUTH_OBJ_TYPES_SEQ</autoIncrementSequenceName>
@@ -43,6 +44,15 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <notNullConstraintName>AUTH_OBJ_TYPES_CODE_NN_CHK</notNullConstraintName>
 </Column>
+<Column name="TYPE" id="D6AEA5E2-57E9-BCA5-5D11-B3B99C7BF725">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-20 14:42:24 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="DESCRIPTION" id="984CA6E8-546B-9B18-E762-240BB62C2EDC">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 10:02:10 UTC</createdTime>
@@ -55,20 +65,6 @@
 <domain>1EF3F76F-872F-BC87-ADB2-6B36294821F7</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 <notNullConstraintName>AUTH_OBJ_TYPES_DESC_NN_CHK</notNullConstraintName>
-</Column>
-<Column name="V_IS_DELETED" id="AF5B227C-2F71-21CD-50D9-26D612027B16">
-<createdBy>s9073</createdBy>
-<createdTime>2014-07-15 10:02:10 UTC</createdTime>
-<commentInRDBMS>Validation column: Is record logicaly deleted?</commentInRDBMS>
-<generatorID>74A41ED9-91F9-6805-436A-78D18C15A7F5</generatorID>
-<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
-<constraintName>AUTH_OBJ_TYPES_DEL_CHK</constraintName>
-<use>0</use>
-<logicalDatatype>LOGDT006</logicalDatatype>
-<domain>ED65EBF4-C7DE-92C1-B9D2-E31E4B39D761</domain>
-<defaultValue>F</defaultValue>
-<autoIncrementCycle>false</autoIncrementCycle>
-<notNullConstraintName>AUTH_OBJ_TYPES_DEL_NN_CHK</notNullConstraintName>
 </Column>
 <Column name="V_VALID_FROM" id="76343CB2-D89A-5349-3785-C09A64FC20F6">
 <createdBy>s9073</createdBy>
@@ -119,9 +115,9 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="12BE9022-7281-243A-691C-8B67BAEF56B0"/>
-<colUsage columnID="AF5B227C-2F71-21CD-50D9-26D612027B16"/>
 <colUsage columnID="76343CB2-D89A-5349-3785-C09A64FC20F6"/>
 <colUsage columnID="4968332C-0C5C-A8A5-3FBF-9882195B3600"/>
+<colUsage columnID="D6AEA5E2-57E9-BCA5-5D11-B3B99C7BF725"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="38016B65-72AE-73F6-4A54-9801F8367910" name="AUTH_OBJECT_TYPES_PK_I">

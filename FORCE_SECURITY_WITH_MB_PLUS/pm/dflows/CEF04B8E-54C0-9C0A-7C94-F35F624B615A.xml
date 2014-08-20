@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DataFlowDesign class="oracle.dbtools.crest.model.design.process.DataFlowDesign" name="User Authorization" id="CEF04B8E-54C0-9C0A-7C94-F35F624B615A" mainViewID="2E2A359B-5664-5155-42B2-7DCDB3818584" topLevel="true">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-20 14:55:08 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</DataFlowDesign>

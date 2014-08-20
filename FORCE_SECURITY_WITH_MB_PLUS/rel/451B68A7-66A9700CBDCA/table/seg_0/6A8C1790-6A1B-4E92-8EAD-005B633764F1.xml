@@ -53,7 +53,16 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <notNullConstraintName>VARS_VAL_NN_CHK</notNullConstraintName>
 </Column>
-<Column name="V_IS_DELETED" id="A138991A-A1C0-E42D-930C-5F3E1A796E7A">
+<Column name="DESCRIPTION" id="BC1219B9-6CB2-65AD-9054-86111D5B4629">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-20 12:11:05 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<domain>1EF3F76F-872F-BC87-ADB2-6B36294821F7</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="V_IS_ACTIVE" id="A138991A-A1C0-E42D-930C-5F3E1A796E7A">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-17 13:59:55 UTC</createdTime>
 <commentInRDBMS>Validation column: Is record logicaly deleted?</commentInRDBMS>
@@ -61,9 +70,9 @@
 <constraintName>VARS_DEL_CHK</constraintName>
 <use>0</use>
 <logicalDatatype>LOGDT006</logicalDatatype>
-<domain>ED65EBF4-C7DE-92C1-B9D2-E31E4B39D761</domain>
+<domain>E87979A5-1214-9393-5154-3867C64A312D</domain>
 <usesDefaultValue>true</usesDefaultValue>
-<defaultValue>F</defaultValue>
+<defaultValue>T</defaultValue>
 <autoIncrementCycle>false</autoIncrementCycle>
 <notNullConstraintName>VARS_DEL_NN_CHK</notNullConstraintName>
 </Column>
@@ -135,7 +144,6 @@
 <indexColumnUsage>
 <colUsage columnID="CDDD4BAD-3D88-C0B1-473C-DA4D080F4FFD"/>
 <colUsage columnID="89153009-D9CA-1313-0C75-D615297C195F"/>
-<colUsage columnID="A138991A-A1C0-E42D-930C-5F3E1A796E7A"/>
 <colUsage columnID="54AFE6DA-E77C-4E8C-45F8-EF12A82CBC7D"/>
 <colUsage columnID="51F3D789-4D5B-E6A3-17DC-974609E1B9F2"/>
 </indexColumnUsage>
@@ -174,7 +182,7 @@
 <validTimeDimensions>
 <validTimeDimension class="oracle.dbtools.crest.model.design.relational.ValidTimeDimension" name="ValidTime_1" directorySegmentName="seg_0" id="EF4244E8-0DC6-CF44-105F-5106B2FE8A34">
 <createdBy>s9073</createdBy>
-<createdTime>2014-08-18 14:33:19 UTC</createdTime>
+<createdTime>2014-08-20 15:22:55 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
 <endTimeColumn>51F3D789-4D5B-E6A3-17DC-974609E1B9F2</endTimeColumn>
 <startTimeColumn>54AFE6DA-E77C-4E8C-45F8-EF12A82CBC7D</startTimeColumn>

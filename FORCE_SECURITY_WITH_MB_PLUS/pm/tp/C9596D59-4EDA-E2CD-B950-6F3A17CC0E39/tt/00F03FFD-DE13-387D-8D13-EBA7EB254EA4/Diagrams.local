@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.process.TransformationTask>
+   <object objectType="main_view" objectID="F2A7EDE9-C1AA-9780-ECDD-E0CA4377943C" name="Transformation Task_1" visible="false"/>
+</oracle.dbtools.crest.model.design.process.TransformationTask>

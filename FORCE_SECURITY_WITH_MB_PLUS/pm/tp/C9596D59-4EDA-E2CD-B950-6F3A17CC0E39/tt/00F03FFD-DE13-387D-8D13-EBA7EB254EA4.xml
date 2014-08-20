@@ -1,0 +1,32 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TransformationTask class="oracle.dbtools.crest.model.design.process.TransformationTask" name="Transformation Task_1" id="00F03FFD-DE13-387D-8D13-EBA7EB254EA4" mainViewID="F2A7EDE9-C1AA-9780-ECDD-E0CA4377943C">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-20 15:09:09 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<processModel>1C15CD80-6E16-F3F6-496D-FE742297256A</processModel>
+<topLevel>true</topLevel>
+<inputParamsObject class="oracle.dbtools.crest.model.design.process.InOutParams" id="B5F156C3-53FB-9BF3-B72A-6AAD7DC2FE10">
+<parametersMultiplicity>Set Of Records</parametersMultiplicity>
+<parameters>
+<parameter class="oracle.dbtools.crest.model.design.process.ParameterObject" name="In Param_1" id="90111B6F-3F67-4B16-CDA0-90BCC45C4051">
+<logicalDatatype>LOGDT017</logicalDatatype>
+</parameter>
+<parameter class="oracle.dbtools.crest.model.design.process.ParameterObject" name="In Param_2" id="F010EFD2-77D4-939E-E1E5-8FE9B3883429">
+<logicalDatatype>LOGDT017</logicalDatatype>
+</parameter>
+<parameter class="oracle.dbtools.crest.model.design.process.ParameterObject" name="In Param_3" id="0BC34DA4-724C-D595-2BF7-37AF6743EA00">
+<logicalDatatype>LOGDT017</logicalDatatype>
+</parameter>
+<parameter class="oracle.dbtools.crest.model.design.process.ParameterObject" name="In Param_4" id="BFE5E171-8AFA-8B9A-BF9C-A38F6BA0417E">
+<logicalDatatype>LOGDT017</logicalDatatype>
+</parameter>
+<parameter class="oracle.dbtools.crest.model.design.process.ParameterObject" name="In Param_5" id="579743D2-C3F5-6652-6D00-F495E8845359">
+<logicalDatatype>LOGDT017</logicalDatatype>
+</parameter>
+</parameters>
+</inputParamsObject>
+<outputParamsObject class="oracle.dbtools.crest.model.design.process.InOutParams" id="22709FB2-D0B3-6204-6F04-9899FB72AC04">
+<parametersMultiplicity>Single Record</parametersMultiplicity>
+</outputParamsObject>
+</TransformationTask>

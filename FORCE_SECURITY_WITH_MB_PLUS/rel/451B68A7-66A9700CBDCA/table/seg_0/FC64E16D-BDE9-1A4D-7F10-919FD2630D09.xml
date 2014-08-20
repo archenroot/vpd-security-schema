@@ -24,7 +24,8 @@
 <domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
 <autoIncrementColumn>true</autoIncrementColumn>
 <identityColumn>true</identityColumn>
-<autoIncrementMinValue>1000</autoIncrementMinValue>
+<autoIncrementStartWith>100</autoIncrementStartWith>
+<autoIncrementMinValue>100</autoIncrementMinValue>
 <autoIncrementCycle>false</autoIncrementCycle>
 <autoIncrementSequenceName>VPD_POL_TYPS_SEQ</autoIncrementSequenceName>
 <autoIncrementTriggerName>VPD_POL_TYPS_BIS_TRG</autoIncrementTriggerName>
@@ -42,19 +43,6 @@
 <domain>CBA61939-B5B5-58F5-6564-C43AC773FAE7</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 <notNullConstraintName>VPD_POL_TYPS_TYPE_NN_CHK</notNullConstraintName>
-</Column>
-<Column name="V_IS_DELETED" id="438A2AC7-FE28-E2B9-89AA-F0EE628BA11B">
-<createdBy>s9073</createdBy>
-<createdTime>2014-08-06 10:34:08 UTC</createdTime>
-<commentInRDBMS>Validation column: Is record logicaly deleted?</commentInRDBMS>
-<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
-<constraintName>VPD_POL_TYPS_DEL_CHK</constraintName>
-<use>0</use>
-<logicalDatatype>LOGDT006</logicalDatatype>
-<domain>ED65EBF4-C7DE-92C1-B9D2-E31E4B39D761</domain>
-<defaultValue>F</defaultValue>
-<autoIncrementCycle>false</autoIncrementCycle>
-<notNullConstraintName>VPD_POL_TYPS_DEL_NN_CHK</notNullConstraintName>
 </Column>
 <Column name="V_VALID_FROM" id="16B24BE0-537F-165F-8B44-7C2002C86AF6">
 <createdBy>s9073</createdBy>
@@ -104,7 +92,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="AC143D64-C3AE-CE1A-C047-F00C8042286A"/>
-<colUsage columnID="438A2AC7-FE28-E2B9-89AA-F0EE628BA11B"/>
 <colUsage columnID="16B24BE0-537F-165F-8B44-7C2002C86AF6"/>
 <colUsage columnID="E64B86F6-3E51-CA71-2EDC-11BA0D8F7FA2"/>
 </indexColumnUsage>

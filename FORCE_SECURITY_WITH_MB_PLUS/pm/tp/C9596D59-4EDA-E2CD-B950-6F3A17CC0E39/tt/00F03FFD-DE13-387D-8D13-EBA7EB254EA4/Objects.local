@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.process.TransformationTask>
+   <object objectType="Transformation" objectID="AFC9FD51-46D1-1A99-076D-977874FCA3CD" name="Transformation_1" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.process.TransformationTask>

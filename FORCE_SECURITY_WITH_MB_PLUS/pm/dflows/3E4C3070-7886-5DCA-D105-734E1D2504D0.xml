@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DataFlowDesign class="oracle.dbtools.crest.model.design.process.DataFlowDesign" name="Oracle VPD Generator" id="3E4C3070-7886-5DCA-D105-734E1D2504D0" mainViewID="2E250422-FD4F-5F44-3D6A-3A1579EFE793" topLevel="true">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-20 14:28:20 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</DataFlowDesign>

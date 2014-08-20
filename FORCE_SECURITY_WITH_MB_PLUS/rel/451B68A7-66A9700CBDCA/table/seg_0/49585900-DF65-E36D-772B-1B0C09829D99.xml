@@ -24,7 +24,8 @@
 <domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
 <autoIncrementColumn>true</autoIncrementColumn>
 <identityColumn>true</identityColumn>
-<autoIncrementMinValue>1000</autoIncrementMinValue>
+<autoIncrementStartWith>10000</autoIncrementStartWith>
+<autoIncrementMinValue>10000</autoIncrementMinValue>
 <autoIncrementCycle>false</autoIncrementCycle>
 <autoIncrementSequenceName>AUTH_OBJS_SEQ</autoIncrementSequenceName>
 <autoIncrementTriggerName>AUTH_OBJS_BIS_TRG</autoIncrementTriggerName>
@@ -66,7 +67,7 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <notNullConstraintName>AUTH_OBJS_BN_NN_CHK</notNullConstraintName>
 </Column>
-<Column name="V_IS_DELETED" id="8FE7A733-10C1-06C2-246D-EBF011040C19">
+<Column name="V_IS_ACTIVE" id="8FE7A733-10C1-06C2-246D-EBF011040C19">
 <createdBy>s9073</createdBy>
 <createdTime>2014-08-18 08:29:58 UTC</createdTime>
 <commentInRDBMS>Validation column: Is record logicaly deleted?</commentInRDBMS>
@@ -74,8 +75,8 @@
 <constraintName>AUTH_OBJS_DEL_CHK</constraintName>
 <use>0</use>
 <logicalDatatype>LOGDT006</logicalDatatype>
-<domain>ED65EBF4-C7DE-92C1-B9D2-E31E4B39D761</domain>
-<defaultValue>F</defaultValue>
+<domain>E87979A5-1214-9393-5154-3867C64A312D</domain>
+<defaultValue>T</defaultValue>
 <autoIncrementCycle>false</autoIncrementCycle>
 <notNullConstraintName>AUTH_OBJS_DEL_NN_CHK</notNullConstraintName>
 </Column>
@@ -145,7 +146,6 @@
 <indexColumnUsage>
 <colUsage columnID="601971D4-A69C-FF44-AF2D-2670CF9890D5"/>
 <colUsage columnID="06B65A40-3068-7F9B-389F-DA1725966DE9"/>
-<colUsage columnID="8FE7A733-10C1-06C2-246D-EBF011040C19"/>
 <colUsage columnID="3A24D37F-24E1-C8B4-32CA-273CA2500140"/>
 <colUsage columnID="45759119-8479-ECA9-2167-134143539C3B"/>
 </indexColumnUsage>

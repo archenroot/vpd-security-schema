@@ -3,6 +3,8 @@
 <createdBy>s9073</createdBy>
 <createdTime>2014-08-19 10:03:49 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<beforeCreate>DROP TABLE USERS_AUTH_OBJECTS;</beforeCreate>
+<shouldGeneratescript>true</shouldGeneratescript>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
@@ -31,16 +33,6 @@
 <associations>
 <colAssociation fkAssociation="D3162CB8-4490-91D1-C997-B087A7F92A5B" referredColumn="A13277FA-0868-771A-1C73-D2019C29C0BF"/>
 </associations>
-</Column>
-<Column name="V_IS_DELETED" id="662B0ED7-A297-FFAE-6DDB-290D997DB85C">
-<createdBy>s9073</createdBy>
-<createdTime>2014-08-19 10:04:31 UTC</createdTime>
-<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
-<use>0</use>
-<logicalDatatype>LOGDT006</logicalDatatype>
-<domain>ED65EBF4-C7DE-92C1-B9D2-E31E4B39D761</domain>
-<defaultValue>F</defaultValue>
-<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="V_VALID_FROM" id="4E9654C3-BDB0-A39A-EDF1-FB4A124C3F3A">
 <createdBy>s9073</createdBy>
@@ -74,12 +66,11 @@
 <indexColumnUsage>
 <colUsage columnID="086EE610-052C-A989-8E07-DEE1BF31F409"/>
 <colUsage columnID="8B42F6B7-D5B7-3A9E-2228-0929EBCFC14B"/>
-<colUsage columnID="662B0ED7-A297-FFAE-6DDB-290D997DB85C"/>
 <colUsage columnID="4E9654C3-BDB0-A39A-EDF1-FB4A124C3F3A"/>
 <colUsage columnID="8ACBC90C-080C-DA09-0CB2-6F8D4615FCB4"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="6FC083DF-1B23-C01F-EF86-9577FE6F386B" name="USERS_AUTH_OBJECTS_PK">
+<ind_PK_UK id="6FC083DF-1B23-C01F-EF86-9577FE6F386B" name="USERS_AUTH_OBJECTS_PK_I">
 <createdBy>s9073</createdBy>
 <createdTime>2014-08-19 10:21:35 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
@@ -88,7 +79,6 @@
 <indexColumnUsage>
 <colUsage columnID="086EE610-052C-A989-8E07-DEE1BF31F409"/>
 <colUsage columnID="8B42F6B7-D5B7-3A9E-2228-0929EBCFC14B"/>
-<colUsage columnID="662B0ED7-A297-FFAE-6DDB-290D997DB85C"/>
 <colUsage columnID="4E9654C3-BDB0-A39A-EDF1-FB4A124C3F3A"/>
 <colUsage columnID="8ACBC90C-080C-DA09-0CB2-6F8D4615FCB4"/>
 </indexColumnUsage>

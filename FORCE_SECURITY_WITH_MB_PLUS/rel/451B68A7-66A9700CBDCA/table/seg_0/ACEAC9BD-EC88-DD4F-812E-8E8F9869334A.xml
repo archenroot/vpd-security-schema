@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ACEAC9BD-EC88-DD4F-812E-8E8F9869334A" name="AUTH_OBJECTS_GROUPS">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-20 13:31:57 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="AUTH_OBJECTS_GROUP_ID" id="56139897-C775-A438-43D4-5A63C940A9B8">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-20 13:32:25 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUTH_OBJECT_ID" id="98D62CE5-26ED-1D89-4027-2F094DE8527A">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-20 15:32:41 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+<delegate>A13277FA-0868-771A-1C73-D2019C29C0BF</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B90FBF06-8F0B-BDD2-C0B1-DEA88570B198" referredColumn="A13277FA-0868-771A-1C73-D2019C29C0BF"/>
+</associations>
+</Column>
+<Column name="V_VALID_FROM" id="19BF5397-8E9A-C809-0288-F989F04D8820">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-20 15:33:39 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>EE15CA62-A196-AD5F-FB68-3D471E68D33A</domain>
+<defaultValue>sysdate</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="V_VALID_TO" id="36BD5019-4394-0424-3099-A9C1C095A684">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-20 15:33:39 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>95658974-F90C-2D33-5642-6BCAB49CAF78</domain>
+<defaultValue>to_date(5373484, &apos;J&apos;)</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="691A53FF-42C1-BF06-AC85-C161165C3D43" name="AUTH_OBJECTS_GROUPS_PK">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-20 13:32:30 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56139897-C775-A438-43D4-5A63C940A9B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1BCCF342-8D2B-A3F3-8776-02371B032BFD" name="AUTH_OBJS_GRPS_PK_I">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-20 15:34:20 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56139897-C775-A438-43D4-5A63C940A9B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D3AA5CC3-4E50-FE64-623D-72BB8755035F" name="AUTH_OBJS_GRPS_AUTH_OBJS_FK_I">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-20 15:35:07 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="98D62CE5-26ED-1D89-4027-2F094DE8527A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7CBFC486-C101-F5BE-B27C-E44505DC8218" name="AUTH_OBJS_GRPS_AUTH_OBJS_FK">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-20 15:32:41 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="98D62CE5-26ED-1D89-4027-2F094DE8527A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

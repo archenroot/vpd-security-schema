@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.process.DataFlowDesign>
+   <object objectType="main_view" objectID="2E250422-FD4F-5F44-3D6A-3A1579EFE793" name="Oracle VPD Generator" visible="false"/>
+</oracle.dbtools.crest.model.design.process.DataFlowDesign>

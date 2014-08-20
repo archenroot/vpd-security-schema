@@ -71,7 +71,7 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <notNullConstraintName>OBJECTS_ALCHO_NN_CHK</notNullConstraintName>
 </Column>
-<Column name="V_IS_DELETED" id="A1028D4B-F833-75C0-281F-FDDD321302DF">
+<Column name="V_IS_ACTIVE" id="A1028D4B-F833-75C0-281F-FDDD321302DF">
 <createdBy>s9073</createdBy>
 <createdTime>2014-08-06 15:30:02 UTC</createdTime>
 <commentInRDBMS>Validation column: Is record logicaly deleted?</commentInRDBMS>
@@ -79,9 +79,9 @@
 <constraintName>OBJECTS_DEL_CHK</constraintName>
 <use>0</use>
 <logicalDatatype>LOGDT006</logicalDatatype>
-<domain>ED65EBF4-C7DE-92C1-B9D2-E31E4B39D761</domain>
+<domain>E87979A5-1214-9393-5154-3867C64A312D</domain>
 <usesDefaultValue>true</usesDefaultValue>
-<defaultValue>F</defaultValue>
+<defaultValue>T</defaultValue>
 <autoIncrementCycle>false</autoIncrementCycle>
 <notNullConstraintName>OBJECTS_DEL_NN_CHK</notNullConstraintName>
 </Column>
@@ -188,7 +188,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="BA32753A-1D5A-0ED9-01BE-F9A4A83C8EE5"/>
-<colUsage columnID="A1028D4B-F833-75C0-281F-FDDD321302DF"/>
 <colUsage columnID="70F2F53D-3DDD-7488-C64A-0A9A0B1D2D95"/>
 <colUsage columnID="D2C5075D-5A64-721C-B46B-1F17D79795C0"/>
 <colUsage columnID="320D2B25-E13B-77D8-22D0-21A986FED773"/>

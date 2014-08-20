@@ -56,7 +56,7 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <notNullConstraintName>NSPS_DESC_NN_CHK</notNullConstraintName>
 </Column>
-<Column name="V_IS_DELETED" id="919AA585-52EF-34CD-9AB5-8C0AF541CAE7">
+<Column name="V_IS_ACTIVE" id="919AA585-52EF-34CD-9AB5-8C0AF541CAE7">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-17 13:46:51 UTC</createdTime>
 <commentInRDBMS>Validation column: Is record logicaly deleted?</commentInRDBMS>
@@ -64,9 +64,9 @@
 <constraintName>NSPS_DEL_CHK</constraintName>
 <use>0</use>
 <logicalDatatype>LOGDT006</logicalDatatype>
-<domain>ED65EBF4-C7DE-92C1-B9D2-E31E4B39D761</domain>
+<domain>E87979A5-1214-9393-5154-3867C64A312D</domain>
 <usesDefaultValue>true</usesDefaultValue>
-<defaultValue>F</defaultValue>
+<defaultValue>T</defaultValue>
 <autoIncrementCycle>false</autoIncrementCycle>
 <notNullConstraintName>NSPS_DEL_NN_CHK</notNullConstraintName>
 </Column>
@@ -121,7 +121,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="7B3AAE57-1962-B64B-060D-8F6FF647C1C5"/>
-<colUsage columnID="919AA585-52EF-34CD-9AB5-8C0AF541CAE7"/>
 <colUsage columnID="93DA4261-E5A1-A73B-BAA4-3BB71443AA01"/>
 <colUsage columnID="FA884606-760C-1FF5-DB42-26B803BA9A6B"/>
 </indexColumnUsage>
@@ -140,7 +139,7 @@
 <validTimeDimensions>
 <validTimeDimension class="oracle.dbtools.crest.model.design.relational.ValidTimeDimension" name="ValidTime_1" directorySegmentName="seg_0" id="389EBF9A-7216-C5FF-0E6B-45F038D9526A">
 <createdBy>s9073</createdBy>
-<createdTime>2014-08-18 14:25:34 UTC</createdTime>
+<createdTime>2014-08-20 15:23:04 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
 <endTimeColumn>FA884606-760C-1FF5-DB42-26B803BA9A6B</endTimeColumn>
 <startTimeColumn>93DA4261-E5A1-A73B-BAA4-3BB71443AA01</startTimeColumn>

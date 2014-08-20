@@ -40,6 +40,59 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <notNullConstraintName>OBJ_COLS_NM_NN_CHK</notNullConstraintName>
 </Column>
+<Column name="CONTENT" id="60DA9120-BCF0-2608-B0A2-4C830BB4A023">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-20 10:37:17 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>8F7D1148-F50B-EB33-3894-F0472C179892</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATA_TYPE" id="445145F4-4C82-05A6-3CFF-933EA39B1F4F">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-20 10:37:58 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATA_LENGTH" id="BF87CA4A-B1F7-1FF1-72DA-46C4FCE862AC">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-20 10:37:58 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F858B42E-04EE-D273-55EA-5AFB8790A8C2</domain>
+<defaultValue>NULL</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRECISION" id="D4F9A573-0B70-6F35-2D6C-5945F689E722">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-20 10:37:58 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F858B42E-04EE-D273-55EA-5AFB8790A8C2</domain>
+<defaultValue>NULL</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SCALE" id="2A82EF15-1C5B-FCB4-B558-4F37E29BFD76">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-20 10:37:58 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F858B42E-04EE-D273-55EA-5AFB8790A8C2</domain>
+<defaultValue>NULL</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="AVAILABILITY" id="99F226B1-2D6A-592C-869C-6A17B64283F5">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 10:02:10 UTC</createdTime>
@@ -70,19 +123,6 @@
 <defaultValue>NULL</defaultValue>
 <autoIncrementCycle>false</autoIncrementCycle>
 <notNullConstraintName>OBJ_COLS_ALCHO_NN_CHK</notNullConstraintName>
-</Column>
-<Column name="V_IS_DELETED" id="B8D8AF7D-9CD0-2D43-E9A2-AEFCE48870B6">
-<createdBy>s9073</createdBy>
-<createdTime>2014-08-06 15:33:03 UTC</createdTime>
-<commentInRDBMS>Validation column: Is record logicaly deleted?</commentInRDBMS>
-<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
-<constraintName>OBJ_COLS_DEL_CHK</constraintName>
-<use>0</use>
-<logicalDatatype>LOGDT006</logicalDatatype>
-<domain>ED65EBF4-C7DE-92C1-B9D2-E31E4B39D761</domain>
-<defaultValue>F</defaultValue>
-<autoIncrementCycle>false</autoIncrementCycle>
-<notNullConstraintName>OBJ_COLS_DEL_NN_CHK</notNullConstraintName>
 </Column>
 <Column name="V_VALID_FROM" id="1BCF85BE-2F93-2E99-746A-519F0C83EF1C">
 <createdBy>s9073</createdBy>
@@ -151,7 +191,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="D1BC9F12-C0B3-D3C5-D8ED-0738F0A1B5DE"/>
-<colUsage columnID="B8D8AF7D-9CD0-2D43-E9A2-AEFCE48870B6"/>
 <colUsage columnID="1BCF85BE-2F93-2E99-746A-519F0C83EF1C"/>
 <colUsage columnID="0BB22041-FFB1-B671-91EC-5885D8AB4BB3"/>
 <colUsage columnID="8D5F22F8-FE9B-D971-3D44-E9A9ECE5FD2F"/>

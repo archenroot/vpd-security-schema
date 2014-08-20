@@ -3,6 +3,8 @@
 <createdBy>s9073</createdBy>
 <createdTime>2014-08-19 09:22:49 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<beforeCreate>DROP TABLE USERS CASCADE CONSTRAINTS;&lt;br/&gt;DROP SEQUENCE USERS_SEQ;</beforeCreate>
+<shouldGeneratescript>true</shouldGeneratescript>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
@@ -16,7 +18,8 @@
 <domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
 <autoIncrementColumn>true</autoIncrementColumn>
 <identityColumn>true</identityColumn>
-<autoIncrementMinValue>5000</autoIncrementMinValue>
+<autoIncrementStartWith>1000</autoIncrementStartWith>
+<autoIncrementMinValue>1000</autoIncrementMinValue>
 <autoIncrementCycle>false</autoIncrementCycle>
 <autoIncrementSequenceName>USERS_SEQ</autoIncrementSequenceName>
 <autoIncrementTriggerName>USER_BIS_TRG</autoIncrementTriggerName>
@@ -31,21 +34,20 @@
 <domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="V_IS_DELETED" id="2E1C4589-2828-98BE-8B51-8040A9983943">
+<Column name="V_IS_ACTIVE" id="2E1C4589-2828-98BE-8B51-8040A9983943">
 <createdBy>s9073</createdBy>
 <createdTime>2014-08-19 09:24:46 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
 <use>0</use>
 <logicalDatatype>LOGDT006</logicalDatatype>
-<domain>ED65EBF4-C7DE-92C1-B9D2-E31E4B39D761</domain>
-<defaultValue>F</defaultValue>
+<domain>E87979A5-1214-9393-5154-3867C64A312D</domain>
+<defaultValue>T</defaultValue>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="V_VALID_FROM" id="76C9ED5D-B357-526F-C0B1-4B4E388BEFBB">
 <createdBy>s9073</createdBy>
 <createdTime>2014-08-19 10:19:03 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
 <domain>EE15CA62-A196-AD5F-FB68-3D471E68D33A</domain>
@@ -56,7 +58,6 @@
 <createdBy>s9073</createdBy>
 <createdTime>2014-08-19 10:19:03 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
 <domain>95658974-F90C-2D33-5642-6BCAB49CAF78</domain>
@@ -67,6 +68,7 @@
 <createdBy>s9073</createdBy>
 <createdTime>2014-08-19 09:24:16 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>LOGDT015</logicalDatatype>
 <domain>0DACC735-A0FA-1D2A-C7C0-10B38AB4CCB6</domain>
@@ -76,6 +78,7 @@
 <createdBy>s9073</createdBy>
 <createdTime>2014-08-19 09:24:16 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>LOGDT015</logicalDatatype>
 <domain>0DACC735-A0FA-1D2A-C7C0-10B38AB4CCB6</domain>
@@ -102,12 +105,11 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="5ED0942F-C56A-4803-F3A4-91B9F05B82AE"/>
-<colUsage columnID="2E1C4589-2828-98BE-8B51-8040A9983943"/>
 <colUsage columnID="76C9ED5D-B357-526F-C0B1-4B4E388BEFBB"/>
 <colUsage columnID="AA553480-094B-253A-B3DB-A07F290C1478"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="34817E5D-5A3A-07C7-8D7A-B2CAA23F7342" name="USERS_PK">
+<ind_PK_UK id="34817E5D-5A3A-07C7-8D7A-B2CAA23F7342" name="USERS_PK_I">
 <createdBy>s9073</createdBy>
 <createdTime>2014-08-19 10:19:30 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>

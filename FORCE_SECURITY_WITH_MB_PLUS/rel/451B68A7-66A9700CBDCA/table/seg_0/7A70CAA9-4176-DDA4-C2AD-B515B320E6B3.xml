@@ -39,19 +39,15 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <notNullConstraintName>VPD_POL_GRPS_NM_NN_CHK</notNullConstraintName>
 </Column>
-<Column name="V_IS_DELETED" id="D6B8569F-9C4F-947A-E1D8-2406C39B187B">
+<Column name="V_IS_ACTIVE" id="B535AAFC-C340-8C21-AD88-FE4E40D35394">
 <createdBy>s9073</createdBy>
-<createdTime>2014-08-18 10:24:36 UTC</createdTime>
-<commentInRDBMS>Validation column: Is record logicaly deleted?</commentInRDBMS>
+<createdTime>2014-08-20 15:22:01 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
-<constraintName>VPD_POL_GRPS_DEL_CHK</constraintName>
 <use>0</use>
 <logicalDatatype>LOGDT006</logicalDatatype>
-<domain>ED65EBF4-C7DE-92C1-B9D2-E31E4B39D761</domain>
-<usesDefaultValue>true</usesDefaultValue>
-<defaultValue>F</defaultValue>
+<domain>E87979A5-1214-9393-5154-3867C64A312D</domain>
+<defaultValue>T</defaultValue>
 <autoIncrementCycle>false</autoIncrementCycle>
-<notNullConstraintName>VPD_POL_GRPS_DEL_NN_CHK</notNullConstraintName>
 </Column>
 <Column name="V_VALID_FROM" id="140DF2EE-9DAF-2242-5F2D-1A102139429E">
 <createdBy>s9073</createdBy>
@@ -102,7 +98,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="72BEE75B-B28F-CBF4-F087-2194D3FA68F4"/>
-<colUsage columnID="D6B8569F-9C4F-947A-E1D8-2406C39B187B"/>
 <colUsage columnID="140DF2EE-9DAF-2242-5F2D-1A102139429E"/>
 <colUsage columnID="01B18B39-C1AE-32BE-A27E-107DAAE631AC"/>
 </indexColumnUsage>

@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.process.DataFlowDesign>
+   <object objectType="main_view" objectID="2E2A359B-5664-5155-42B2-7DCDB3818584" name="User Authorization" visible="false"/>
+</oracle.dbtools.crest.model.design.process.DataFlowDesign>

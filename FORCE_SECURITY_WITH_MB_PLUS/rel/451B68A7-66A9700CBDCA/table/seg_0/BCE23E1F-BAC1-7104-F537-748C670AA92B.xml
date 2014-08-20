@@ -9,7 +9,7 @@
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="AUTH_OBJS_RELATIONS_ID" id="E3D211F9-29F4-BE1F-86D4-582C2791D8F8">
+<Column name="AUTH_OBJS_RELATION_ID" id="E3D211F9-29F4-BE1F-86D4-582C2791D8F8">
 <createdBy>s9073</createdBy>
 <createdTime>2014-08-18 10:51:45 UTC</createdTime>
 <commentInRDBMS>Technical primary key.</commentInRDBMS>
@@ -59,19 +59,6 @@
 <colAssociation fkAssociation="727B7AE0-EF16-9F39-33FA-9527370EAC1A" referredColumn="A13277FA-0868-771A-1C73-D2019C29C0BF"/>
 </associations>
 </Column>
-<Column name="V_IS_DELETED" id="E5D6D066-5E4A-13CD-3EB6-955B276FF3C9">
-<createdBy>s9073</createdBy>
-<createdTime>2014-08-18 08:46:59 UTC</createdTime>
-<commentInRDBMS>Validation column: Is record logicaly deleted?</commentInRDBMS>
-<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
-<constraintName>AUTH_OBJS_RELS_DEL_CHK</constraintName>
-<use>0</use>
-<logicalDatatype>LOGDT006</logicalDatatype>
-<domain>ED65EBF4-C7DE-92C1-B9D2-E31E4B39D761</domain>
-<defaultValue>F</defaultValue>
-<autoIncrementCycle>false</autoIncrementCycle>
-<notNullConstraintName>AUTH_OBJS_RELS_DEL_NN_CHK</notNullConstraintName>
-</Column>
 <Column name="V_VALID_FROM" id="F0350DBD-EDEA-8B57-4ABF-2FFAE7151321">
 <createdBy>s9073</createdBy>
 <createdTime>2014-08-18 08:46:59 UTC</createdTime>
@@ -120,7 +107,6 @@
 <indexColumnUsage>
 <colUsage columnID="750D790E-2AD3-9263-FFFC-53C7660898A2"/>
 <colUsage columnID="8A4E8CDF-83E2-0B12-8A95-D5C74F63D7D0"/>
-<colUsage columnID="E5D6D066-5E4A-13CD-3EB6-955B276FF3C9"/>
 <colUsage columnID="F0350DBD-EDEA-8B57-4ABF-2FFAE7151321"/>
 <colUsage columnID="FD92F5AF-72B4-3596-031D-2879BB2F6F96"/>
 </indexColumnUsage>
