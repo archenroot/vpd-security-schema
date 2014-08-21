@@ -1,0 +1,402 @@
+Message-ID: <1593893785.5248.1408632135644.JavaMail.!fmp_vier@s0198vss043>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_5247_1441759498.1408632135644"
+
+------=_Part_5247_1441759498.1408632135644
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Example 1: Using session-based application contexts</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+#main {
+    padding-bottom: 1em !important; /* The default padding of 6em is too mu=
+ch for printouts */
+}
+
+body {
+    font-family: Arial, Helvetica, FreeSans, sans-serif;
+    font-size: 10pt;
+    line-height: 1.2;
+}
+
+body, #full-height-container, #main, #page, #content, .has-personal-sidebar=
+ #content {
+    background: #fff    !important;
+    color: #000         !important;
+    border: 0           !important;
+    width: 100%         !important;
+    height: auto        !important;
+    min-height: auto    !important;
+    margin: 0           !important;
+    padding: 0          !important;
+    display: block      !important;
+}
+
+a, a:link, a:visited, a:focus, a:hover, a:active {
+    color: #000;
+}
+#content h1,
+#content h2,
+#content h3,
+#content h4,
+#content h5,
+#content h6 {
+    font-family: Arial, Helvetica, FreeSans, sans-serif;
+    page-break-after: avoid;
+}
+pre {
+    font-family: Monaco, "Courier New", monospace;
+}
+
+#header,
+.aui-header-inner,
+#navigation,
+#sidebar,
+.sidebar,
+#personal-info-sidebar,
+.ia-fixed-sidebar,
+.page-actions,
+.navmenu,
+.ajs-menu-bar,
+.noprint,
+.inline-control-link,
+.inline-control-link a,
+a.show-labels-editor,
+.global-comment-actions,
+.comment-actions,
+.quick-comment-container,
+#addcomment {
+    display: none !important;
+}
+
+.comment .date::before {
+    content: none !important; /* remove middot for print view */
+}
+
+h1.pagetitle img {
+    height: auto;
+    width: auto;
+}
+
+.print-only {
+    display: block;
+}
+#footer {
+    position: relative !important; /* CONF-17506 Place the footer at end of=
+ the content */
+    margin: 0;
+    padding: 0;
+    background: none;
+    clear: both;
+}
+
+#poweredby {
+    border-top: none;
+    background: none;
+}
+
+#poweredby li.print-only {
+    display: list-item;
+    font-style: italic;
+}
+
+#poweredby li.noprint {
+    display:none;
+}
+
+
+/* no width controls in print */
+.wiki-content .table-wrap,
+.wiki-content p,
+.panel .codeContent,
+.panel .codeContent pre,
+.image-wrap {
+    overflow: visible !important;
+}
+
+/* TODO - should this work? */
+#children-section,
+#comments-section .comment,
+#comments-section .comment .comment-body,
+#comments-section .comment .comment-content,
+#comments-section .comment p {
+    page-break-inside: avoid;
+}
+
+#page-children a {
+    text-decoration: none;
+}
+
+/**
+ hide twixies
+
+ the specificity here is a hack because print styles
+ are getting loaded before the base styles. */
+#comments-section.pageSection .section-header,
+#comments-section.pageSection .section-title,
+#children-section.pageSection .section-header,
+#children-section.pageSection .section-title,
+.children-show-hide {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.children-show-hide.icon {
+    display: none;
+}
+
+/* personal sidebar */
+.has-personal-sidebar #content {
+    margin-right: 0px;
+}
+
+.has-personal-sidebar #content .pageSection {
+    margin-right: 0px;
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Example 1: Using session-based application contexts</h1>
+    <div class=3D"Section1">
+        <h1 id=3D"Example1:Usingsession-basedapplicationcontexts-Overview">=
+Overview</h1>
+<p>The structure of a context consists of a namespace and the associated va=
+lues it contains. The namespace or name is used for accessing the context's=
+ individual attributes, and their associated values held in memory. A names=
+pace can be represented as an associative array with a name-type organizati=
+on. The initialization of application contexts is performed using a PL/SQL =
+package used in their definition. Generally application contexts are used i=
+n VPD implementations to retrieve session information to allow or to block =
+access to certain data.</p>
+<p>Next, we will create a locally initialized context type, using a package=
+ containing a procedure that initializes a value from the context. The valu=
+es will be generated using a logon trigger. Next, we will define a view bas=
+ed on the returning value from the context.</p>
+<h1 id=3D"Example1:Usingsession-basedapplicationcontexts-Workflow">Workflow=
+</h1>
+<ol>
+<li><p>Connect as user system. Create two users vw_america and vw_europe an=
+d grant create session privilege to each of them as follows:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">&nbsp;create user vw_america identified by vw_america;
+ create user vw_europe identified by vw_europe;
+ grant connect to vw_america,vw_europe;</pre>=20
+</div>
+</div></li>
+<li><p>Create a view named VIEW_REG_DATA in the HR schema, based on tables =
+EMPLOYEES, DEPARTMENTS, JOBS, LOCATION, and COUNTRIES from HR schema as fol=
+lows:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">CREATE OR REPLACE VIEW hr.view_reg_data
+AS
+  SELECT e.first_name,
+    e.last_name,
+    e.email,
+    e.phone_number,
+    e.hire_date,
+    j.job_title,
+    e.salary,
+    e.commission_pct,
+    d.department_name,
+    l.state_province,
+    l.city,
+    l.postal_code,
+    c.country_name
+  FROM hr.employees e
+  JOIN hr.departments d
+  ON e.department_id=3Dd.department_id
+  JOIN hr.jobs j
+  ON e.job_id=3Dj.job_id
+  JOIN hr.locations l
+  ON d.location_id=3Dl.location_id
+  JOIN hr.countries c
+  ON l.country_id=3Dc.country_id
+  AND c.region_id=3D SYS_CONTEXT('HR_REGVIW_CONTEXT','REGION_ID')</pre>=20
+</div>
+</div></li>
+<li><p>Grant select privileges to vw_europe and vw_america on hr.view_reg_d=
+ata as follows:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">grant select on hr.view_reg_data to vw_europe,vw_america;</pre>=20
+</div>
+</div></li>
+<li><p>Create an application context named HR_REGVIW_CONTEXT as follows:</p=
+>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">create or replace context hr_regviw_context using set_region_context_=
+pkg;</pre>=20
+</div>
+</div></li>
+<li><p>Create the context package and package body SET_REGION_CONTEXT_PKG a=
+s follows:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">create or replace PACKAGE              set_region_context_pkg IS
+   PROCEDURE set_regionid; -- this  procedure will activate the application=
+ context
+    END;
+
+CREATE OR REPLACE
+PACKAGE BODY set_region_context_pkg
+IS
+PROCEDURE set_regionid
+IS
+  v_region_id INTEGER;
+BEGIN
+  IF (SYS_CONTEXT('USERENV', 'SESSION_USER')    =3D 'VW_EUROPE') THEN
+    v_region_id                                :=3D 1;
+  ELSIF (SYS_CONTEXT('USERENV', 'SESSION_USER') =3D 'VW_AMERICA') THEN
+    v_region_id                                :=3D 2;
+  END IF;
+  DBMS_SESSION.SET_CONTEXT('hr_regviw_context', 'region_id', v_region_id);
+END set_regionid;
+END set_region_context_pkg;</pre>=20
+</div>
+</div></li>
+<li><p>Create a logon trigger that will be used to set the region_id values=
+ in hr_regview context at user logon as follows:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">CREATE OR REPLACE TRIGGER set_regionid_context_trg AFTER LOGON ON DAT=
+ABASE
+  BEGIN
+   set_region_context_pkg.set_regionid;
+  END;</pre>=20
+</div>
+</div></li>
+<li><p>Next, connect as user vw_europe and vw_america, and check the values=
+ returned by hr_regviw_context:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">conn vw_europe
+Enter password:
+Connected.
+
+select sys_context('hr_regviw_context','region_id') as REGION_ID from dual;
+
+REGION_ID
+------------------------------------------------------------------
+--------------
+1
+
+conn vw_america
+Enter password:
+Connected.
+
+select sys_context('hr_regviw_context','region_id') as REGION_ID from dual;
+
+REGION_ID
+------------------------------------------------------------------
+--------------
+2</pre>=20
+</div>
+</div></li>
+<li><p>Next, connect as users vm_europe and vw_america, and issue a select =
+distinct command based on country_name from the HR.VIEW_REG_DATA view. The =
+values will be retrieved based on the dynamic condition set by sys_context(=
+'HR_REGVIW_CONTEXT,'REG_ID'):</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">conn vw_europe
+Enter password:
+Connected.
+ select distinct country_name from hr.view_Reg_data;
+
+COUNTRY_NAME
+----------------------------------------
+United Kingdom
+Germany
+
+conn vw_america
+Enter password:
+Connected.
+ select distinct country_name from hr.view_Reg_data;
+
+COUNTRY_NAME
+----------------------------------------
+United States of America
+Canada</pre>=20
+</div>
+</div></li>
+</ol>
+<h1 id=3D"Example1:Usingsession-basedapplicationcontexts-Howitworks...">How=
+ it works...</h1>
+<p>The database session-based application context is managed entirely withi=
+n the Oracle database. The Oracle database sets the values, and then when t=
+he user exits the session, automatically clears the application context val=
+ues stored in cache. Database session-based application contexts can be ini=
+tialized locally, externally, or globally. In local initialization mode, th=
+e session data is retrieved for User Global Area (UGA). External initializa=
+tion can be implemented using an external application (OCI, JDBC), a job qu=
+eue process, or through a connected database link. Global initialization ca=
+n be implemented using an external location, such as LDAP or OID.</p>
+<h1 id=3D"Example1:Usingsession-basedapplicationcontexts-There'smore=E2=80=
+=A6">There's more=E2=80=A6</h1>
+<p>Oracle provides, for any connected session, a default application contex=
+t named USERENV.</p>
+    </div>
+</body>
+</html>
+------=_Part_5247_1441759498.1408632135644--

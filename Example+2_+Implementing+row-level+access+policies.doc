@@ -1,0 +1,591 @@
+Message-ID: <2123472048.5250.1408632151816.JavaMail.!fmp_vier@s0198vss043>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_5249_914471140.1408632151816"
+
+------=_Part_5249_914471140.1408632151816
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Example 2: Implementing row-level access policies</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+#main {
+    padding-bottom: 1em !important; /* The default padding of 6em is too mu=
+ch for printouts */
+}
+
+body {
+    font-family: Arial, Helvetica, FreeSans, sans-serif;
+    font-size: 10pt;
+    line-height: 1.2;
+}
+
+body, #full-height-container, #main, #page, #content, .has-personal-sidebar=
+ #content {
+    background: #fff    !important;
+    color: #000         !important;
+    border: 0           !important;
+    width: 100%         !important;
+    height: auto        !important;
+    min-height: auto    !important;
+    margin: 0           !important;
+    padding: 0          !important;
+    display: block      !important;
+}
+
+a, a:link, a:visited, a:focus, a:hover, a:active {
+    color: #000;
+}
+#content h1,
+#content h2,
+#content h3,
+#content h4,
+#content h5,
+#content h6 {
+    font-family: Arial, Helvetica, FreeSans, sans-serif;
+    page-break-after: avoid;
+}
+pre {
+    font-family: Monaco, "Courier New", monospace;
+}
+
+#header,
+.aui-header-inner,
+#navigation,
+#sidebar,
+.sidebar,
+#personal-info-sidebar,
+.ia-fixed-sidebar,
+.page-actions,
+.navmenu,
+.ajs-menu-bar,
+.noprint,
+.inline-control-link,
+.inline-control-link a,
+a.show-labels-editor,
+.global-comment-actions,
+.comment-actions,
+.quick-comment-container,
+#addcomment {
+    display: none !important;
+}
+
+.comment .date::before {
+    content: none !important; /* remove middot for print view */
+}
+
+h1.pagetitle img {
+    height: auto;
+    width: auto;
+}
+
+.print-only {
+    display: block;
+}
+#footer {
+    position: relative !important; /* CONF-17506 Place the footer at end of=
+ the content */
+    margin: 0;
+    padding: 0;
+    background: none;
+    clear: both;
+}
+
+#poweredby {
+    border-top: none;
+    background: none;
+}
+
+#poweredby li.print-only {
+    display: list-item;
+    font-style: italic;
+}
+
+#poweredby li.noprint {
+    display:none;
+}
+
+
+/* no width controls in print */
+.wiki-content .table-wrap,
+.wiki-content p,
+.panel .codeContent,
+.panel .codeContent pre,
+.image-wrap {
+    overflow: visible !important;
+}
+
+/* TODO - should this work? */
+#children-section,
+#comments-section .comment,
+#comments-section .comment .comment-body,
+#comments-section .comment .comment-content,
+#comments-section .comment p {
+    page-break-inside: avoid;
+}
+
+#page-children a {
+    text-decoration: none;
+}
+
+/**
+ hide twixies
+
+ the specificity here is a hack because print styles
+ are getting loaded before the base styles. */
+#comments-section.pageSection .section-header,
+#comments-section.pageSection .section-title,
+#children-section.pageSection .section-header,
+#children-section.pageSection .section-title,
+.children-show-hide {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.children-show-hide.icon {
+    display: none;
+}
+
+/* personal sidebar */
+.has-personal-sidebar #content {
+    margin-right: 0px;
+}
+
+.has-personal-sidebar #content .pageSection {
+    margin-right: 0px;
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Example 2: Implementing row-level access policies</h1>
+    <div class=3D"Section1">
+        <h1 id=3D"Example2:Implementingrow-levelaccesspolicies-Overview">Ov=
+erview</h1>
+<p>Implementing row-level access is probably the most common form of securi=
+ty controls applied using VPD. It prevents rows from being returned that do=
+ not meet the condition defined in policy function, and is activated in any=
+ condition regardless of the columns participating in the statement.</p>
+<p>In this recipe we will create a new table EMPLOYEES_REG_DATA_VPD in the =
+HR schema, based on the VIEW_REG_DATA definition created in the previous re=
+cipe. Next, we will create a policy function that will limit the data that =
+is returned by dynamically applying a region restriction through the applic=
+ation context HR_REGVIW_CONTEXT.</p>
+<p>Basically we recreate the scenario used in the previous recipe, but this=
+ time using VPD components.</p>
+<h1 id=3D"Example2:Implementingrow-levelaccesspolicies-Workflow">Workflow</=
+h1>
+<ol>
+<li><p>As user HR create a table EMPLOYEES_REG_DATA_VPD as follows:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">CREATE TABLE EMPLOYEES_REG_DATA_VPD
+AS
+  SELECT E.FIRST_NAME,
+    E.LAST_NAME,
+    E.EMAIL,
+    E.PHONE_NUMBER,
+    E.HIRE_DATE,
+    J.JOB_TITLE,
+    E.SALARY,
+    E.COMMISSION_PCT,
+    D.DEPARTMENT_NAME,
+    L.STATE_PROVINCE,
+    L.CITY,
+    L.POSTAL_CODE,
+    C.COUNTRY_NAME,
+    C.REGION_ID
+  FROM HR.EMPLOYEES E
+  JOIN HR.DEPARTMENTS D
+  ON E.DEPARTMENT_ID=3DD.DEPARTMENT_ID
+  JOIN HR.JOBS J
+  ON E.JOB_ID=3DJ.JOB_ID
+  JOIN HR.LOCATIONS L
+  ON D.LOCATION_ID=3DL.LOCATION_ID
+  JOIN HR.COUNTRIES C
+  ON L.COUNTRY_ID=3DC.COUNTRY_ID</pre>=20
+</div>
+</div></li>
+<li><p>Grant select on table EMPLOYEES_REG_DATA_VPD to vw_america and vw_eu=
+rope users as follows:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">GRANT SELECT ON EMPLOYEES_REG_DATA_VPD TO VW_AMERICA,VW_EUROPE;</pre>=
+=20
+</div>
+</div></li>
+<li><p>Connect as user system and create region_id_plc_func VPD policy func=
+tion as follows:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">conn system
+Enter password:
+
+ CREATE OR REPLACE
+  FUNCTION region_id_plc_func
+    (
+      schema_v IN VARCHAR2,
+      tbl_v VARCHAR2)
+    RETURN VARCHAR2
+  IS
+    ret_val VARCHAR2(200);
+  BEGIN
+    ret_val :=3D 'region_id =3D sys_context(''hr_regviw_context'',''region_=
+id'')';
+    RETURN ret_val;
+  END;</pre>=20
+</div>
+</div></li>
+<li><p>Next, define a policy named SELECT_REGIONS _POLICY , defined on obje=
+ct EMPLOYEES_REG_DATA_VPD from schema HR, and applicable only for select st=
+atements as follows:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">BEGIN
+  DBMS_RLS.ADD_POLICY ( object_schema =3D&gt; 'HR', object_name =3D&gt; 'EM=
+PLOYEES_REG_DATA_VPD', policy_name =3D&gt; 'SELECT_REGIONS_POLICY', functio=
+n_schema =3D&gt; 'SYSTEM', policy_function =3D&gt; 'region_id_plc_func', st=
+atement_types =3D&gt; 'select');
+END;</pre>=20
+</div>
+</div></li>
+<li><p>Connect as users vw_europe and vw_america, and issue a select distin=
+ct statement to see if the SELECT_REGIONS_POLICY VPD policy is correctly ap=
+plied:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">conn vw_europe
+Enter password:
+
+select distinct country_name from hr. EMPLOYEES_REG_DATA_VPD;
+4
+
+conn vw_america
+Enter password:
+Connected.
+
+select distinct country_name from hr. EMPLOYEES_REG_DATA_VPD;</pre>=20
+</div>
+</div></li>
+<li><p>If you try to select from table EMPLOYEES_REG_DATA_VPD connected as =
+other users that have select privileges, no rows will be returned. Connect =
+as system and reissue the previous select distinct statement as follows:</p=
+>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">conn system
+Enter password:
+Connected.
+
+select distinct country_name from hr. EMPLOYEES_REG_DATA_VPD;</pre>=20
+</div>
+</div></li>
+<li><p>Next we will create a policy function for inserts and delete. In the=
+ following steps we will create an empty table and a VPD policy applicable =
+for insert statements. Connect as user HR and create an empty table named E=
+MPLOYEES_REG_DATA_VPD_EU based on the structure of EMPLOYEES_REG_DATA_VPD a=
+s follows:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">create table EMPLOYEES_REG_DATA_EU_VPD as select * from EMPLOYEES_REG=
+_DATA_VPD;</pre>=20
+</div>
+</div></li>
+<li><p>As system, create a policy name REGION_ID_EU_PLC_FNC, which will all=
+ow inserts only for rows corresponding to region 1 or Europe as follows:</p=
+>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">CREATE OR REPLACE
+      FUNCTION region_id_EU_plc_func
+        (
+          schema_v IN VARCHAR2,
+          tbl_v VARCHAR2)
+        RETURN VARCHAR2
+      IS
+        ret_val VARCHAR2(200);
+      BEGIN
+        ret_val :=3D 'region_id =3D 1';
+        RETURN ret_val;
+      END;</pre>=20
+</div>
+</div></li>
+<li><p>Create a insert policy called INSERT_EU_POLICY as follows:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">BEGIN
+    DBMS_RLS.ADD_POLICY (=20
+object_schema =3D&gt; 'HR',=20
+object_name =3D&gt; 'EMPLOYEES_REG_DATA_VPD_EU',=20
+policy_name =3D&gt; 'INSERT_EU_POLICY',=20
+function_schema =3D&gt; 'SYSTEM',=20
+policy_function =3D&gt; 'region_id_eu_plc_func',=20
+statement_types =3D&gt; 'insert');
+END;</pre>=20
+</div>
+</div></li>
+<li><p>Next, try to insert some values that are not compliant with INSERT_E=
+U_POLICY as follows:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">conn HR/HR
+ INSERT INTO EMPLOYEES_REG_DATA_EU_VPD values ('Donald','OConnell','DOCONNE=
+L','650.507.9833',to_timestamp('21-06-2007','DD-MM-RRRR HH24:MI:SSXFF'),'Sh=
+ipping
+ Clerk',4100,null,'Shipping','California','South San Francisco','99236','Un=
+ited States of America',2);
+
+1 row created.</pre>=20
+</div>
+</div></li>
+<li><p>Surprisingly it works. To enforce VPD policy on insert statement we =
+must to enable update_check parameter. Connect as system, drop the policy a=
+nd recreate it with update_check=3D&gt;true, and reissue the previous INSER=
+T statement as follows:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">conn system
+Enter password:
+Connected.
+
+execute dbms_rls.drop_policy(
+object_schema =3D&gt;'HR',
+policy_name =3D&gt; 'INSERT_EU_POLICY',
+object_name =3D&gt; 'EMPLOYEES_REG_DATA_EU_VPD'
+);
+
+PL/SQL procedure successfully completed.
+
+BEGIN
+DBMS_RLS.ADD_POLICY=20
+(=20
+object_schema =3D&gt; 'HR',=20
+object_name =3D&gt; 'EMPLOYEES_REG_DATA_EU_VPD',=20
+policy_name =3D&gt; 'INSERT_EU_POLICY',=20
+function_schema =3D&gt; 'SYSTEM',
+policy_function =3D&gt; 'region_id_eu_plc_func',=20
+statement_types =3D&gt; 'insert',
+update_check =3D&gt; true
+);
+END;</pre>=20
+</div>
+</div></li>
+<li><p>Connect as HR and reissue the previous insert as follows:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">conn HR
+Enter password:
+
+INSERT INTO EMPLOYEES_REG_DATA_EU_VPD values ('Donald','OConnell','DOCONNEL=
+','650.507.9833',to_timestamp('21-06-2007','DD-MM-RRRR HH24:MI:SSXFF'),'Shi=
+pping
+ Clerk',4100,null,'Shipping','California','South San Francisco','99236','Un=
+ited States of America',2);
+INSERT INTO EMPLOYEES_REG_DATA_EU_VPD values ('Donald','OConnell','DOCONNEL=
+','650.507.9833',to_timestamp('21-06-2007','DD-MM-RRRR HH24:MI:SSXFF'),'Shi=
+pping Cler
+k',4100,null,'Shipping','California','South San Francisco','99236','United =
+States of America',2);
+
+ERROR at line 1:
+ORA-28115: policy with check option violation</pre>=20
+</div>
+</div></li>
+<li><p>This time the policy is enforced. Now, insert values that are compli=
+ant with the policy:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">Insert into EMPLOYEES_REG_DATA_VPD values ('Hermann','Baer','HBAER','=
+515.123.8888',to_timestamp('07-06-2002','DD-MM-RRRR HH24:MI:SSXFF'),'Public=
+ Relations
+Representative',10000,null,'Public Relations','Bavaria','Munich','80925','G=
+ermany',1);
+
+commit;</pre>=20
+</div>
+</div></li>
+<li><p>Next, in the following steps, we will create a policy function and V=
+PD policy to deal with delete statement. Connect as user HR and create a ta=
+ble EMPLOYEES_SAL_COMPCT_VPD, which will contain first_name,last_name, sala=
+ry, and commission_pct columns, as follows:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">create table employees_sal_cmpct_vpd as select first_name,last_name,s=
+alary,commission_pct from employees;</pre>=20
+</div>
+</div></li>
+<li><p>Create a policy function named COST_REDUCTION_PLC_FUNC, which will b=
+e applied for salaries over 5000 and commissions over 0.1 as follows:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">CREATE OR REPLACE
+     FUNCTION cost_reduction_plc_func
+       (
+         schema_v IN VARCHAR2,
+         tbl_v VARCHAR2)
+       RETURN VARCHAR2
+     IS
+       ret_val VARCHAR2(200);
+     BEGIN
+       ret_val :=3D 'salary &gt; 5000 and commission_pct &gt; 0.1';
+       RETURN ret_val;
+     END;</pre>=20
+</div>
+</div></li>
+<li><p>Next, create a policy applicable on the EMPLOYEES_SAL_CMPCT_VPD tabl=
+e using COST_REDUCTION_PLC_FUNC for delete statements, named COST_REDUCTION=
+_POLICY, as follows:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">BEGIN
+=09DBMS_RLS.ADD_POLICY (=20
+=09=09object_schema =3D&gt; 'HR',=20
+object_name =3D&gt; 'EMPLOYEES_SAL_CMPCT_VPD',=20
+policy_name =3D&gt; 'COST_REDUCTION_POLICY',=20
+function_schema =3D&gt; 'SYSTEM' ,=20
+policy_function =3D&gt; 'COST_REDUCTION_PLC_FUNC',=20
+statement_types =3D&gt; 'delete'
+);
+END;</pre>=20
+</div>
+</div></li>
+<li><p>Issue a count to check the number of rows for value of salary greate=
+r than 5000 and the value of commission_pct greater than 0.1:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">select count(*) from employees_sal_cmpct_vpd where salary &gt; 5000 a=
+nd commission_pct &gt; 0.1;
+
+COUNT(*)
+----------
+29</pre>=20
+</div>
+</div></li>
+<li><p>Connect as HR and issue a delete command on employees_sal_cmpct_vpd =
+table as follows:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">conn HR
+Enter password:
+
+delete employees_sal_cmpct_vpd;
+
+commit;</pre>=20
+</div>
+</div></li>
+<li><p>If you issue the delete command again, no rows will be deleted becau=
+se no one fits in the policy check:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">delete employees_sal_cmpct_vpd;
+
+0 rows deleted.</pre>=20
+</div>
+</div></li>
+</ol>
+<h1 id=3D"Example2:Implementingrow-levelaccesspolicies-Howitworks">How it w=
+orks</h1>
+<p>As a table, view, or synonym is associated with a policy, all statements=
+ that are found in the category defined in the policy will be dynamically r=
+ewritten to apply the policy condition when they are executed. The statemen=
+t types are defined within the policy by using the statement_type input var=
+iable of package DBMS_RLS. As mentioned before, there could be defined poli=
+cies on SELECT, UPDATE, DELETE, INSERT, and INDEX statements. The default i=
+s all but INDEX.</p>
+<p>If the statement issued against an object has a WHERE clause, then the p=
+olicy predicate will be added to the clause. When there is no WHERE clause =
+one will be added in order to apply the policy predicate to the statement. =
+The policy function must have the function arguments declared as object_nam=
+e and object_schema, and the return value should always be varchar2 type. T=
+he predicate returned must form a valid WHERE clause. There must not be a c=
+ircular reference for the object defined in the policy. In other words, you=
+ cannot use the protected object to generate the policy predicate.</p>
+<h1 id=3D"Example2:Implementingrow-levelaccesspolicies-There'smore=E2=80=A6=
+">There's more=E2=80=A6</h1>
+<p>The Execute privilege on DBMS_RLS should be granted to the security admi=
+nistrator user and not to application users. In this way the VPD policies w=
+ill be controlled only by a privileged user, which will be audited. There i=
+s a special policy parameter named UPDATE_CHECK. When this parameter is set=
+ to TRUE, the policy will check the after values and the before values issu=
+ed from an UPDATE or INSERT statement. More information about VPD policies =
+can be found in the ALL_POLICIES and DBA_POLICIES dictionary views.</p>
+<h1 id=3D"Example2:Implementingrow-levelaccesspolicies-Performanceimplicati=
+ons">Performance implications</h1>
+<p>In most cases, using VPD can lead to increase in performance because the=
+ final result set is decreased in size. However in some cases using complex=
+ queries having several tables with VPD policies enabled can lead to perfor=
+mance degradation. To find out the predicates used for query rewrite you ma=
+y use event 10730. For more information check oracle support note [ID 96704=
+2.1] - How to Investigate Query Performance Regressions Caused by VPD (FGAC=
+) Predicates?</p>
+    </div>
+</body>
+</html>
+------=_Part_5249_914471140.1408632151816--

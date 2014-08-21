@@ -1,0 +1,367 @@
+Message-ID: <1956531406.5252.1408632160675.JavaMail.!fmp_vier@s0198vss043>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_5251_789371275.1408632160675"
+
+------=_Part_5251_789371275.1408632160675
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Example 3: Implementing column-level access policies</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+#main {
+    padding-bottom: 1em !important; /* The default padding of 6em is too mu=
+ch for printouts */
+}
+
+body {
+    font-family: Arial, Helvetica, FreeSans, sans-serif;
+    font-size: 10pt;
+    line-height: 1.2;
+}
+
+body, #full-height-container, #main, #page, #content, .has-personal-sidebar=
+ #content {
+    background: #fff    !important;
+    color: #000         !important;
+    border: 0           !important;
+    width: 100%         !important;
+    height: auto        !important;
+    min-height: auto    !important;
+    margin: 0           !important;
+    padding: 0          !important;
+    display: block      !important;
+}
+
+a, a:link, a:visited, a:focus, a:hover, a:active {
+    color: #000;
+}
+#content h1,
+#content h2,
+#content h3,
+#content h4,
+#content h5,
+#content h6 {
+    font-family: Arial, Helvetica, FreeSans, sans-serif;
+    page-break-after: avoid;
+}
+pre {
+    font-family: Monaco, "Courier New", monospace;
+}
+
+#header,
+.aui-header-inner,
+#navigation,
+#sidebar,
+.sidebar,
+#personal-info-sidebar,
+.ia-fixed-sidebar,
+.page-actions,
+.navmenu,
+.ajs-menu-bar,
+.noprint,
+.inline-control-link,
+.inline-control-link a,
+a.show-labels-editor,
+.global-comment-actions,
+.comment-actions,
+.quick-comment-container,
+#addcomment {
+    display: none !important;
+}
+
+.comment .date::before {
+    content: none !important; /* remove middot for print view */
+}
+
+h1.pagetitle img {
+    height: auto;
+    width: auto;
+}
+
+.print-only {
+    display: block;
+}
+#footer {
+    position: relative !important; /* CONF-17506 Place the footer at end of=
+ the content */
+    margin: 0;
+    padding: 0;
+    background: none;
+    clear: both;
+}
+
+#poweredby {
+    border-top: none;
+    background: none;
+}
+
+#poweredby li.print-only {
+    display: list-item;
+    font-style: italic;
+}
+
+#poweredby li.noprint {
+    display:none;
+}
+
+
+/* no width controls in print */
+.wiki-content .table-wrap,
+.wiki-content p,
+.panel .codeContent,
+.panel .codeContent pre,
+.image-wrap {
+    overflow: visible !important;
+}
+
+/* TODO - should this work? */
+#children-section,
+#comments-section .comment,
+#comments-section .comment .comment-body,
+#comments-section .comment .comment-content,
+#comments-section .comment p {
+    page-break-inside: avoid;
+}
+
+#page-children a {
+    text-decoration: none;
+}
+
+/**
+ hide twixies
+
+ the specificity here is a hack because print styles
+ are getting loaded before the base styles. */
+#comments-section.pageSection .section-header,
+#comments-section.pageSection .section-title,
+#children-section.pageSection .section-header,
+#children-section.pageSection .section-title,
+.children-show-hide {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.children-show-hide.icon {
+    display: none;
+}
+
+/* personal sidebar */
+.has-personal-sidebar #content {
+    margin-right: 0px;
+}
+
+.has-personal-sidebar #content .pageSection {
+    margin-right: 0px;
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Example 3: Implementing column-level access policies</h1>
+    <div class=3D"Section1">
+        <h1 id=3D"Example3:Implementingcolumn-levelaccesspolicies-Overview"=
+>Overview</h1>
+<p>In row-level access policies, the policy is applied regardless of the se=
+lected columns. However, when implementing restrictions at the column level=
+, the policy is not enforced until the columns protected by the policy are =
+included in the DML statement. As we will see, this option can also be used=
+ to mask column data when desired. When column masks are also enforced by t=
+he policy, the records that don't conform to the defined criteria have thei=
+r column values hidden by the policy and displayed as nulls instead.</p>
+<h1 id=3D"Example3:Implementingcolumn-levelaccesspolicies-Gettingready">Get=
+ting ready</h1>
+<p>In this recipe we will create two users; DOCONNEL and JWHALEN. We will d=
+eclare a policy named EMPLOYEES_SALCOMM_PLC that will protect the salary an=
+d commision_pct columns from the EMPLOYEES_TEST_VPD table. Then we will red=
+efine the VPD policy to apply column masking.</p>
+<h1 id=3D"Example3:Implementingcolumn-levelaccesspolicies-Workflow">Workflo=
+w</h1>
+<ol>
+<li><p>As system user create users DOCONNEL and JWHALEN:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">create user DOCONNEL identified by DOCONNEL;
+create user JWHALEN identified by JWHALEN;
+grant create session to DOCONNL,JWHALEN;</pre>=20
+</div>
+</div></li>
+<li><p>As user HR grant select on employee table as follows:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">grant select on hr.employees_test_vpd to DOCONNEL,JWHALEN;</pre>=20
+</div>
+</div></li>
+<li><p>Connect as security_adm user and create salcomm_plc_func policy func=
+tion:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: Midnight; brush: sql; gutter: false" style=3D"font-siz=
+e:12px;">CREATE OR REPLACE
+FUNCTION salcomm_plc_func
+  (
+    schema_v IN VARCHAR2,
+    tbl_v VARCHAR2)
+  RETURN VARCHAR2
+IS
+  ret_val VARCHAR2(200);
+BEGIN
+  ret_val :=3D 'email =3D  SYS_CONTEXT(''USERENV'', ''SESSION_USER'')';
+  RETURN ret_val;
+END;</pre>=20
+</div>
+</div></li>
+<li><p>Create the column-level policy EMPLOYEES_SALCOMM_PLC as follows:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">BEGIN
+    DBMS_RLS.add_policy=20
+=09(
+=09=09object_schema =3D&gt; 'HR',
+=09=09object_name =3D&gt; 'EMPLOYEES_TEST_VPD',
+=09=09policy_name =3D&gt; 'employees_salcomm_plc',
+policy_function =3D&gt; 'salcomm_plc_func',=20
+statement_types =3D&gt; 'SELECT',=20
+sec_relevant_cols =3D&gt; 'SALARY,COMMISSION_PCT'
+);
+END;</pre>=20
+</div>
+</div></li>
+<li><p>Connect as user DOCONNEL and issue a select statement without includ=
+ing the protected columns salary and commission_pct as follows:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">select first_name,last_name from hr.employees_test_vpd;</pre>=20
+</div>
+</div></li>
+<li><p>Now issue a select statement that includes the salary column as foll=
+ows:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">select first_name,last_name,salary from hr.employees;</pre>=20
+</div>
+</div></li>
+<li><p>Next issue a select statement that includes the commission_pct colum=
+n as follows:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">select first_name,last_name,commission_pct from hr.employees;</pre>=
+=20
+</div>
+</div></li>
+<li><p>And finally include salary and also commission_pct column as follows=
+:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">select first_name,last_name,salary,commission_pct from hr.employees;<=
+/pre>=20
+</div>
+</div></li>
+<li><p>Connect as user JHWALEN and repeat some of the statements from that =
+performed for DOCONNEL user . Connect as user security_adm and disable the =
+policy employees_salcomm_plc:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">conn security_adm
+Enter password:
+ BEGIN
+  2      dbms_rls.enable_policy(policy_name=3D&gt;'employees_salcomm_plc',o=
+bject_name=3D&gt;'employees_test_vpd', object_schema=3D&gt;'HR',enable=3D&g=
+t;FALSE);
+  3    END;
+  4  /</pre>=20
+</div>
+</div></li>
+<li><p>Create a new policy named employee_salcomm_plc_mask using the data m=
+asking option:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">begin
+  2      DBMS_RLS.add_policy (object_schema =3D&gt; 'HR', object_name =3D&g=
+t; 'EMPLOYEES_TEST_VPD', policy_name =3D&gt; 'employees_salcomm_plc_mask', =
+policy_function =3D&gt; 'salco
+mm_plc_func', statement_types =3D&gt; 'SELECT', sec_relevant_cols =3D&gt; '=
+SALARY,COMMISSION_PCT', sec_relevant_cols_opt =3D&gt; DBMS_RLS.all_rows );
+  3  end;
+  4  /</pre>=20
+</div>
+</div></li>
+<li><p>Connect as user DOCONNEL and issue the following statement:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">select first_name,last_name,salary,commission_pct fromhr.employees;</=
+pre>=20
+</div>
+</div><p>&nbsp;</p><p>The salary and commission_pct has values just for the=
+ user DOCONNEL; for other users' salary and commission_pct are displayed as=
+ null.</p></li>
+</ol>
+<h1 id=3D"Example3:Implementingcolumn-levelaccesspolicies-Howitworks">How i=
+t works</h1>
+<p>The policy will not trigger unless the columns declared in sec_relevant_=
+cols are not used in statements. Column masking works only with SELECT stat=
+ements. Additional information about secured columns can be found in the DB=
+A_SEC_RELEVANT_COLS dictionary view.</p>
+<p>&nbsp;</p>
+    </div>
+</body>
+</html>
+------=_Part_5251_789371275.1408632160675--

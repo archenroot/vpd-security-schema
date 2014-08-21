@@ -1,0 +1,611 @@
+Message-ID: <2124966560.5256.1408632179066.JavaMail.!fmp_vier@s0198vss043>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_5255_138377002.1408632179066"
+
+------=_Part_5255_138377002.1408632179066
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Example 4: Implementing VPD Grouped Policies</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+#main {
+    padding-bottom: 1em !important; /* The default padding of 6em is too mu=
+ch for printouts */
+}
+
+body {
+    font-family: Arial, Helvetica, FreeSans, sans-serif;
+    font-size: 10pt;
+    line-height: 1.2;
+}
+
+body, #full-height-container, #main, #page, #content, .has-personal-sidebar=
+ #content {
+    background: #fff    !important;
+    color: #000         !important;
+    border: 0           !important;
+    width: 100%         !important;
+    height: auto        !important;
+    min-height: auto    !important;
+    margin: 0           !important;
+    padding: 0          !important;
+    display: block      !important;
+}
+
+a, a:link, a:visited, a:focus, a:hover, a:active {
+    color: #000;
+}
+#content h1,
+#content h2,
+#content h3,
+#content h4,
+#content h5,
+#content h6 {
+    font-family: Arial, Helvetica, FreeSans, sans-serif;
+    page-break-after: avoid;
+}
+pre {
+    font-family: Monaco, "Courier New", monospace;
+}
+
+#header,
+.aui-header-inner,
+#navigation,
+#sidebar,
+.sidebar,
+#personal-info-sidebar,
+.ia-fixed-sidebar,
+.page-actions,
+.navmenu,
+.ajs-menu-bar,
+.noprint,
+.inline-control-link,
+.inline-control-link a,
+a.show-labels-editor,
+.global-comment-actions,
+.comment-actions,
+.quick-comment-container,
+#addcomment {
+    display: none !important;
+}
+
+.comment .date::before {
+    content: none !important; /* remove middot for print view */
+}
+
+h1.pagetitle img {
+    height: auto;
+    width: auto;
+}
+
+.print-only {
+    display: block;
+}
+#footer {
+    position: relative !important; /* CONF-17506 Place the footer at end of=
+ the content */
+    margin: 0;
+    padding: 0;
+    background: none;
+    clear: both;
+}
+
+#poweredby {
+    border-top: none;
+    background: none;
+}
+
+#poweredby li.print-only {
+    display: list-item;
+    font-style: italic;
+}
+
+#poweredby li.noprint {
+    display:none;
+}
+
+
+/* no width controls in print */
+.wiki-content .table-wrap,
+.wiki-content p,
+.panel .codeContent,
+.panel .codeContent pre,
+.image-wrap {
+    overflow: visible !important;
+}
+
+/* TODO - should this work? */
+#children-section,
+#comments-section .comment,
+#comments-section .comment .comment-body,
+#comments-section .comment .comment-content,
+#comments-section .comment p {
+    page-break-inside: avoid;
+}
+
+#page-children a {
+    text-decoration: none;
+}
+
+/**
+ hide twixies
+
+ the specificity here is a hack because print styles
+ are getting loaded before the base styles. */
+#comments-section.pageSection .section-header,
+#comments-section.pageSection .section-title,
+#children-section.pageSection .section-header,
+#children-section.pageSection .section-title,
+.children-show-hide {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.children-show-hide.icon {
+    display: none;
+}
+
+/* personal sidebar */
+.has-personal-sidebar #content {
+    margin-right: 0px;
+}
+
+.has-personal-sidebar #content .pageSection {
+    margin-right: 0px;
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Example 4: Implementing VPD Grouped Policies</h1>
+    <div class=3D"Section1">
+        <h1 id=3D"Example4:ImplementingVPDGroupedPolicies-Overview">Overvie=
+w</h1>
+<p>There may be cases where you want to use different VPD policies on the s=
+ame object. In such cases VPD offers a feature named grouped policies that =
+can be used to assign policies to different groups and to trigger them depe=
+nding on certain conditions. Enabling one policy or another will be decided=
+ by a driver context according to certain parameters declared at the applic=
+ation level. The following recipe will demonstrate how to use this VPD feat=
+ure.</p>
+<p>In this recipe we will create a table that will contain three different =
+department groups.</p>
+<p>We will create a new user STOBIAS in addition to the DOCONNEL and JWHALE=
+N users created earlier, in order to have one user for each group of depart=
+ments. For each group of departments a group policy will be defined. These =
+grouped policies will isolate the role of each group based on user membersh=
+ip. Each user will see his department determined by a driver context.</p>
+<h1 id=3D"Example4:ImplementingVPDGroupedPolicies-Workflow">Workflow</h1>
+<ol>
+<li><p>Connect as user HR and create the DEPARTMENT_CATEGORY table as follo=
+ws:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">CREATE TABLE HR.DEPARTMENT_CATEGORY
+      (
+        DEPID_CAT1 NUMBER,
+        DEP_CAT1   VARCHAR2(100 BYTE),
+        DEPID_CAT2 NUMBER,
+        DEP_CAT2   VARCHAR2(100 BYTE),
+        DEPID_CAT3 NUMBER,
+        DEP_CAT3   VARCHAR2(100 BYTE)
+      )
+      SEGMENT CREATION IMMEDIATE PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS =
+255 NOCOMPRESS LOGGING STORAGE
+      (
+        INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645 PCTIN=
+CREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFA=
+ULT CELL_FLASH_CACHE DEFAULT
+      )
+      TABLESPACE USERS ;</pre>=20
+</div>
+</div></li>
+<li><p>Next, insert into department_category control data. The data will be=
+ used by the driving context:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">Insert into DEPARTMENT_CATEGORY (DEPID_CAT1,DEP_CAT1,DEPID_CAT2,DEP_C=
+AT2,DEPID_CAT3,DEP_CAT3) values (10,'Administration',20,'Marketing',30,'Pur=
+chasing');
+Insert into DEPARTMENT_CATEGORY (DEPID_CAT1,DEP_CAT1,DEPID_CAT2,DEP_CAT2,DE=
+PID_CAT3,DEP_CAT3) values (40,'Human Resources',50,'Shipping',60,'IT');
+Insert into DEPARTMENT_CATEGORY (DEPID_CAT1,DEP_CAT1,DEPID_CAT2,DEP_CAT2,DE=
+PID_CAT3,DEP_CAT3) values (70,'Public Relations',80,'Sales',90,'Executive')=
+;
+Insert into DEPARTMENT_CATEGORY (DEPID_CAT1,DEP_CAT1,DEPID_CAT2,DEP_CAT2,DE=
+PID_CAT3,DEP_CAT3) values (100,'Finance',110,'Accounting',120,'Treasury');
+Insert into DEPARTMENT_CATEGORY (DEPID_CAT1,DEP_CAT1,DEPID_CAT2,DEP_CAT2,DE=
+PID_CAT3,DEP_CAT3) values (130,'Corporate Tax',140,'Control And Credit',150=
+,'Sha
+reholder Services');
+Insert into DEPARTMENT_CATEGORY (DEPID_CAT1,DEP_CAT1,DEPID_CAT2,DEP_CAT2,DE=
+PID_CAT3,DEP_CAT3) values (160,'Benefits',170,'Manufacturing',180,'Construc=
+tion'
+);
+Insert into DEPARTMENT_CATEGORY (DEPID_CAT1,DEP_CAT1,DEPID_CAT2,DEP_CAT2,DE=
+PID_CAT3,DEP_CAT3) values (190,'Contracting',200,'Operations',210,'IT Suppo=
+rt');
+Insert into DEPARTMENT_CATEGORY (DEPID_CAT1,DEP_CAT1,DEPID_CAT2,DEP_CAT2,DE=
+PID_CAT3,DEP_CAT3) values (220,'NOC',230,'IT Helpdesk',240,'Government Sale=
+s');
+Insert into DEPARTMENT_CATEGORY (DEPID_CAT1,DEP_CAT1,DEPID_CAT2,DEP_CAT2,DE=
+PID_CAT3,DEP_CAT3) values (250,'Retail Sales',260,'Recruiting',270,'Payroll=
+');
+commit;</pre>=20
+</div>
+</div></li>
+<li><p>Connect as user system and create a user STOBIAS, grant create sessi=
+on privilege to it:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">conn system
+Enter password:
+create user STOBIAS identified by STOBIAS;
+grant create session to STOBIAS;</pre>=20
+</div>
+</div></li>
+<li><p>Next, grant select on DEPARTMENT_CATEGORY to DOCONNEL, JWHALEN, and =
+STOBIAS as follows:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">grant select on hr.department_category to stobias,doconnel,jwhalen;</=
+pre>=20
+</div>
+</div></li>
+<li><p>Connect as system and create the driving context dep_cat_context as =
+follows:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">conn system
+Enter password:
+CREATE OR REPLACE CONTEXT dep_cat_context USING department_cat_pkg;</pre>=
+=20
+</div>
+</div></li>
+<li><p>From now on we will create one policy for each category. Create poli=
+cy_group category_dept_one as follows:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">BEGIN
+=09DBMS_RLS.CREATE_POLICY_GROUP( object_schema =3D&gt; 'HR', object_name =
+=3D&gt; 'department_category', policy_group =3D&gt; 'category_dept_one');
+END;</pre>=20
+</div>
+</div></li>
+<li><p>Create policy group category_dept_two as follows:\</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">BEGIN
+DBMS_RLS.CREATE_POLICY_GROUP( object_schema =3D&gt; 'HR', object_name =3D&g=
+t; 'department_category', policy_group =3D&gt; 'category_dept_two');
+END;</pre>=20
+</div>
+</div></li>
+<li><p>Create policy group category_dept_three as follows:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">BEGIN
+=09DBMS_RLS.CREATE_POLICY_GROUP( object_schema =3D&gt; 'HR', object_name =
+=3D&gt; 'department_category', policy_group =3D&gt; 'category_dept_three');
+END;</pre>=20
+</div>
+</div></li>
+<li><p>Next, we will create three policy functions that will be assigned to=
+ each grouped policy. Create the policy function for category one named vpd=
+_function_category_one as follows:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">CREATE OR REPLACE
+    FUNCTION VPD_FUNCTION_CATEGORY_ONE
+    (
+    =09V_SCHEMA IN VARCHAR2,
+        V_TABLE  IN VARCHAR2
+=09)
+      RETURN VARCHAR2
+    AS
+      PREDICATE VARCHAR2(8) DEFAULT NULL;
+    BEGIN
+      IF (SYS_CONTEXT('USERENV','SESSION_USER')) =3D 'JWHALEN' THEN
+        predicate                               :=3D '1=3D2';
+      ELSE
+        NULL;
+      END IF;
+      RETURN predicate;
+=09END;</pre>=20
+</div>
+</div></li>
+<li><p>Create the policy function vpd_function_category_two as follows:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">CREATE OR REPLACE FUNCTION vpd_function_category_two
+    (v_schema in varchar2, v_table in varchar2) return varchar2 as
+     predicate varchar2(8) default NULL;
+      BEGIN
+      IF (SYS_CONTEXT('USERENV','SESSION_USER')) =3D 'DOCONNEL'
+      THEN predicate :=3D '1=3D2';
+      ELSE NULL;
+      END IF;
+      RETURN predicate;
+    END;</pre>=20
+</div>
+</div></li>
+<li><p>Create the policy function vpd_function_category_three as follows:</=
+p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">CREATE OR REPLACE
+    FUNCTION vpd_function_category_three
+      (
+        v_schema IN VARCHAR2,
+        v_table  IN VARCHAR2)
+      RETURN VARCHAR2
+    AS
+      predicate VARCHAR2(8) DEFAULT NULL;
+    BEGIN
+      IF (SYS_CONTEXT('USERENV','SESSION_USER')) =3D 'STOBIAS' THEN
+        predicate                               :=3D '1=3D2';
+      ELSE
+        NULL;
+      END IF;
+      RETURN predicate;
+    END;</pre>=20
+</div>
+</div></li>
+<li><p>Next, we will create the grouped policies for each department catego=
+ry. Create the grouped policy named vpd_function_category_one_plc for categ=
+ory one as follows:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">BEGIN
+=09DBMS_RLS.ADD_GROUPED_POLICY
+=09(
+=09=09object_schema =3D&gt; 'HR',=20
+=09=09object_name =3D&gt; 'department_category',=20
+=09=09policy_group =3D&gt; 'category_dept_one',=20
+=09=09policy_name =3D&gt; 'vpd_function_category_one_plc',=20
+=09=09policy_function =3D&gt; 'vpd_function_category_one',=20
+=09=09statement_types =3D&gt; 'select',=20
+=09=09policy_type =3D&gt; DBMS_RLS.CONTEXT_SENSITIVE,=20
+=09=09sec_relevant_cols =3D&gt; 'depid_cat2,dep_cat2,depid_cat3,dep_cat3',=
+=20
+=09=09sec_relevant_cols_opt =3D&gt; DBMS_RLS.ALL_ROWS);
+END;</pre>=20
+</div>
+</div></li>
+<li><p>Next create a grouped policy named vpd_function_category_two_plc for=
+ category two as follows:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">BEGIN
+=09DBMS_RLS.ADD_GROUPED_POLICY
+=09(
+=09=09object_schema =3D&gt; 'HR',=20
+=09=09object_name =3D&gt; 'department_category',=20
+=09=09policy_group =3D&gt; 'category_dept_two',=20
+=09=09policy_name =3D&gt; 'vpd_function_category_two_plc',=20
+=09=09policy_function =3D&gt; 'vpd_function_category_two',=20
+=09=09statement_types =3D&gt; 'select',=20
+=09=09policy_type =3D&gt; DBMS_RLS.CONTEXT_SENSITIVE,=20
+=09=09sec_relevant_cols=3D&gt; 'depid_cat1,dep_cat1,depid_cat3,dep_cat3', =
+=09
+=09=09sec_relevant_cols_opt =3D&gt; DBMS_RLS.ALL_ROWS
+=09);
+END;</pre>=20
+</div>
+</div></li>
+<li><p>And finally create policy named vpd_function_cat_three_plc for the l=
+ast department category as follows:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">BEGIN
+=09DBMS_RLS.ADD_GROUPED_POLICY
+=09(
+=09=09object_schema =3D&gt; 'HR',=20
+=09=09object_name =3D&gt; 'department_category',=20
+=09=09policy_group =3D&gt; 'category_dept_three',=20
+=09=09policy_name =3D&gt; 'vpd_function_cat_three_plc',=20
+=09=09policy_function =3D&gt; 'vpd_function_category_three',=20
+=09=09statement_types =3D&gt; 'select',=20
+=09=09policy_type =3D&gt; DBMS_RLS.CONTEXT_SENSITIVE,=20
+=09=09sec_relevant_cols =3D&gt; 'depid_cat1,dep_cat1,depid_cat2,dep_cat2',=
+=20
+=09=09sec_relevant_cols_opt =3D&gt; DBMS_RLS.ALL_ROWS
+=09);
+END;</pre>=20
+</div>
+</div></li>
+<li><p>Next, create package and package body department_cat_pkg associated =
+with context dep_cat_context:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">CREATE OR REPLACE
+  PACKAGE department_cat_pkg
+  IS
+  PROCEDURE set_dep_cat_context
+    (
+      plc_grp VARCHAR2 DEFAULT NULL);
+  END;
+
+CREATE OR REPLACE
+  PACKAGE BODY department_cat_pkg
+  AS
+  PROCEDURE set_dep_cat_context
+    (
+      plc_grp VARCHAR2 DEFAULT NULL)
+  IS
+  BEGIN
+    CASE (SYS_CONTEXT('USERENV', 'SESSION_USER'))
+    WHEN 'JWHALEN' THEN
+      DBMS_SESSION.SET_CONTEXT('dep_cat_context','plc_grp','CATEGORY_DEPT_O=
+NE');
+    WHEN 'DOCONNEL' THEN
+      DBMS_SESSION.SET_CONTEXT('dep_cat_context','plc_grp','CATEGORY_DEPT_T=
+WO');
+    WHEN 'STOBIAS' THEN
+      DBMS_SESSION.SET_CONTEXT('dep_cat_context','plc_grp','CATEGORY_DEPT_T=
+HREE');
+    ELSE
+      NULL;
+    END CASE;
+  EXCEPTION
+  WHEN NO_DATA_FOUND THEN
+    NULL;
+  END set_dep_cat_context;
+END;</pre>=20
+</div>
+</div></li>
+<li><p>Next, assign dep_cat_context context to department_category as drivi=
+ng context:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">BEGIN
+=09DBMS_RLS.ADD_POLICY_CONTEXT
+=09(
+=09=09object_schema =3D&gt;'HR',=20
+=09=09object_name =3D&gt;'department_category',
+=09=09namespace =3D&gt;'dep_cat_context',
+attribute =3D&gt;'plc_grp'
+);
+END;</pre>=20
+</div>
+</div></li>
+<li><p>Next, create a new logon trigger to set the driving context after co=
+nnect as follows:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">CREATE OR REPLACE TRIGGER set_dep_cat_context_trg AFTER LOGON ON DATA=
+BASE
+BEGIN
+security_adm.department_cat_pkg.set_dep_cat_context;
+END;</pre>=20
+</div>
+</div></li>
+<li><p>Next, connect as DOCONNEL, check the plc_grp value from the driving =
+context, and select from department_category to check if the grouped policy=
+ if enforced:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">conn DOCONNEL
+Enter password:
+Connected.
+
+select sys_context('dep_cat_context','plc_grp') as DRIVING_CONTEXT from dua=
+l;
+
+select depid_cat1,dep_cat1,depid_cat2,dep_cat2,depid_cat3,dep_cat3 from hr.=
+department_category;</pre>=20
+</div>
+</div></li>
+<li><p>Connect as STOBIAS user, check the plc_grp value from the driving co=
+ntext, and select from department_category to check if the grouped policy i=
+f enforced:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">conn STOBIAS/STOBIAS
+Connected.
+
+select sys_context('dep_cat_context','plc_grp') from dual;
+
+select depid_cat1,dep_cat1,depid_cat2,dep_cat2,depid_cat3,dep_cat3 from hr.=
+department_category;</pre>=20
+</div>
+</div></li>
+<li><p>And finally connect as user JWHALEN, check the plc_grp value from th=
+e driving context, and select from department_category to check if the grou=
+ped policy if enforced:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"theme: RDark; brush: sql; gutter: false" style=3D"font-size:1=
+2px;">conn JWHALEN/JWHALEN
+
+Connected.
+
+select sys_context('dep_cat_context','plc_grp') from dual;
+
+select depid_cat1,dep_cat1,depid_cat2,dep_cat2,depid_cat3,dep_cat3 from hr.=
+department_category;</pre>=20
+</div>
+</div></li>
+</ol>
+<h1 id=3D"Example4:ImplementingVPDGroupedPolicies-Howitworks">How it works<=
+/h1>
+<p>In grouped policies, the active policy is decided by using the driving c=
+ontext. In our example, the driving context is &quot;dep_cat_context&quot; =
+defined with the ADD_POLICY_CONTEXT procedure from the DBMS_RLS package. It=
+s attribute is modified depending on which user connects.</p>
+<h1 id=3D"Example4:ImplementingVPDGroupedPolicies-There'smore">There's more=
+</h1>
+<p>More information about grouped policies can be found in the ALL_POLICIES=
+_GROUP, DBA_POLICIES_GROUPS, and DBA_POLICY_CONTEXTS dictionary views.</p>
+    </div>
+</body>
+</html>
+------=_Part_5255_138377002.1408632179066--
