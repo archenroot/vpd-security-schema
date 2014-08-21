@@ -207,3 +207,137 @@ select * from user_objects where object_type = 'TABLE';
 
 
 
+INSERT INTO F_SEC_ADMIN.OBJECTS (NAME,OBJECT_TYPE_ID, SCHEMA_ID, AUTHORIZATION_OBJECT_ID) VALUES ('PORTFOLIO_GROUPS_V',2,1,'842');
+
+
+
+SELECT * FROM F_SEC_ADMIN.AUTHORIZATION_OBJECTS,F_SEC_ADMIN.OBJECTS;
+WHERE AUTH_OBJ_TYPE_ID = 5;
+
+select * from all_tab_columns
+where column_name='OWNER_NUM'
+AND OWNER='F_DWH_BL'
+;
+
+
+
+select table_name,column_name from all_tab_columns
+where 
+--column_name='OWNER_NUM'
+OWNER='F_DWH_BL'
+and table_name in(
+'CUSTOMERS_V',
+'CUSTOMER_SYSTEMATICS_V',
+'CUST_PORT_ASSIGNMENTS_V',
+'OWNERS_V',
+'PORTFOLIOS_V',
+'PORTFOLIO_ASSIGNMENTS_V',
+'PORTFOLIO_FIGURES_DAILY_V',
+'PORTFOLIO_FIGURES_DLY_HIST_V',
+'PORTFOLIO_GROUPS_V',
+'PORTFOLIO_HIST_V',
+'PORTFOLIO_HOLDINGS_V',
+'PORTFOLIO_HOLDING_CALCS_V',
+'PORTFOLIO_HOLDING_CALCS_VV_V',
+'PORTFOLIO_HOLDING_CALC_HIST_V',
+'PORTFOLIO_HOLDING_HIST_V',
+'PORTFOLIO_IDS_V',
+'PORTFOLIO_ID_MAPPINGS_V',
+'PORTFOLIO_TARGET_SYSTEMS_V',
+'TRANSACTIONS_V',
+'TRANSACTION_COSTS_V',
+'TRANSACTION_COST_HIST_V',
+'TRANSACTION_DETAILS_V',
+'TRANSACTION_DETAIL_HIST_V',
+'TRANSACTION_HIST_V');
+
+
+
+sele
+
+
+--- CREATE BL VIEWS
+declare
+l_schema varchar2(60) := 'F_DWH_BL';
+l_statement varchar2(4000) := '';
+CURSOR tab_cur 
+  IS 
+    SELECT table_name,REPLACE(table_name,'_TB','_V') as view_name
+    FROM dba_tables WHERE owner='F_DWH_BL'
+    AND table_name NOT IN ('ASSETS_TB_20140710','ASSET_ID_MAPPINGS_DUBS_HIST');
+begin
+
+FOR x IN tab_cur LOOP
+l_statement :='CREATE OR REPLACE force VIEW ' || l_schema || '.' || x.view_name || ' AS SELECT * FROM F_DWH_BL.' || x.table_name;
+DBMS_OUTPUT.PUT(l_statement);
+EXECUTE IMMEDIATE l_statement;
+EXECUTE IMMEDIATE 'GRANT SELECT ON '|| l_schema  || '.' ||x.view_name||' to '|| 'A88FS01,A88FS02,A88FS03,A88FS04';
+--EXECUTE IMMEDIATE 'GRANT SELECT ON '||tables_schema||'.'||x.table_name||' to '||synonyms_schema;
+--EXECUTE IMMEDIATE 'CREATE SYNONYM '||synonyms_schema||'.'||x.table_name||' FOR '||tables_schema||'.'||x.table_name;
+END LOOP;
+end;
+
+SELECT table_name,REPLACE(table_name,'_TB','_V') as view_name
+    FROM dba_tables WHERE owner='F_DWH_BL';
+
+
+-- DROP BL VIEWS
+declare
+l_schema varchar2(60) := 'F_DWH_BL';
+l_statement varchar2(4000) := '';
+CURSOR tab_cur 
+  IS 
+    SELECT * FROM ALL_VIEWS WHERE owner='F_DWH_BL';
+begin
+
+FOR x IN tab_cur LOOP
+l_statement :='DROP VIEW ' || l_schema || '.' || x.view_name ;
+DBMS_OUTPUT.PUT(l_statement);
+EXECUTE IMMEDIATE l_statement;
+--EXECUTE IMMEDIATE 'GRANT SELECT ON '|| l_schema  || '.' ||x.view_name||' to '|| 's9073';
+--EXECUTE IMMEDIATE 'GRANT SELECT ON '||tables_schema||'.'||x.table_name||' to '||synonyms_schema;
+--EXECUTE IMMEDIATE 'CREATE SYNONYM '||synonyms_schema||'.'||x.table_name||' FOR '||tables_schema||'.'||x.table_name;
+END LOOP;
+end;
+
+
+
+
+
+
+-- EOS part, because the sequence and trigger must be created
+-- Initial static constants.
+
+-- Generator
+
+-- VPD Groups
+SELECT *
+FROM AUTHORIZATION_OBJECTS
+WHERE 
+V_IS_DELETED
+
+-- VPD POLICIES
+SELECT OBJECT_SCHEMA
+OBJECT_NAME
+POLICY_NAME
+FUNCTION_SCHEMA
+POLICY_FUNCTION
+STATEMENT_TYPES
+UPDATE_CHECK
+ENABLE
+STATIC_POLICY
+LONG_PREDICATE
+SEC_RELEVANT_COLS
+SEC_RELEVANT_COLS_OPT
+V_IS_DELETED
+V_VALID_FROM
+V_VALID_TO
+VPD_POLICY_TYPE_ID
+VPD_POLICY_GROUP_ID
+
+
+
+
+
+
+
