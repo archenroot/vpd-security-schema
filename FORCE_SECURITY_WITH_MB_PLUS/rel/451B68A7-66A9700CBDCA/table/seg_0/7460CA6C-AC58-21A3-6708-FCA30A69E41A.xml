@@ -44,6 +44,18 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <notNullConstraintName>SCHEMAS_NM_NN_CHK</notNullConstraintName>
 </Column>
+<Column name="V_IS_ACTIVE" id="B9455E36-3D85-1DAC-6191-A2F79D2908F1">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-21 07:58:32 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>SCHEMAS_IA_CHK</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<domain>E87979A5-1214-9393-5154-3867C64A312D</domain>
+<defaultValue>T</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>SCHEMAS_IA_NN_CHK</notNullConstraintName>
+</Column>
 <Column name="V_VALID_FROM" id="33AD30D8-065C-4D5B-A4E8-C7BD6B89FB5A">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-15 10:02:10 UTC</createdTime>

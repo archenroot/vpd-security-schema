@@ -4,10 +4,11 @@
 <createdTime>2014-08-20 13:42:19 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
 <beforeCreate>DROP TABLE USERS_AUTH_OBJS_RELS;&lt;br/&gt;DROP SEQUENCE USERS_AUTH_OBJS_RELS_SEQ;</beforeCreate>
+<shouldGeneratescript>true</shouldGeneratescript>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="USERS_AUTH_OBJS_RELS_ID" id="35F6F962-EC78-307A-D6E5-DD2141C14E53">
+<Column name="USR_AUTH_OBJS_REL_ID" id="35F6F962-EC78-307A-D6E5-DD2141C14E53">
 <createdBy>s9073</createdBy>
 <createdTime>2014-08-20 13:54:05 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
@@ -28,12 +29,14 @@
 <createdBy>s9073</createdBy>
 <createdTime>2014-08-20 13:44:01 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>USRS_AUTH_OBJS_RELS_UID_CHK</constraintName>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
 <delegate>95120261-DBA3-3FF3-3860-7A1D8C57B138</delegate>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>USRS_AUTH_OBJS_RELS_UID_NN_CHK</notNullConstraintName>
 <associations>
 <colAssociation fkAssociation="5D348937-D08C-8C80-2E02-4CEC0A141315" referredColumn="95120261-DBA3-3FF3-3860-7A1D8C57B138"/>
 </associations>
@@ -42,35 +45,53 @@
 <createdBy>s9073</createdBy>
 <createdTime>2014-08-20 13:44:08 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>USRS_AUTH_OBJS_RELS_AORID_CHK</constraintName>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
 <delegate>E3D211F9-29F4-BE1F-86D4-582C2791D8F8</delegate>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>USRS_AUTH_OBJS_RELS_AORID_NN_CHK</notNullConstraintName>
 <associations>
 <colAssociation fkAssociation="52025B9C-48B0-5536-E747-37B4BF40058A" referredColumn="E3D211F9-29F4-BE1F-86D4-582C2791D8F8"/>
 </associations>
+</Column>
+<Column name="V_IS_ACTIVE" id="76E2D7F2-2C72-4A75-C502-9FA26863311F">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-21 07:50:59 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>USRS_AUTH_OBJS_RELS_IA_CHK</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<domain>E87979A5-1214-9393-5154-3867C64A312D</domain>
+<defaultValue>T</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>USRS_AUTH_OBJS_RELS_IA_NN_CHK</notNullConstraintName>
 </Column>
 <Column name="V_VALID_FROM" id="16A4017F-4B38-1D85-D4CE-92326CDAE0D9">
 <createdBy>s9073</createdBy>
 <createdTime>2014-08-20 13:46:29 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>USRS_AUTH_OBJS_RELS_VF_CHK</constraintName>
 <use>0</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
 <domain>EE15CA62-A196-AD5F-FB68-3D471E68D33A</domain>
 <defaultValue>sysdate</defaultValue>
 <autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>USRS_AUTH_OBJS_RELS_VF_NN_CHK</notNullConstraintName>
 </Column>
 <Column name="V_VALID_TO" id="9CDC2764-7216-8811-8727-3D1BE651D580">
 <createdBy>s9073</createdBy>
 <createdTime>2014-08-20 13:46:29 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>USRS_AUTH_OBJS_RELS_VT_CHK</constraintName>
 <use>0</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
 <domain>95658974-F90C-2D33-5642-6BCAB49CAF78</domain>
 <defaultValue>to_date(5373484, &apos;J&apos;)</defaultValue>
 <autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>USRS_AUTH_OBJS_RELS_VT_NN_CHK</notNullConstraintName>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">

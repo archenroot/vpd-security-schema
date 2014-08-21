@@ -8,10 +8,12 @@
    <object objectType="Table" objectID="6E7F26DF-EBA1-AD29-1801-99892025DEFD" name="OBJECTS" seqName="seg_0"/>
    <object objectType="Table" objectID="F9099400-D966-7ACE-1C20-92DF0269A668" name="OBJECT_COLUMNS" seqName="seg_0"/>
    <object objectType="Table" objectID="202F4B40-B611-E1AF-5EAB-EE97495739B0" name="OBJECT_TYPES" seqName="seg_0"/>
+   <object objectType="Table" objectID="8D56787D-98CA-10B9-47E1-CA6ADAECF753" name="ROLES" seqName="seg_0"/>
    <object objectType="Table" objectID="7460CA6C-AC58-21A3-6708-FCA30A69E41A" name="SCHEMAS" seqName="seg_0"/>
    <object objectType="Table" objectID="1F21AE2C-FCFA-D45D-6C27-8574B62848A2" name="USERS" seqName="seg_0"/>
    <object objectType="Table" objectID="044E82D8-30CA-C09B-CDC7-3007E3733414" name="USERS_AUTH_OBJECTS" seqName="seg_0"/>
    <object objectType="Table" objectID="F13965AD-BE1A-7012-3427-12727C60C1FE" name="USERS_AUTH_OBJS_RELS" seqName="seg_0"/>
+   <object objectType="Table" objectID="7B46ACF3-1E1A-7883-634D-E5D72A018825" name="USER_TYPES" seqName="seg_0"/>
    <object objectType="Table" objectID="6A8C1790-6A1B-4E92-8EAD-005B633764F1" name="VARIABLES" seqName="seg_0"/>
    <object objectType="Table" objectID="1ECDC71A-BDD2-D131-2F18-5ACA06FD66F5" name="VPD_POLICIES" seqName="seg_0"/>
    <object objectType="Table" objectID="7A70CAA9-4176-DDA4-C2AD-B515B320E6B3" name="VPD_POLICY_GROUPS" seqName="seg_0"/>
@@ -21,6 +23,7 @@
    <object objectType="FKIndexAssociation" objectID="5D348937-D08C-8C80-2E02-4CEC0A141315" name="AOSRS_UAOSRS_FK" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="0D485684-F2EB-CD58-6195-ED0619D8C0BC" name="AOS_AOTS_FK" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="B90FBF06-8F0B-BDD2-C0B1-DEA88570B198" name="AUTH_OBJS_GRPS_AUTH_OBJS_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="D25FE0F0-3E3B-AE66-5F6C-D618F98458D3" name="USERS_USER_TYPES_FK" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="D86E89AC-F32E-1FE6-14EC-E46B41B76196" name="OBJECTS_AUTH_OBJS_FK" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="7909663B-6CD5-8B63-5A21-2876D382722E" name="OBJECTS_OBJ_TYPES_FK" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="83057370-8398-70ED-9EE8-873F2FC72248" name="OBJECTS_SCHEMAS_FK" seqName="seg_0"/>

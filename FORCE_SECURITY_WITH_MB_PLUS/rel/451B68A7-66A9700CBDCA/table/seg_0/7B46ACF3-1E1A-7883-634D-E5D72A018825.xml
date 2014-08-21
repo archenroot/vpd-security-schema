@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7B46ACF3-1E1A-7883-634D-E5D72A018825" name="USER_TYPES">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-21 10:16:07 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<beforeCreate>DROP TABLE USER_TYPES CASCADE CONSTRAINTS;&lt;br/&gt;DROP SEQUENCE USER_TYPE_ID_SEQ;</beforeCreate>
+<shouldGeneratescript>true</shouldGeneratescript>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="USER_TYPE_ID" id="26F2AE0A-5B05-F342-EB47-EA2F4998A70B">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-21 10:17:08 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>USER_TYPE_ID_CHK</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>USER_TYPE_ID_SEQ</autoIncrementSequenceName>
+<autoIncrementTriggerName>USER_TYPE_BIS_TRG</autoIncrementTriggerName>
+<notNullConstraintName>USER_TYPE_ID_NN_CHK</notNullConstraintName>
+</Column>
+<Column name="CODE" id="A76F265B-9475-3D96-0E0D-5245AF5208BF">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-21 10:17:08 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>USER_TYPE_CODE_CHK</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>USER_TYPE_CODE_NN_CHK</notNullConstraintName>
+</Column>
+<Column name="DESCRIPTION" id="6E7FA5FA-11A1-0132-DA0E-BCBD6F0938F7">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-21 10:17:08 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>USER_TYPE_DESC_CHK</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>8F7D1148-F50B-EB33-3894-F0472C179892</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>USER_TYPE_DESC_NN_CHK</notNullConstraintName>
+</Column>
+<Column name="V_IS_ACTIVE" id="93A74701-0965-4114-CFF6-F940B7D5D1C7">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-21 10:29:48 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>USER_TYPE_IA_CHK</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<domain>E87979A5-1214-9393-5154-3867C64A312D</domain>
+<defaultValue>T</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>USER_TYPE_IA_NN_CHK</notNullConstraintName>
+</Column>
+<Column name="V_VALID_FROM" id="EA99A00E-53C6-63D0-86E8-04FC8D24EF61">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-21 10:29:48 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>USER_TYPE_VF_CHK</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>EE15CA62-A196-AD5F-FB68-3D471E68D33A</domain>
+<defaultValue>sysdate</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>USER_TYPE_VF_NN_CHK</notNullConstraintName>
+</Column>
+<Column name="V_VALID_TO" id="79E4D3D1-8724-A095-FCA7-40A296B58078">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-21 10:29:48 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>USER_TYPE_VF_CHK</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>95658974-F90C-2D33-5642-6BCAB49CAF78</domain>
+<defaultValue>to_date(5373484, &apos;J&apos;)</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>USER_TYPE_VF_NN_CHK</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5E29DED9-92E8-F7DE-C7A8-4641D47859B0" name="USER_TYPES_PK">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-21 10:17:08 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="26F2AE0A-5B05-F342-EB47-EA2F4998A70B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

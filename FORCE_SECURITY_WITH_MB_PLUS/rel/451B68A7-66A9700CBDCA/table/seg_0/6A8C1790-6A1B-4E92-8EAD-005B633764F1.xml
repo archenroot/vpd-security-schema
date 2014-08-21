@@ -57,24 +57,26 @@
 <createdBy>s9073</createdBy>
 <createdTime>2014-08-20 12:11:05 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>VARS_DESC_CHK</constraintName>
 <use>0</use>
 <logicalDatatype>LOGDT040</logicalDatatype>
 <domain>1EF3F76F-872F-BC87-ADB2-6B36294821F7</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>VARS_DESC_NN_CHK</notNullConstraintName>
 </Column>
 <Column name="V_IS_ACTIVE" id="A138991A-A1C0-E42D-930C-5F3E1A796E7A">
 <createdBy>s9073</createdBy>
 <createdTime>2014-07-17 13:59:55 UTC</createdTime>
 <commentInRDBMS>Validation column: Is record logicaly deleted?</commentInRDBMS>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
-<constraintName>VARS_DEL_CHK</constraintName>
+<constraintName>VARS_IA_CHK</constraintName>
 <use>0</use>
 <logicalDatatype>LOGDT006</logicalDatatype>
 <domain>E87979A5-1214-9393-5154-3867C64A312D</domain>
 <usesDefaultValue>true</usesDefaultValue>
 <defaultValue>T</defaultValue>
 <autoIncrementCycle>false</autoIncrementCycle>
-<notNullConstraintName>VARS_DEL_NN_CHK</notNullConstraintName>
+<notNullConstraintName>VARS_IA_NN_CHK</notNullConstraintName>
 </Column>
 <Column name="V_VALID_FROM" id="54AFE6DA-E77C-4E8C-45F8-EF12A82CBC7D">
 <createdBy>s9073</createdBy>
@@ -182,7 +184,7 @@
 <validTimeDimensions>
 <validTimeDimension class="oracle.dbtools.crest.model.design.relational.ValidTimeDimension" name="ValidTime_1" directorySegmentName="seg_0" id="EF4244E8-0DC6-CF44-105F-5106B2FE8A34">
 <createdBy>s9073</createdBy>
-<createdTime>2014-08-20 15:22:55 UTC</createdTime>
+<createdTime>2014-08-21 09:22:02 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
 <endTimeColumn>51F3D789-4D5B-E6A3-17DC-974609E1B9F2</endTimeColumn>
 <startTimeColumn>54AFE6DA-E77C-4E8C-45F8-EF12A82CBC7D</startTimeColumn>

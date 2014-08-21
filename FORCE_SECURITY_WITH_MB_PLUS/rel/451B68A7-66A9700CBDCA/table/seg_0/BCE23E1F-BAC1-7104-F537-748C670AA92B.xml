@@ -4,7 +4,7 @@
 <createdTime>2014-07-15 10:02:10 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
 <abbreviation>AUTH_OBJS_RELS</abbreviation>
-<beforeCreate>DROP TABLE AUTH_OBJS_RELATIONS;&lt;br/&gt;DROP SEQUENCE AUTH_OBJS_RELS_SEQ;</beforeCreate>
+<beforeCreate>DROP TABLE AUTH_OBJS_RELATIONS CASCADE CONSTRAINTS;&lt;br/&gt;DROP SEQUENCE AUTH_OBJS_RELS_SEQ;</beforeCreate>
 <shouldGeneratescript>true</shouldGeneratescript>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -58,6 +58,38 @@
 <associations>
 <colAssociation fkAssociation="727B7AE0-EF16-9F39-33FA-9527370EAC1A" referredColumn="A13277FA-0868-771A-1C73-D2019C29C0BF"/>
 </associations>
+</Column>
+<Column name="NAME" id="2CCAA2D7-03EE-BFF5-AA1D-CE884256931D">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-21 08:34:29 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPTION" id="14CBE26E-B99C-FEED-0C23-25642B3FBB25">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-21 08:34:29 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<domain>1EF3F76F-872F-BC87-ADB2-6B36294821F7</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="V_IS_ACTIVE" id="611ECFB6-B4E2-A121-E3A8-E53B53E4B976">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-21 07:52:30 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>AUTH_OBJS_RELS_IA_CHK</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<domain>E87979A5-1214-9393-5154-3867C64A312D</domain>
+<defaultValue>T</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>AUTH_OBJS_RELS_IA_NN_CHK</notNullConstraintName>
 </Column>
 <Column name="V_VALID_FROM" id="F0350DBD-EDEA-8B57-4ABF-2FFAE7151321">
 <createdBy>s9073</createdBy>

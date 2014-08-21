@@ -124,6 +124,18 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <notNullConstraintName>OBJ_COLS_ALCHO_NN_CHK</notNullConstraintName>
 </Column>
+<Column name="V_IS_ACTIVE" id="ACAD8845-DC95-000A-C2A3-C90B4443EEF4">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-21 07:57:19 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>OBJ_COLS_IA_CHK</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<domain>E87979A5-1214-9393-5154-3867C64A312D</domain>
+<defaultValue>T</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>OBJ_COLS_IA_NN_CHK</notNullConstraintName>
+</Column>
 <Column name="V_VALID_FROM" id="1BCF85BE-2F93-2E99-746A-519F0C83EF1C">
 <createdBy>s9073</createdBy>
 <createdTime>2014-08-06 15:33:03 UTC</createdTime>

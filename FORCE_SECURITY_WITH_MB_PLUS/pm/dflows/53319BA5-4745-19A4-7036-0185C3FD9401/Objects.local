@@ -1,0 +1,5 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.process.DataFlowDesign>
+   <object objectType="Process" objectID="2BCC7EAE-E25D-C40D-72C0-64E702C5E802" name="Process_1" seqName="seg_0"/>
+   <object objectType="Process" objectID="67339408-A1C5-A1AA-4191-3D7A7CE9890D" name="Process_2" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.process.DataFlowDesign>

@@ -3,6 +3,8 @@
 <createdBy>s9073</createdBy>
 <createdTime>2014-08-20 13:31:57 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<beforeCreate>DROP TABLE AUTH_OBJECTS_GROUPS;&lt;br/&gt;DROP SEQUENCE AUTH_OBJS_GRP_ID_SEQ;</beforeCreate>
+<shouldGeneratescript>true</shouldGeneratescript>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
@@ -10,44 +12,80 @@
 <createdBy>s9073</createdBy>
 <createdTime>2014-08-20 13:32:25 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>AUTH_OBJS_GRP_ID_CHK</constraintName>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>AUTH_OBJS_GRP_ID_SEQ</autoIncrementSequenceName>
+<autoIncrementTriggerName>AUTH_OBJS_GRP_ID_BIS_TRG</autoIncrementTriggerName>
+<notNullConstraintName>AUTH_OBJS_GRP_ID_NN_CHK</notNullConstraintName>
 </Column>
 <Column name="AUTH_OBJECT_ID" id="98D62CE5-26ED-1D89-4027-2F094DE8527A">
 <createdBy>s9073</createdBy>
 <createdTime>2014-08-20 15:32:41 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>AUTH_OBJS_GRP_AOID_CHK</constraintName>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
 <delegate>A13277FA-0868-771A-1C73-D2019C29C0BF</delegate>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>AUTH_OBJS_GRP_AOID_NN_CHK</notNullConstraintName>
 <associations>
 <colAssociation fkAssociation="B90FBF06-8F0B-BDD2-C0B1-DEA88570B198" referredColumn="A13277FA-0868-771A-1C73-D2019C29C0BF"/>
 </associations>
+</Column>
+<Column name="NAME" id="1BC3977D-1608-4D6B-984D-158C815656C4">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-21 07:48:29 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>AUTH_OBJS_GRP_NAME_CHK</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>AUTH_OBJS_GRP_NAME_NN_CHK</notNullConstraintName>
+</Column>
+<Column name="DESCRIPTION" id="8E8CDE44-5F03-23DB-109E-A3DF5A3E6977">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-21 07:48:29 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>AUTH_OBJS_GRP_DESC_CHK</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<domain>1EF3F76F-872F-BC87-ADB2-6B36294821F7</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>AUTH_OBJS_GRP_DESC_NN_CHK</notNullConstraintName>
 </Column>
 <Column name="V_VALID_FROM" id="19BF5397-8E9A-C809-0288-F989F04D8820">
 <createdBy>s9073</createdBy>
 <createdTime>2014-08-20 15:33:39 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>AUTH_OBJS_GRP_VF_CHK</constraintName>
 <use>0</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
 <domain>EE15CA62-A196-AD5F-FB68-3D471E68D33A</domain>
 <defaultValue>sysdate</defaultValue>
 <autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>AUTH_OBJS_GRP_VF_NN_CHK</notNullConstraintName>
 </Column>
 <Column name="V_VALID_TO" id="36BD5019-4394-0424-3099-A9C1C095A684">
 <createdBy>s9073</createdBy>
 <createdTime>2014-08-20 15:33:39 UTC</createdTime>
 <ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>AUTH_OBJS_GRP_VT_CHK</constraintName>
 <use>0</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
 <domain>95658974-F90C-2D33-5642-6BCAB49CAF78</domain>
 <defaultValue>to_date(5373484, &apos;J&apos;)</defaultValue>
 <autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>AUTH_OBJS_GRP_VT_NN_CHK</notNullConstraintName>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">

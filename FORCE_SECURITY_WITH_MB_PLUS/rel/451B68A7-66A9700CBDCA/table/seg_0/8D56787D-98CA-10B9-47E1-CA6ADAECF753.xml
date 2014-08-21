@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8D56787D-98CA-10B9-47E1-CA6ADAECF753" name="ROLES">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-21 08:35:17 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ROLE_ID" id="780246A4-D24C-1462-69AB-7F03EF9F764F">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-21 08:35:40 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>ROLE_ID_CHK</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>E1FC7E06-E17E-570F-CF24-FBDCE3D2A844</domain>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>ROLES_SEQ</autoIncrementSequenceName>
+<autoIncrementTriggerName>ROLES_BIS_TRG</autoIncrementTriggerName>
+<notNullConstraintName>ROLE_ID_NN_CHK</notNullConstraintName>
+</Column>
+<Column name="NAME" id="E307B808-31C1-BADB-38B6-3DF583D4D61D">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-21 08:35:40 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>19DEE806-9F73-939C-4464-330DC8C2F169</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPTION" id="584779E8-AD8B-6326-699D-E186F8602EC5">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-21 08:35:40 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<domain>1EF3F76F-872F-BC87-ADB2-6B36294821F7</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B7106B4C-38CA-17B3-215E-402EDE4FDF11" name="ROLES_PK">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-21 08:36:33 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="780246A4-D24C-1462-69AB-7F03EF9F764F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

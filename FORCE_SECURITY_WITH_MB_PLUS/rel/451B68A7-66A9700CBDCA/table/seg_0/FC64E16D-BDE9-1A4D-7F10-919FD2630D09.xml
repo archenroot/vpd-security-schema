@@ -7,7 +7,7 @@
 <abbreviation>VPD_POL_TYPS</abbreviation>
 <afterCreate>&lt;br/&gt;</afterCreate>
 <beforeCreate>DROP TABLE VPD_POLICY_TYPES CASCADE CONSTRAINTS;&lt;br/&gt;DROP SEQUENCE VPD_POL_TYPS_SEQ;</beforeCreate>
-<endOfScript>-- EOS part, because the sequence and trigger must be created&lt;br/&gt;-- Initial static constants.&lt;br/&gt;REM INSERTING into F_SEC_ADMIN.VPD_POLICY_TYPES&lt;br/&gt;SET DEFINE OFF;&lt;br/&gt;Insert into F_SEC_ADMIN.VPD_POLICY_TYPES (VPD_POLICY_TYPE_ID,TYPE,V_IS_DELETED,V_VALID_FROM,V_VALID_TO) values (1,&apos;dbms_rls.CONTEXT_SENSITIVE&apos;,&apos;F&apos;,sysdate,to_date(&apos;31-DEC-99&apos;,&apos;DD-MON-RR&apos;));&lt;br/&gt;Insert into F_SEC_ADMIN.VPD_POLICY_TYPES (VPD_POLICY_TYPE_ID,TYPE,V_IS_DELETED,V_VALID_FROM,V_VALID_TO) values (2,&apos;dbms_rls.DYNAMIC&apos;,&apos;F&apos;,sysdate,to_date(&apos;31-DEC-99&apos;,&apos;DD-MON-RR&apos;));&lt;br/&gt;Insert into F_SEC_ADMIN.VPD_POLICY_TYPES (VPD_POLICY_TYPE_ID,TYPE,V_IS_DELETED,V_VALID_FROM,V_VALID_TO) values (3,&apos;dbms_rls.SHARED_CONTEXT_SENSITIVE&apos;,&apos;F&apos;,sysdate,to_date(&apos;31-DEC-99&apos;,&apos;DD-MON-RR&apos;));&lt;br/&gt;Insert into F_SEC_ADMIN.VPD_POLICY_TYPES (VPD_POLICY_TYPE_ID,TYPE,V_IS_DELETED,V_VALID_FROM,V_VALID_TO) values (4,&apos;dbms_rls.SHARED_STATIC&apos;,&apos;F&apos;,sysdate,to_date(&apos;31-DEC-99&apos;,&apos;DD-MON-RR&apos;));&lt;br/&gt;Insert into F_SEC_ADMIN.VPD_POLICY_TYPES (VPD_POLICY_TYPE_ID,TYPE,V_IS_DELETED,V_VALID_FROM,V_VALID_TO) values (5,&apos;dbms_rls.STATIC&apos;,&apos;F&apos;,sysdate,to_date(&apos;31-DEC-99&apos;,&apos;DD-MON-RR&apos;));&lt;br/&gt;</endOfScript>
+<endOfScript>-- EOS part, because the sequence and trigger must be created&lt;br/&gt;-- Initial static constants.&lt;br/&gt;REM INSERTING into F_SEC_ADMIN.VPD_POLICY_TYPES&lt;br/&gt;SET DEFINE OFF;&lt;br/&gt;Insert into F_SEC_ADMIN.VPD_POLICY_TYPES (VPD_POLICY_TYPE_ID,TYPE) values (1,&apos;dbms_rls.CONTEXT_SENSITIVE&apos;);&lt;br/&gt;Insert into F_SEC_ADMIN.VPD_POLICY_TYPES (VPD_POLICY_TYPE_ID,TYPE) values (2,&apos;dbms_rls.DYNAMIC&apos;);&lt;br/&gt;Insert into F_SEC_ADMIN.VPD_POLICY_TYPES (VPD_POLICY_TYPE_ID,TYPE) values (3,&apos;dbms_rls.SHARED_CONTEXT_SENSITIVE&apos;);&lt;br/&gt;Insert into F_SEC_ADMIN.VPD_POLICY_TYPES (VPD_POLICY_TYPE_ID,TYPE) values (4,&apos;dbms_rls.SHARED_STATIC&apos;);&lt;br/&gt;Insert into F_SEC_ADMIN.VPD_POLICY_TYPES (VPD_POLICY_TYPE_ID,TYPE) values (5,&apos;dbms_rls.STATIC&apos;);</endOfScript>
 <shouldGeneratescript>true</shouldGeneratescript>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
@@ -43,6 +43,18 @@
 <domain>CBA61939-B5B5-58F5-6564-C43AC773FAE7</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 <notNullConstraintName>VPD_POL_TYPS_TYPE_NN_CHK</notNullConstraintName>
+</Column>
+<Column name="V_IS_ACTIVE" id="5B464ECA-F5E9-2892-2B49-C504042D058F">
+<createdBy>s9073</createdBy>
+<createdTime>2014-08-21 07:58:56 UTC</createdTime>
+<ownerDesignName>FORCE_SECURITY_WITH_MB_PLUS</ownerDesignName>
+<constraintName>VPD_POL_TYPS_IA_CHK</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<domain>E87979A5-1214-9393-5154-3867C64A312D</domain>
+<defaultValue>T</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>VPD_POL_TYPS_IA_NN_CHK</notNullConstraintName>
 </Column>
 <Column name="V_VALID_FROM" id="16B24BE0-537F-165F-8B44-7C2002C86AF6">
 <createdBy>s9073</createdBy>

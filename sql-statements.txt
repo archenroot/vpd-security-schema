@@ -1,0 +1,209 @@
+
+
+Can user be connected to the auth_object_relation if he doesn' posses both experten codes? -> NO
+
+
+-- Get only records where there is defined relationship between VERTICAL and 
+-- HORIZONTAL authorization objects
+  AND AO.AUTH_OBJECT_ID 
+    IN (
+      -- Select M relations
+      SELECT DISTINCT AUTH_OBJECT_ID 
+        FROM (
+          SELECT AORM.AUTH_OBJ_ID_M AUTH_OBJECT_ID 
+          FROM AUTH_OBJS_RELATIONS AORM
+          WHERE 
+            -- Only valid records
+            AORM.V_IS_ACTIVE = 'T'
+            AND AORM.V_VALID_FROM < SYSDATE
+            AND AORM.V_VALID_TO >= SYSDATE
+          
+          UNION ALL
+          
+          SELECT AORN.AUTH_OBJ_ID_N AUTH_OBJECT_ID 
+          FROM AUTH_OBJS_RELATIONS AORN
+          WHERE 
+            -- Only valid records
+            AORN.V_IS_ACTIVE = 'T'
+            AND AORN.V_VALID_FROM < SYSDATE
+            AND AORN.V_VALID_TO >= SYSDATE
+          ) AUTH_OBJECTS_RELATIONS
+        )
+      
+
+
+
+
+
+-- search for the columns if exists
+DECLARE
+  v_column_exists number := 0;  
+BEGIN
+  Select count(*) into v_column_exists
+    from user_tab_cols
+    where column_name = 'ADD_TMS'
+      and table_name = 'EMP';
+      --and owner = 'SCOTT --*might be required if you are using all/dba views
+
+  if (v_column_exists = 0) then
+      execute immediate 'alter table emp add (ADD_TMS date)';
+  end if;
+end;
+/
+
+
+DBMS_RLS.ADD_POLICY
+	
+
+Adds a policy to a table, view, or synonym
+
+DBMS_RLS.ENABLE_POLICY
+	
+
+Enables (or disables) a policy you previously added to a table, view, or synonym
+
+DBMS_RLS.REFRESH_POLICY
+	
+
+Invalidates cursors associated with nonstatic policies
+
+DBMS_RLS.DROP_POLICY
+	
+
+To drop a policy from a table, view, or synonym
+
+For Handling Grouped Policies
+	 
+
+DBMS_RLS.CREATE_POLICY_GROUP
+	
+
+Creates a policy group
+
+DBMS_RLS.DELETE_POLICY_GROUP
+	
+
+Drops a policy group
+
+DBMS_RLS.ADD_GROUPED_POLICY
+	
+
+Adds a policy to the specified policy group
+
+DBMS_RLS.ENABLE_GROUPED_POLICY
+	
+
+Enables a policy within a group
+
+DBMS_RLS.REFRESH_GROUPED_POLICY
+	
+
+Parses again the SQL statements associated with a refreshed policy
+
+DBMS_RLS.DISABLE_GROUPED_POLICY
+	
+
+Disables a policy within a group
+
+DBMS_RLS.DROP_GROUPED_POLICY
+	
+
+Drops a policy that is a member of the specified group
+
+For Handling Application Contexts
+	 
+
+DBMS_RLS.ADD_POLICY_CONTEXT
+	
+
+Adds the context for the active application
+
+DBMS_RLS.DROP_POLICY_CONTEXT
+	
+
+Drops the context for the application
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        alter session enable parallel dml;
+    merge /*+ parallel(contract_dim,10) append */
+        into contract_dim d
+        using TABLE(trx.go(
+            CURSOR(select /*+ parallel(contracts_
+
+file,10) full (contracts_file) */ *
+                from contracts_file ))) f
+        on  d.contract_id = f.contract_id
+        when matched then
+            update set desc              = f.desc,
+                       init_val_loc_curr = f.init_val_loc_curr,
+                       init_val_adj_amt  = f.init_val_adj_amt
+        when not matched then
+            insert values ( f.contract_id,
+                            f.desc,
+                            f.init_val_loc_curr,
+                            f.init_val_adj_amt);  
+                            
+-- CHECK IF THERE WILL BE MORE THAN ONE POLICY OVER SINGLE OBJECT REQUIRED.                            
+
+SELECT /*+ parallel(6) */
+  AO.CODE AUTH_OBJ_CODE,
+  S.NAME SCHEMA_NAME,
+  O.NAME OBJECT_NAME,
+  OC.NAME OBJECT_COLUMN_NAME,
+  COUNT(*) AS COUNT
+FROM AUTHORIZATION_OBJECTS AO
+INNER JOIN OBJECTS O ON AO.AUTH_OBJECT_ID = O.AUTHORIZATION_OBJECT_ID
+INNER JOIN SCHEMAS S ON O.SCHEMA_ID = S.SCHEMA_ID
+INNER JOIN OBJECT_COLUMNS OC ON O.OBJECT_ID = OC.OBJECT_ID
+WHERE 
+
+  -- Get only valid records
+  AO.V_IS_ACTIVE = 'T'
+  AND AO.V_VALID_FROM < SYSDATE
+  AND AO.V_VALID_TO >= SYSDATE
+  AND S.V_IS_ACTIVE = 'T'
+  AND S.V_VALID_FROM < SYSDATE
+  AND S.V_VALID_TO >= SYSDATE
+  AND O.V_IS_ACTIVE = 'T'
+  AND O.V_VALID_FROM < SYSDATE
+  AND O.V_VALID_TO >= SYSDATE
+  AND OC.V_IS_ACTIVE = 'T'
+  AND OC.V_VALID_FROM < SYSDATE
+  AND OC.V_VALID_TO >= SYSDATE
+
+
+  
+-- BEGIN: For testing purposes only --
+  -- AND O.NAME = '%%'
+-- END: For testing purposes only --
+
+GROUP BY AO.CODE,S.NAME,O.NAME,OC.NAME
+
+ORDER BY COUNT DESC;
+
+
+select * from user_objects where object_type = 'TABLE';
+
+
+
+
+
+
